@@ -9,8 +9,8 @@ export type QuestionExplanation = {
 };
 
 const explanations = {
-  ...(cha1ExplanationData as Record<string, QuestionExplanation>),
-  ...(cha2ExplanationData as Record<string, QuestionExplanation>),
+  ...(cha1ExplanationData as unknown as Record<string, QuestionExplanation>),
+  ...(cha2ExplanationData as unknown as Record<string, QuestionExplanation>),
 };
 
 export function getQuestionExplanation(
