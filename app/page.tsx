@@ -2,69 +2,209 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { getQuestionExplanation } from "./explanations";
-import { questions } from "./questions";
+import type { Question } from "./questions";
+import {
+  categories,
+  getCategory,
+  pickRandomQuestions,
+  type CategoryKey,
+} from "./quiz-data";
 
 const labels = ["A", "B", "C", "D"];
-const initialOrder = questions.map((_, index) => index);
+const COUNT_OPTIONS = [10, 20, 0] as const; // 0 = 전체
 
-function shuffledOrder() {
-  const order = [...initialOrder];
-  for (let index = order.length - 1; index > 0; index -= 1) {
-    const swapIndex = Math.floor(Math.random() * (index + 1));
-    [order[index], order[swapIndex]] = [order[swapIndex], order[index]];
+type RankingRow = {
+  id: number;
+  name: string;
+  correct: number;
+  total: number;
+  percent: number;
+  createdAt: string;
+};
+
+type Screen = "home" | "quiz" | "result";
+
+function formatDate(value: string) {
+  const date = new Date(value.includes("T") ? value : `${value.replace(" ", "T")}Z`);
+  if (Number.isNaN(date.getTime())) return "";
+  return `${date.getMonth() + 1}/${date.getDate()}`;
+}
+
+async function fetchRankings(category: CategoryKey): Promise<RankingRow[]> {
+  const response = await fetch(`/api/rankings?category=${category}`);
+  const payload = (await response.json()) as { rankings?: RankingRow[]; error?: string };
+  if (!response.ok || !payload.rankings) {
+    throw new Error(payload.error ?? "랭킹을 불러오지 못했습니다.");
   }
-  return order;
+  return payload.rankings;
+}
+
+function RankingTable({
+  rows,
+  highlightId,
+  emptyMessage,
+}: {
+  rows: RankingRow[];
+  highlightId?: number | null;
+  emptyMessage: string;
+}) {
+  if (rows.length === 0) {
+    return <p className="ranking-empty">{emptyMessage}</p>;
+  }
+
+  return (
+    <ol className="ranking-list">
+      {rows.map((row, index) => (
+        <li
+          key={row.id}
+          className={highlightId === row.id ? "ranking-row highlight" : "ranking-row"}
+        >
+          <span className={`rank-no ${index < 3 ? "top" : ""}`}>{index + 1}</span>
+          <span className="rank-name">{row.name}</span>
+          <span className="rank-score">
+            {row.percent}점
+            <small>
+              {row.correct}/{row.total}
+            </small>
+          </span>
+          <span className="rank-date">{formatDate(row.createdAt)}</span>
+        </li>
+      ))}
+    </ol>
+  );
 }
 
 export default function Home() {
-  const [order, setOrder] = useState(initialOrder);
+  const [screen, setScreen] = useState<Screen>("home");
+  const [categoryKey, setCategoryKey] = useState<CategoryKey>("cha1");
+  const [countOption, setCountOption] = useState<number>(20);
+  const [quizQuestions, setQuizQuestions] = useState<Question[]>([]);
   const [position, setPosition] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [correct, setCorrect] = useState(0);
-  const [finished, setFinished] = useState(false);
 
-  const current = questions[order[position]];
+  const [homeRankings, setHomeRankings] = useState<
+    Partial<Record<CategoryKey, RankingRow[]>>
+  >({});
+  const [rankingError, setRankingError] = useState<string | null>(null);
+
+  const [playerName, setPlayerName] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [registeredId, setRegisteredId] = useState<number | null>(null);
+  const [resultRankings, setResultRankings] = useState<RankingRow[] | null>(null);
+
+  const category = getCategory(categoryKey);
+  const total = quizQuestions.length;
+  const current = quizQuestions[position];
   const isAnswered = selected !== null;
-  const isCorrect = selected === current.answer;
-  const explanation = useMemo(() => getQuestionExplanation(current), [current]);
-  const solved = finished ? questions.length : position + (isAnswered ? 1 : 0);
-  const score = useMemo(
-    () => (finished ? Math.round((correct / questions.length) * 100) : 0),
-    [correct, finished],
+  const isCorrect = current != null && selected === current.answer;
+  const explanation = useMemo(
+    () => (current ? getQuestionExplanation(current) : null),
+    [current],
   );
+  const solved = position + (isAnswered ? 1 : 0);
+  const score = total > 0 ? Math.round((correct / total) * 100) : 0;
+
+  const loadHomeRankings = useCallback(() => {
+    Promise.all(
+      categories.map(async (entry) => {
+        const rows = await fetchRankings(entry.key);
+        return [entry.key, rows] as const;
+      }),
+    )
+      .then((pairs) => {
+        setHomeRankings(Object.fromEntries(pairs));
+        setRankingError(null);
+      })
+      .catch((error: unknown) => {
+        setRankingError(
+          error instanceof Error ? error.message : "랭킹을 불러오지 못했습니다.",
+        );
+      });
+  }, []);
 
   useEffect(() => {
-    setOrder(shuffledOrder());
-  }, []);
+    loadHomeRankings();
+  }, [loadHomeRankings]);
+
+  const startQuiz = useCallback(
+    (key: CategoryKey) => {
+      const pool = getCategory(key).questions;
+      const count = countOption === 0 ? pool.length : countOption;
+      setCategoryKey(key);
+      setQuizQuestions(pickRandomQuestions(pool, count));
+      setPosition(0);
+      setSelected(null);
+      setCorrect(0);
+      setRegisteredId(null);
+      setResultRankings(null);
+      setSubmitError(null);
+      setScreen("quiz");
+    },
+    [countOption],
+  );
 
   const choose = useCallback(
     (choiceIndex: number) => {
-      if (isAnswered || finished) return;
+      if (isAnswered || !current) return;
       setSelected(choiceIndex);
       if (choiceIndex === current.answer) {
         setCorrect((value) => value + 1);
       }
     },
-    [current.answer, finished, isAnswered],
+    [current, isAnswered],
   );
 
   const moveForward = useCallback(() => {
     if (!isAnswered) return;
-    if (position === questions.length - 1) {
-      setFinished(true);
+    if (position === total - 1) {
+      setScreen("result");
       return;
     }
     setPosition((value) => value + 1);
     setSelected(null);
-  }, [isAnswered, position]);
+  }, [isAnswered, position, total]);
 
-  const restartCycle = useCallback(() => {
-    setOrder(shuffledOrder());
-    setPosition(0);
+  const goHome = useCallback(() => {
+    setScreen("home");
+    setQuizQuestions([]);
     setSelected(null);
-    setCorrect(0);
-    setFinished(false);
-  }, []);
+    loadHomeRankings();
+  }, [loadHomeRankings]);
+
+  const registerRanking = useCallback(async () => {
+    const name = playerName.trim();
+    if (!name) {
+      setSubmitError("이름을 입력해 주세요.");
+      return;
+    }
+    setSubmitting(true);
+    setSubmitError(null);
+    try {
+      const response = await fetch("/api/rankings", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ name, category: categoryKey, correct, total }),
+      });
+      const payload = (await response.json()) as {
+        entry?: RankingRow;
+        rankings?: RankingRow[];
+        error?: string;
+      };
+      if (!response.ok || !payload.entry || !payload.rankings) {
+        throw new Error(payload.error ?? "랭킹 등록에 실패했습니다.");
+      }
+      setRegisteredId(payload.entry.id);
+      setResultRankings(payload.rankings);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error ? error.message : "랭킹 등록에 실패했습니다.",
+      );
+    } finally {
+      setSubmitting(false);
+    }
+  }, [categoryKey, correct, playerName, total]);
 
   return (
     <main className="page-shell">
@@ -75,72 +215,111 @@ export default function Home() {
               $
             </span>
             <div>
-              <p className="eyebrow">LINUX MASTER · FULL CYCLE QUIZ</p>
+              <p className="eyebrow">LINUX MASTER · RANDOM QUIZ</p>
               <h1 id="quiz-title">리눅스 마스터 2급</h1>
             </div>
           </div>
-          <div
-            className="score"
-            aria-label={`전체 ${questions.length}문제 중 ${solved}문제 완료`}
-          >
-            <span>
-              {finished ? "완료" : "진행"} <strong>{solved}</strong>
-            </span>
-            <span className="score-divider" />
-            <span>전체 {questions.length}</span>
-            <span className="score-rate">
-              {Math.round((solved / questions.length) * 100)}%
-            </span>
-          </div>
+          {screen === "quiz" && (
+            <div
+              className="score"
+              aria-label={`전체 ${total}문제 중 ${solved}문제 완료`}
+            >
+              <span>
+                {category.label} <strong>{solved}</strong>
+              </span>
+              <span className="score-divider" />
+              <span>전체 {total}</span>
+              <span className="score-rate">
+                {total > 0 ? Math.round((solved / total) * 100) : 0}%
+              </span>
+            </div>
+          )}
         </header>
 
-        <div className="cycle-progress" aria-hidden="true">
-          <span style={{ width: `${(solved / questions.length) * 100}%` }} />
-        </div>
+        {screen === "quiz" && (
+          <div className="cycle-progress" aria-hidden="true">
+            <span style={{ width: `${total > 0 ? (solved / total) * 100 : 0}%` }} />
+          </div>
+        )}
 
         <article className="quiz-card">
-          {finished ? (
-            <section className="final-result" aria-live="polite">
-              <span className="complete-badge">한 사이클 완료</span>
-              <h2>{questions.length}문제를 모두 풀었습니다.</h2>
-              <p className="final-message">
-                이번 사이클의 최종 결과입니다. 새 사이클을 시작하면 문제 순서가
-                다시 무작위로 섞입니다.
+          {screen === "home" && (
+            <section className="home-panel">
+              <h2 className="home-title">어떤 분야를 공부할까요?</h2>
+              <p className="home-sub">
+                족보 기출문제가 무작위 순서로, 중복 없이 출제됩니다.
               </p>
 
-              <div className="result-grid">
-                <div>
-                  <span>최종 점수</span>
-                  <strong>{score}점</strong>
-                </div>
-                <div>
-                  <span>정답</span>
-                  <strong>{correct}개</strong>
-                </div>
-                <div>
-                  <span>오답</span>
-                  <strong>{questions.length - correct}개</strong>
-                </div>
+              <div className="count-picker" role="group" aria-label="문항 수 선택">
+                <span>문항 수</span>
+                {COUNT_OPTIONS.map((option) => (
+                  <button
+                    key={option}
+                    type="button"
+                    className={countOption === option ? "count-option active" : "count-option"}
+                    onClick={() => setCountOption(option)}
+                  >
+                    {option === 0 ? "전체" : `${option}문제`}
+                  </button>
+                ))}
               </div>
 
-              <button type="button" className="next-button restart-cycle" onClick={restartCycle}>
-                새 사이클 시작
-                <span aria-hidden="true">↻</span>
-              </button>
+              <div className="category-grid">
+                {categories.map((entry) => (
+                  <button
+                    key={entry.key}
+                    type="button"
+                    className="category-card"
+                    onClick={() => startQuiz(entry.key)}
+                    disabled={entry.questions.length === 0}
+                  >
+                    <span className="category-eyebrow">{entry.eyebrow}</span>
+                    <strong>{entry.label}</strong>
+                    <p>{entry.description}</p>
+                    <span className="category-count">
+                      {entry.questions.length > 0
+                        ? `${entry.questions.length}개 고유 문항`
+                        : "준비 중"}
+                    </span>
+                  </button>
+                ))}
+              </div>
+
+              <div className="home-rankings">
+                {categories.map((entry) => (
+                  <section key={entry.key} className="ranking-panel">
+                    <h3>{entry.label} 랭킹 TOP 20</h3>
+                    {rankingError ? (
+                      <p className="ranking-empty">{rankingError}</p>
+                    ) : (
+                      <RankingTable
+                        rows={homeRankings[entry.key] ?? []}
+                        emptyMessage={
+                          homeRankings[entry.key]
+                            ? "아직 등록된 기록이 없습니다. 첫 주인공이 되어 보세요!"
+                            : "랭킹을 불러오는 중..."
+                        }
+                      />
+                    )}
+                  </section>
+                ))}
+              </div>
             </section>
-          ) : (
+          )}
+
+          {screen === "quiz" && current && (
             <>
               <div className="question-meta">
                 <div className="meta-badges">
-                  <span className="question-badge">{current.source}</span>
-                  {current.revised && <span className="revised-badge">교정 문항</span>}
+                  <span className="question-badge">{category.label}</span>
+                  <span className="source-badge">{current.source}</span>
                 </div>
                 <span>
-                  {position + 1} / {questions.length}
+                  {position + 1} / {total}
                 </span>
               </div>
 
-              <h2>{current.question}</h2>
+              <h2 className="question-text">{current.question}</h2>
 
               <div className="choices" role="group" aria-label="선택지">
                 {current.choices.map((choice, index) => {
@@ -155,7 +334,7 @@ export default function Home() {
                       disabled={isAnswered}
                     >
                       <span className="choice-label">{labels[index]}</span>
-                      <span>{choice}</span>
+                      <span className="choice-text">{choice}</span>
                       {isAnswer && <span className="choice-state">정답</span>}
                       {isWrong && <span className="choice-state">선택</span>}
                     </button>
@@ -179,7 +358,7 @@ export default function Home() {
                 )}
               </div>
 
-              {isAnswered && (
+              {isAnswered && explanation && (
                 <section className="explanation-panel" aria-label="문항 해설">
                   <div className="explanation-heading">
                     <span aria-hidden="true">i</span>
@@ -210,19 +389,12 @@ export default function Home() {
                       ))}
                     </ol>
                   </div>
-
-                  {current.revised && (
-                    <p className="revision-note">
-                      원본 족보의 오탈자, 오래된 환경 또는 정답이 어긋난 표현을 현재
-                      기준에 맞게 교정한 문항입니다.
-                    </p>
-                  )}
                 </section>
               )}
 
               <div className="actions">
-                <button type="button" className="reset-button" onClick={restartCycle}>
-                  사이클 다시 시작
+                <button type="button" className="reset-button" onClick={goHome}>
+                  그만두고 홈으로
                 </button>
                 <button
                   type="button"
@@ -230,16 +402,92 @@ export default function Home() {
                   onClick={moveForward}
                   disabled={!isAnswered}
                 >
-                  {position === questions.length - 1 ? "최종 결과 확인" : "다음 문제"}
+                  {position === total - 1 ? "최종 결과 확인" : "다음 문제"}
                   <span aria-hidden="true">→</span>
                 </button>
               </div>
             </>
           )}
+
+          {screen === "result" && (
+            <section className="final-result" aria-live="polite">
+              <span className="complete-badge">{category.label} 완료</span>
+              <h2>{total}문제를 모두 풀었습니다.</h2>
+
+              <div className="result-grid">
+                <div>
+                  <span>최종 점수</span>
+                  <strong>{score}점</strong>
+                </div>
+                <div>
+                  <span>정답</span>
+                  <strong>{correct}개</strong>
+                </div>
+                <div>
+                  <span>오답</span>
+                  <strong>{total - correct}개</strong>
+                </div>
+              </div>
+
+              {registeredId == null ? (
+                <div className="name-form">
+                  <p>이름을 등록하면 {category.label} 랭킹에 기록됩니다.</p>
+                  <div className="name-row">
+                    <input
+                      type="text"
+                      value={playerName}
+                      maxLength={12}
+                      placeholder="이름 (최대 12자)"
+                      onChange={(event) => setPlayerName(event.target.value)}
+                      onKeyDown={(event) => {
+                        if (event.key === "Enter" && !submitting) registerRanking();
+                      }}
+                    />
+                    <button
+                      type="button"
+                      className="next-button"
+                      onClick={registerRanking}
+                      disabled={submitting}
+                    >
+                      {submitting ? "등록 중..." : "랭킹 등록"}
+                    </button>
+                  </div>
+                  {submitError && <p className="form-error">{submitError}</p>}
+                </div>
+              ) : (
+                <section className="ranking-panel result-ranking">
+                  <h3>{category.label} 랭킹 TOP 20</h3>
+                  <RankingTable
+                    rows={resultRankings ?? []}
+                    highlightId={registeredId}
+                    emptyMessage="아직 등록된 기록이 없습니다."
+                  />
+                </section>
+              )}
+
+              <div className="result-actions">
+                <button
+                  type="button"
+                  className="reset-button"
+                  onClick={goHome}
+                >
+                  홈으로
+                </button>
+                <button
+                  type="button"
+                  className="next-button restart-cycle"
+                  onClick={() => startQuiz(categoryKey)}
+                >
+                  같은 분야 다시 풀기
+                  <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </section>
+          )}
         </article>
 
         <p className="source-note">
-          한 사이클에 {questions.length}개 고유 문항이 중복 없이 한 번씩 출제됩니다.
+          리눅스 마스터 2급 1차·2차 족보 기출문제가 중복 없이 무작위로 출제됩니다.
         </p>
       </section>
     </main>

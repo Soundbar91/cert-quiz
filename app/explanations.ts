@@ -1,4 +1,5 @@
-import explanationData from "./data/explanations.json";
+import cha1ExplanationData from "./data/explanations.json";
+import cha2ExplanationData from "./data/explanations-cha2.json";
 import type { Question } from "./questions";
 
 export type QuestionExplanation = {
@@ -7,14 +8,13 @@ export type QuestionExplanation = {
   choiceReasons: [string, string, string, string];
 };
 
-const explanations = explanationData as Record<string, QuestionExplanation>;
+const explanations = {
+  ...(cha1ExplanationData as Record<string, QuestionExplanation>),
+  ...(cha2ExplanationData as Record<string, QuestionExplanation>),
+};
 
-export function getQuestionExplanation(question: Question): QuestionExplanation {
-  const explanation = explanations[question.id];
-
-  if (!explanation) {
-    throw new Error(`문항 ${question.id}의 해설 데이터가 없습니다.`);
-  }
-
-  return explanation;
+export function getQuestionExplanation(
+  question: Question,
+): QuestionExplanation | null {
+  return explanations[question.id] ?? null;
 }
