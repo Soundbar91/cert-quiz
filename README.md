@@ -1,98 +1,38 @@
-# vinext-starter
+# 리눅스 마스터 2급 랜덤 퀴즈
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+리눅스 마스터 2급 1차·2차 족보 기출문제를 무작위로 풀고, 분야별 랭킹에
+기록을 남길 수 있는 학습용 웹앱입니다. [vinext](https://github.com/cloudflare/vinext)
+(Next.js App Router 호환) + Cloudflare Workers + D1(Drizzle) 위에서 동작합니다.
 
-## Prerequisites
+## 기능
 
-- Node.js `>=22.13.0`
+- **분야 선택**: 첫 화면에서 2급 1차(255문항) / 2급 2차(327문항) 중 선택
+- **랜덤 출제**: 문항 수(10 / 20 / 전체)를 고르면 무작위 순서로 중복 없이 출제
+- **해설**: 문항마다 핵심 개념, 정답 근거, 선택지별 정답/오답 사유 제공
+- **분야별 랭킹**: 퀴즈 완료 후 이름을 등록하면 D1에 저장되어 분야별 TOP 20 표시
 
-## Quick Start
+## 데이터
+
+- `app/questions.ts` — 1차 족보 문항 (수작업 정제)
+- `app/data/questions-cha2.json` — 2차 족보 문항 (PDF 추출 → 정제·중복 제거)
+- `app/data/explanations.json`, `app/data/explanations-cha2.json` — 문항별 해설
+- `scripts/validate-explanations.mjs` — 문항·해설 매칭, 중복 문항 검사 (빌드 시 실행)
+
+족보 원본 PDF는 상업 자료(무단 배포 금지 표기)이므로 저장소에 포함하지 않습니다
+(`docs/리눅스1+2차 족보/`는 gitignore 처리).
+
+## 개발
 
 ```bash
 npm install
-npm run dev
-npm run build
+npm run dev        # 로컬 개발 서버
+npm run build      # 해설 검증 + 프로덕션 빌드
+npm test           # 빌드 + 렌더링 테스트
+npm run lint
+npm run db:generate  # db/schema.ts 변경 후 마이그레이션 생성
 ```
 
-This starter does not use `wrangler.jsonc`.
-
-## Included Shape
-
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
-```
-
-## Optional Dispatch-Owned ChatGPT Sign-In
-
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
-
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
-
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
-
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
-
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
-
-## Useful Commands
-
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+랭킹 API는 Cloudflare D1 바인딩 `DB`를 사용합니다(`.openai/hosting.json`의
+`"d1": "DB"`). 배포 플랫폼이 `dist/.openai/drizzle`의 마이그레이션을 적용하면
+`rankings` 테이블이 생성됩니다. 테이블이 없는 환경에서는 랭킹 API가 안내
+메시지를 반환하며, 퀴즈 풀이 자체는 DB 없이도 동작합니다.
