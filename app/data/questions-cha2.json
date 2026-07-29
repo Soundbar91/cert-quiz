@@ -1,1 +1,3926 @@
-[]
+[
+  {
+    "id": "c2-001",
+    "source": "2차 · 문1 · 파일 시스템",
+    "question": "다음 중 사용자가 소스 컴파일하여 설치하는 프로그램을 위치시키는 디렉터리로 가장 알맞은 것은?",
+    "choices": [
+      "/lib",
+      "/etc",
+      "/usr/local",
+      "/usr"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-002",
+    "source": "2차 · 문2 · 파일 시스템",
+    "question": "다음 중 일반적인 리눅스 디렉터리에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "/ : 최상위(루트) 디렉터리",
+      "/lib : 실행파일 저장 디렉터리",
+      "/var : 사용자 프로그램 설치 디렉터리",
+      "/etc : 사용자 홈 저장 디렉터리"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-003",
+    "source": "2차 · 문3 · 파일 시스템",
+    "question": "다음 중 리눅스의 각종 시스템 설정 파일들이 저장되는 기본 디렉터리로 알맞은 것은?",
+    "choices": [
+      "/etc",
+      "/usr",
+      "/var",
+      "/lib"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-004",
+    "source": "2차 · 문4 · 파일 시스템",
+    "question": "리눅스 시스템에서 일반적으로 메일, 로그관련 데이터가 저장되는 디렉터리로 알맞은 것은?",
+    "choices": [
+      "/etc",
+      "/usr",
+      "/var",
+      "/lib"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-005",
+    "source": "2차 · 문5 · 파일 시스템",
+    "question": "다음 중 파일의 소유권(Ownership) 및 허가권(Permission)을 확인할 수 있는 명령어로 알맞은 것은?",
+    "choices": [
+      "chown",
+      "chmod",
+      "ls",
+      "chgrp"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-006",
+    "source": "2차 · 문6 · 파일 시스템",
+    "question": "다음 중 파일속성에 대한 문자와 의미에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "c : 문자특수 파일",
+      "d : 디렉터리 파일",
+      "b : 배치 파일",
+      "l : 기호링크"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-007",
+    "source": "2차 · 문7 · 파일 시스템",
+    "question": "다음 중 허가권(Permission)에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "파일의 내용을 볼 수 있는 권한 표시는 r을 사용한다.",
+      "디렉터리 안에 파일을 생성 또는 삭제할 수 없는 권한 표시는 w를 사용한다.",
+      "실행 파일을 실행시킬 수 있는 권한 표시는 x를 사용한다.",
+      "디렉터리 내부로 접근할 수 있는 권한 표시는 x를 사용한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-008",
+    "source": "2차 · 문8 · 파일 시스템",
+    "question": "다음 ls -l 명령의 결과에 대한 설명으로 알맞은 것은?\n\nsrw-r----- 1 root root 0 Aug 8 13:41 control",
+    "choices": [
+      "심볼릭 링크 파일을 의미한다.",
+      "블록 구조의 특수 파일을 의미한다.",
+      "소켓 파일을 의미한다.",
+      "입출력에 사용되는 특수 파일을 의미한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-009",
+    "source": "2차 · 문9 · 파일 시스템",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n[root@www ~]# ls -l /dev/sda\n( ) 1 root disk 8, 0 Aug 8 13:01 /dev/sda",
+    "choices": [
+      "brw-rw----",
+      "crw-rw----",
+      "drw-rw----",
+      "lrw-rw----"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-010",
+    "source": "2차 · 문10 · 파일 시스템",
+    "question": "다음 중 리눅스 시스템에서 일반적으로 분류하는 3가지 종류에 해당하는 파일로 틀린 것은?",
+    "choices": [
+      "일반 파일",
+      "디렉터리 파일",
+      "백업 파일",
+      "특수 파일"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-012",
+    "source": "2차 · 문12 · 파일 시스템",
+    "question": "다음 중 chmod 옵션에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "-R, --recursive : 하위 디렉터리를 포함하여 디렉터리 내부의 모든 파일의 접근 권한을 변경한다.",
+      "-c, --changes : 변경된 정보를 출력해준다.",
+      "-f, --force : 변경되지 않는 권한이 있을 경우에 강제로 변경한다.",
+      "-v, --version : 명령어의 버전 정보를 출력한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-016",
+    "source": "2차 · 문16 · 파일 시스템",
+    "question": "다음 중 파일이나 디렉터리에 설정된 접근권한을 변경할 때 사용하는 명령어로 알맞은 것은?",
+    "choices": [
+      "chgrp",
+      "chmod",
+      "chfn",
+      "chown"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-017",
+    "source": "2차 · 문17 · 파일 시스템",
+    "question": "다음 중 chmod 명령어에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "파일이나 디렉터리의 소유권 및 그룹 소유권을 변경하는 명령이다.",
+      "16진수의 값을 사용하는 숫자 모드(Numeric Mode)로 지정한다.",
+      "문자 모드에서 권한의 표시는 r, m, x를 사용한다.",
+      "파일이나 디렉터리에 접근할 수 없는 허가권(Permission)을 설정하는 명령이다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-019",
+    "source": "2차 · 문19 · 파일 시스템",
+    "question": "/root 디렉터리에 존재하는 test.txt 파일에 대해 모든 사용자가 읽기만 가능하도록 설정하기 위한 명령으로 알맞은 것은?\n\n[root@www ~]# ls -ld /root/\ndrwxr-xr-x 1 root root 4096 Aug 8 13:08 /root/\n[root@www ~]# ls -l test.txt\n-rw-r----- 1 root root 4 Aug 8 13:48 test.txt",
+    "choices": [
+      "chmod 111 /root/test.txt",
+      "chmod 444 /root/test.txt",
+      "chmod 555 /root/test.txt",
+      "chmod 666 /root/test.txt"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-020",
+    "source": "2차 · 문20 · 파일 시스템",
+    "question": "다음 중 명령어를 한 번만 사용하여 파일의 소유자와 소유그룹을 동시에 변경하려 할 때 알맞은 것은?",
+    "choices": [
+      "chmod",
+      "chgrp",
+      "chown",
+      "chsh"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-022",
+    "source": "2차 · 문22 · 파일 시스템",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n[root@ihd ~]$ ls -l documentation/\n-rw-rw-r--. 1 jparks7 jparks7 3046 Jan 10 18:18 Connector-J.md\n-rw-rw-r--. 1 jparks7 jparks7 18365 Jan 10 18:18 Failovery.md\ndrwxrwxr-x. 4 jparks7 jparks7 4096 Jan 10 18:18 src\n[root@ihd ~]$ chown ( ) jparks7.root documentation/\n[root@ihd ~]$ ls -l documentation/\n-rw-rw-r--. 1 jparks7 root 3046 Jan 10 18:18 Connector-J.md\n-rw-rw-r--. 1 jparks7 root 18365 Jan 10 18:18 Failovery.md\ndrwxrwxr-x. 4 jparks7 root 4096 Jan 10 18:18 src",
+    "choices": [
+      "-f",
+      "-c",
+      "-r",
+      "-R"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-023",
+    "source": "2차 · 문23 · 파일 시스템",
+    "question": "사용자 user1, 그룹 grep1 소유인 디렉터리 /home/user1을 포함한 하위 디렉터리 및 파일의 소유자를 모두 user2로 변경하려고 할 때 명령으로 알맞은 것은?",
+    "choices": [
+      "chown -R user2 /home/user1",
+      "chown -H user2 /home/user1",
+      "chmod -R user2 /home/user1",
+      "chmod -H user2 /home/user1"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-024",
+    "source": "2차 · 문24 · 파일 시스템",
+    "question": "다음 중 파일이나 디렉터리의 소유그룹 권한을 변경하는 명령어로 알맞은 것은?",
+    "choices": [
+      "chgrp",
+      "chmod",
+      "groupmod",
+      "usermod"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-025",
+    "source": "2차 · 문25 · 파일 시스템",
+    "question": "다음 chgrp 옵션 중 하위 디렉터리를 포함하여 디렉터리 내부의 모든 파일의 그룹 소유권을 ihd으로 변경할 때 사용하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-h",
+      "-f",
+      "-R",
+      "-v"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-026",
+    "source": "2차 · 문26 · 파일 시스템",
+    "question": "다음 중 리눅스 파일에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "디렉터리 파일은 파일 및 디렉터리의 이름뿐 아니라 해당 파일 및 디렉터리에 대한 포인터가 들어있는 파일이다.",
+      "일반파일은 텍스트, 또는 실행 가능한 바이너리 프로그램 및 여러 가지 유형의 데이터를 포함할 수 있다.",
+      "파일확장자의 의미가 없으며, 파일 속성을 변경하여 실행 파일로 사용할 수 있다.",
+      "파일명 내에 공백이나 필드분리자를 포함할 수 있다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-027",
+    "source": "2차 · 문27 · 파일 시스템",
+    "question": "다음 umask 옵션 중 umask 값을 문자로 표기하려고 할 때 알맞은 것은?",
+    "choices": [
+      "-S",
+      "-p",
+      "-u",
+      "-t"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-028",
+    "source": "2차 · 문28 · 파일 시스템",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\numask 명령어는 파일이나 디렉터리 생성 시 부여되는 기본 허가권을 지정하는 명령이다. umask 값이 0022일 때 파일 생성 시 기본 권한이 ( ㉠ )이고 디렉터리는 기본 권한이 ( ㉡ )로 설정된다.",
+    "choices": [
+      "㉠ u=rw,g=r,o=r ㉡ u=rwx,g=rx,o=rx",
+      "㉠ u=rw,g=rw,o=r ㉡ u=rwx,g=rwx,o=r",
+      "㉠ u=rw,g=rw,o=r ㉡ u=rwx,g=rwx,o=rx",
+      "㉠ u=rw,g=rw,o=rw ㉡ u=rw,g=rw,o=rx"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-029",
+    "source": "2차 · 문29 · 파일 시스템",
+    "question": "umask 설정값과 관련된 설명으로 틀린 것은?",
+    "choices": [
+      "umask는 파일 및 디렉터리 생성 시 기본권한을 설정할 수 있는 명령어이다.",
+      "기본적인 umask 값은 8진수로 022 또는 002이다.",
+      "umask 값이 8진수로 022일 때 파일을 생성하면 권한은 644이다.",
+      "umask 값 설정은 root만이 가능하다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-030",
+    "source": "2차 · 문30 · 파일 시스템",
+    "question": "다음 중 보안상 가장 안전한 umask 설정값으로 알맞은 것은?",
+    "choices": [
+      "umask 066",
+      "umask 077",
+      "umask 022",
+      "umask 002"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-031",
+    "source": "2차 · 문31 · 파일 시스템",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n[jparks7@ihd ~]$ umask -S\nu=rwx,g=rwx,o=rx\n[jparks7@ihd ~]$ umask (    )\n[jparks7@ihd ~]$ mkdir ihd\n[jparks7@ihd ~]$ touch ihd.txt\n[jparks7@ihd ~]$ ls -l\n-rw-r--r-- 1 jparks7 jparks7 0 Jan 31 17:00 ihd.txt\ndrwxr-xr-x 2 jparks7 jparks7 4096 Jan 31 16:57 ihd",
+    "choices": [
+      "033",
+      "022",
+      "0002",
+      "011"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-032",
+    "source": "2차 · 문32 · 파일 시스템",
+    "question": "Set-UID의 설명으로 틀린 것은?",
+    "choices": [
+      "보통 실행파일에 사용되며 Set-UID가 부여된 파일을 실행 시, 해당 파일을 실행하는 동안 실행시킨 사용자의 권한이 아닌 해당 파일의 소유자 권한으로 인식한다.",
+      "소유자 권한 부분의 x자리에 s로 표기된다.",
+      "디렉터리에 설정되는 특수 권한으로 일종의 공유 디렉터리로 사용된다.",
+      "실행 권한이 없는 파일에 부여하면 대문자 S로 나타난다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-033",
+    "source": "2차 · 문33 · 파일 시스템",
+    "question": "다음 디렉터리에 대한 설명으로 틀린 것은?\n\n[root@ihd ~]# ls -ld /tmp\ndrwxrwxrwt. 12 root root 4096 2016-02-02 16:47 /tmp",
+    "choices": [
+      "사용자 소유권과 그룹 소유권 모두 root이다.",
+      "Set-UID와 Set-GID가 설정되어 있다.",
+      "X 윈도 실행 시에 필요한 소켓 등 시스템에서 필요한 파일들이 임시 저장되는 디렉터리이다.",
+      "특정 응용프로그램이 다른 응용 프로그램에서 생성한 파일을 삭제 못한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-034",
+    "source": "2차 · 문34 · 파일 시스템",
+    "question": "다음 조건으로 디렉터리의 권한을 설정하려 할 때 괄호 안에 들어갈 내용은?\n\n1) /project 디렉터리는 해당 그룹에 속한 사용자만 접근하고, 파일 생성 시 자동으로 그룹 소유권이 project로 설정되도록 한다.\n2) project 그룹에 속한 사용자들의 파일 생성은 제한 없으나, 파일 삭제 시에는 본인이 생성한 파일만 가능하도록 설정한다.\n\n# ls -ld /project\ndrwxr-xr-x 2 root project 4096 2013-10-22 21:05 /project\n# chmod ( ) /project",
+    "choices": [
+      "1770",
+      "2770",
+      "3770",
+      "7770"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-035",
+    "source": "2차 · 문35 · 파일 시스템",
+    "question": "/project 디렉터리에 Set-GID를 설정하려고 할 때 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\nchmod ( ) /project",
+    "choices": [
+      "a+r",
+      "g+t",
+      "o+t",
+      "g+s"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-036",
+    "source": "2차 · 문36 · 파일 시스템",
+    "question": "다음 중 data 디렉터리를 공유 모드로 설정할 때 명령으로 알맞은 것은?",
+    "choices": [
+      "chmod o+s data/",
+      "chmod u+s data/",
+      "chmod o+t data/",
+      "chmod g+s data/"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-038",
+    "source": "2차 · 문38 · 파일 시스템",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n리눅스 커널 2.4 버전부터는 ( ) 파일 시스템 기능이 있는 ext3를 사용하였고, 시스템에 충돌이 발생하거나 전원 문제가 발생된 경우에 데이터 복구 확률을 높여준다.",
+    "choices": [
+      "저널링(Journaling)",
+      "ext4",
+      "ext",
+      "ext2"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-039",
+    "source": "2차 · 문39 · 파일 시스템",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n( ) 파일시스템은 ext2 및 ext3와 호환성이 있는 확장 버전으로 64비트 기억 공간 제한을 없애고, 최대 1Exabyte의 디스크 볼륨과 16Terabyte의 파일을 지원하는 등 대형 파일 시스템과 관련된 기능이 대폭 강화되었다.",
+    "choices": [
+      "ext",
+      "minix",
+      "ext4",
+      "Reiserfs"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-040",
+    "source": "2차 · 문40 · 파일 시스템",
+    "question": "다음 중 SGI에서 개발한 저널링 파일 시스템으로 알맞은 것은?",
+    "choices": [
+      "EXT3",
+      "XFS",
+      "JFS",
+      "NTFS"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-041",
+    "source": "2차 · 문41 · 파일 시스템",
+    "question": "다음에서 설명하는 파일 시스템의 종류로 알맞은 것은?\n\n256 바이트 길이의 파일 이름, 2GB의 단일 파일, 4TB의 디스크를 사용할 수 있으며, ext3 이전까지 대부분의 리눅스가 채택한 파일 시스템이다.",
+    "choices": [
+      "msdos",
+      "ext",
+      "ext2",
+      "nfs"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-042",
+    "source": "2차 · 문42 · 파일 시스템",
+    "question": "다음 중 파일 시스템에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "proc은 리눅스에서 사용하는 가상 파일 시스템으로 커널과 관련된 데이터를 담는 영역이다.",
+      "sysv은 SystemV/Coherent 파일 시스템을 리눅스에서 구현한 파일 시스템이다.",
+      "ncpfs은 Novel Netware에서 사용하는 네트워크 파일 시스템인 NCP 프로토콜을 구현한 파일 시스템이다.",
+      "umsdos 파일 시스템은 윈도우에서 MS-DOS 파일 시스템을 확장하여 만든 것으로 UID/GID, POSIX 허가권, 특수 파일 등을 지원한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-043",
+    "source": "2차 · 문43 · 파일 시스템",
+    "question": "다음은 윈도우의 파일 시스템인 FAT-32를 읽기 모드로 /mnt 디렉터리에 마운트할 때 마운트하는 과정이다. ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n#mount -t ( ㉠ ) -o ( ㉡ ) /mnt",
+    "choices": [
+      "㉠ vfat ㉡ ro",
+      "㉠ vfat ㉡ rw",
+      "㉠ msdos ㉡ rw",
+      "㉠ msdos ㉡ ro"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-044",
+    "source": "2차 · 문44 · 파일 시스템",
+    "question": "다음 명령어의 빈칸에 알맞은 내용으로 순서대로 나열한 것으로 알맞은 것은?\n\n(조건 : IDE 방식의 P-ATA에 연결된 2번째 디스크의 첫번째 파티션을 ext4 파일시스템 형식으로 read-only 옵션을 주어 마운트하려고 한다.)\n\n# mount -t ( ⓐ ) -o ro ( ⓑ ) /read-only",
+    "choices": [
+      "ⓐ ext4 - ⓑ /dev/hda1",
+      "ⓐ ext4 - ⓑ /dev/hdb1",
+      "ⓐ /dev/hda1 - ⓑ ext4",
+      "ⓐ /dev/hdb1 - ⓑ ext4"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-045",
+    "source": "2차 · 문45 · 파일 시스템",
+    "question": "다음 중 mount 명령어의 설명으로 알맞은 것은?",
+    "choices": [
+      "디스크의 파티션을 생성·삭제·확인하는데 사용한다.",
+      "파일시스템의 무결성 오류를 수정할 때 사용한다.",
+      "파티션의 파일시스템을 생성할 수 있다.",
+      "CD-ROM과 같은 광학드라이브를 /mnt 같은 디렉터리에 붙여서 사용할 수 있게 해준다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-046",
+    "source": "2차 · 문46 · 파일 시스템",
+    "question": "다음 중 ISO 이미지 파일을 /mnt 디렉터리에 읽기 전용으로 마운트 하는 명령으로 알맞은 것은?",
+    "choices": [
+      "mount -t iso9660 -o rw,loop /test.iso /mnt",
+      "mount -t iso9660 -o rw,acl /test.iso /mnt",
+      "mount -t iso9660 -o ro,loop /test.iso /mnt",
+      "mount -t sr0 -o ro,loop /test.iso /mnt"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-047",
+    "source": "2차 · 문47 · 파일 시스템",
+    "question": "다음 중 umount 명령에서 /etc/mtab에 명시된 파일 시스템 호출할 때 사용하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-h",
+      "-t",
+      "-o",
+      "-a"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-048",
+    "source": "2차 · 문48 · 파일 시스템",
+    "question": "다음 fdisk 옵션 중 파티션의 크기를 출력하려고 할 때 사용하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-l",
+      "-v",
+      "-s",
+      "-t"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-049",
+    "source": "2차 · 문49 · 파일 시스템",
+    "question": "다음 중 fdisk 실행 시 주요 명령에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "p 명령은 현재 디스크의 정보를 출력한다.",
+      "d 명령은 파티션을 삭제한다.",
+      "n 명령은 파티션을 새롭게 생성(추가)한다.",
+      "t 명령은 파티션을 마운트 한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-050",
+    "source": "2차 · 문50 · 파일 시스템",
+    "question": "운영 중인 시스템에 새로운 하드디스크를 추가하였다. 다음 중 관련 작업 순서로 알맞은 것은?",
+    "choices": [
+      "mount - fdisk - mkfs",
+      "fdisk - mkfs - mount",
+      "fdisk - mount - mkfs",
+      "mkfs - mount - fdisk"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-051",
+    "source": "2차 · 문51 · 파일 시스템",
+    "question": "다음 중 생성되는 파일 시스템의 종류가 다른 것은?",
+    "choices": [
+      "mke2fs -j /dev/sdb1",
+      "mkfs -t ext3 /dev/sdb1",
+      "mkfs /dev/sdb1",
+      "mke2fs -t ext3 /dev/sdb1"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-052",
+    "source": "2차 · 문52 · 파일 시스템",
+    "question": "다음 중 /dev/hda2를 ext3 파일 시스템으로 생성하려고 할 때 명령으로 틀린 것은?",
+    "choices": [
+      "mkfs -t ext3 /dev/hda2",
+      "mke2fs -t ext3 /dev/hda2",
+      "mke2fs -j /dev/hda2",
+      "fsck -t ext3 /dev/hda2"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-053",
+    "source": "2차 · 문53 · 파일 시스템",
+    "question": "다음 중 /lost+found 디렉터리와 가장 관계가 깊은 명령어로 알맞은 것은?",
+    "choices": [
+      "fdisk",
+      "chmod",
+      "last",
+      "fsck"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-054",
+    "source": "2차 · 문54 · 파일 시스템",
+    "question": "다음 중 fsck 명령의 옵션에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "-A : 어떤 질문도 하지 않고 파일 시스템에서 발견되는 모든 문제를 자동으로 수리",
+      "-r : 파일 시스템을 수리하기 전에 확인을 요청",
+      "-V : 수행 중인 사항에 대한 추가정보를 인쇄",
+      "-s : 파일 시스템을 점검하기 전에 슈퍼블럭을 나열"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-055",
+    "source": "2차 · 문55 · 파일 시스템",
+    "question": "다음 중 fsck 명령 옵션에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "-A 옵션을 사용하면 /etc/fstab의 모든 파일시스템에 대해 기능을 수행한다.",
+      "-a 옵션을 사용하면 오류 발견 시 자동으로 복구를 시도한다.",
+      "-s 옵션을 사용하면 파일 시스템 점검 전에 모든 inode를 출력한다.",
+      "-r 옵션을 사용하면 복구 시도 전에 확인을 요청한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-056",
+    "source": "2차 · 문56 · 파일 시스템",
+    "question": "다음 중 df 명령을 사용 시 파일시스템의 종류를 확인할 때 입력하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-T",
+      "-t",
+      "-h",
+      "-a"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-058",
+    "source": "2차 · 문58 · 파일 시스템",
+    "question": "다음 중 파일이나 디렉터리의 크기를 확인할 때 사용하는 명령어는?",
+    "choices": [
+      "du",
+      "free",
+      "fsck",
+      "df"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-059",
+    "source": "2차 · 문59 · 파일 시스템",
+    "question": "/ 이하에 있는 각 디렉터리별로 크기를 합쳐서 사람이 읽기 좋은 단위(KB, MB, GB 등)로 출력하기 위한 명령으로 알맞은 것은?",
+    "choices": [
+      "du -s /*",
+      "df -s /*",
+      "du -sh /*",
+      "df -sh /*"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-060",
+    "source": "2차 · 문60 · 파일 시스템",
+    "question": "다음 중 /etc/fstab의 첫 번째 필드에 설정하는 값으로 틀린 것은?",
+    "choices": [
+      "UUID",
+      "마운트 포인트",
+      "LABEL",
+      "장치파일명"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-061",
+    "source": "2차 · 문61 · 파일 시스템",
+    "question": "/etc/fstab 파일 4번째 필드의 주요 옵션 중 로컬(Local) 시스템에서 일반 사용자가 마운트 할 수 있는 권한을 부여하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "defaults",
+      "grpquota",
+      "user",
+      "usrquota"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-062",
+    "source": "2차 · 문62 · 파일 시스템",
+    "question": "다음 중 사용자 쿼터를 이용하기 위해 /etc/fstab에 설정하는 옵션 값으로 알맞은 것은?",
+    "choices": [
+      "usrquota",
+      "userquota",
+      "grpquota",
+      "groupquota"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-063",
+    "source": "2차 · 문63 · 파일 시스템",
+    "question": "/etc/fstab 필드 중에 fsck와 가장 연관이 있는 필드는 몇 번째 인가?",
+    "choices": [
+      "3번째",
+      "4번째",
+      "5번째",
+      "6번째"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-064",
+    "source": "2차 · 문64 · 파일 시스템",
+    "question": "사용자의 쿼터 관련 정보를 기록하는 파일로 알맞은 것은?",
+    "choices": [
+      "aquota.user",
+      "aquota.group",
+      "user.aquota",
+      "group.aquota"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-066",
+    "source": "2차 · 문66 · 파일 시스템",
+    "question": "리눅스 파일 시스템에서 특별한 종류의 디스크 블록으로 파일이름, 소유주, 권한, 시간, 디스크에서의 위치 등에 대한 정보를 담고 있는 것으로 알맞은 것은?",
+    "choices": [
+      "partition table",
+      "super block",
+      "inode",
+      "data block"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-067",
+    "source": "2차 · 문67 · 파일 시스템",
+    "question": "다음 edquota 옵션 중 디스크 쿼터의 soft 제한을 초과했을 때의 유예기간을 설정하는 옵션은?",
+    "choices": [
+      "-q",
+      "-s",
+      "-t",
+      "-p"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-069",
+    "source": "2차 · 문69 · 파일 시스템",
+    "question": "다음 중 nanuminfo 사용자의 디스크 용량을 soft 10MB, Hard 11MB로 설정하기 위한 명령어로 알맞은 것은?",
+    "choices": [
+      "setquota -u nanuminfo 10M 11M 0 0 /home/nanuminfo",
+      "setquota -u nanuminfo 11M 10M 0 0 /home/nanuminfo",
+      "setquota -u nanuminfo 10M 11M 0 0 /home",
+      "setquota -u nanuminfo 11M 10M 0 0 /home"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-070",
+    "source": "2차 · 문70 · 셸",
+    "question": "다음 설명으로 알맞은 것은?\n\n커널과 사용자간의 다리역할을 하는 것으로 사용자로부터 명령을 받아 그것을 해석하고 프로그램을 실행하는 역할을 한다.",
+    "choices": [
+      "메타캐릭터(Metacharacter)",
+      "히스토리(History)",
+      "셸(Shell)",
+      "환경변수(Environment Variable)"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-071",
+    "source": "2차 · 문71 · 셸",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n$ ( ) -s /bin/bash\nChanging shell for ihd.\nPassword:\nShell changed.\n$ grep user01 /etc/passwd\nihd:x:500:500::/home/user01:/bin/bash",
+    "choices": [
+      "chsh",
+      "usermod",
+      "groupmod",
+      "shell"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-072",
+    "source": "2차 · 문72 · 셸",
+    "question": "다음 설명으로 알맞은 것은?\n\n- 리눅스의 표준 셸이다.\n- GNU 프로젝트에 의해 개발되었다.",
+    "choices": [
+      "bash",
+      "tcsh",
+      "zsh",
+      "ksh"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-074",
+    "source": "2차 · 문74 · 셸",
+    "question": "다음 중 변경 가능한 셸의 목록을 확인할 때 사용하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/shells",
+      "/etc/shell",
+      "/etc/bashrc",
+      "/etc/profile"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-075",
+    "source": "2차 · 문75 · 셸",
+    "question": "다음 중 리눅스 시스템에 로그인 후 사용 중인 셸을 확인하는 방법으로 알맞은 것은?",
+    "choices": [
+      "명령 프롬프트 상에서 'echo $SHELL'을 실행하여 확인한다.",
+      "명령 프롬프트 상에서 'chsh -l'을 실행하여 확인한다.",
+      "명령 프롬프트 상에서 'cat /etc/shells'을 실행하여 확인한다.",
+      "명령 프롬프트 상에서 'chsh'을 실행하여 확인한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-076",
+    "source": "2차 · 문76 · 셸",
+    "question": "다음 ( 괄호 ) 안에 들어갈 셸 프롬프트 형식으로 알맞은 것은?\n\n( ) echo $PS1\n[ \\u@ \\h: \\w] \\$\n( ) pwd\n/etc/sysconfig\n( ) hostname\ntestbed\n( ) whoami\nihd",
+    "choices": [
+      "[testbed@sysconfig:ihd]$",
+      "[testbed@/etc/sysconfig:ihd]$",
+      "[ihd@testbed:sysconfig]$",
+      "[ihd@testbed:/etc/sysconfig]$"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-077",
+    "source": "2차 · 문77 · 셸",
+    "question": "다음 조건으로 bash 셸에서 변수를 설정하고 확인하려 할 때 알맞은 것은?\n\n㉠ city 변수값은 seoul로 지정한다.\n㉡ echo 명령으로 city 변수값을 출력한다.",
+    "choices": [
+      "㉠ city=seoul ㉡ echo $city",
+      "㉠ city=seoul ㉡ echo $CITY",
+      "㉠ seoul=city ㉡ echo $CITY",
+      "㉠ seoul=city ㉡ echo $city"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-078",
+    "source": "2차 · 문78 · 셸",
+    "question": "현재 설정된 전체 환경변수의 값은 아래와 같다. 다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n[root@ihd]# ( ) | head -7\nLANG=en_US.UTF-8\nUSER=root\nLOGNAME=root\nHOME=/root\nPATH=/usr/lib64/qt-3.3/bin:/usr/local/sbin\nMAIL=/var/spool/mail/root\nSHELL=/bin/tcsh",
+    "choices": [
+      "echo",
+      "history",
+      "env",
+      "alias"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-079",
+    "source": "2차 · 문79 · 셸",
+    "question": "다음 중 현재 셸에 선언된 모든 환경 변수를 확인하는 명령어로 알맞은 것은?",
+    "choices": [
+      "test",
+      "env",
+      "ksh",
+      "while"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-081",
+    "source": "2차 · 문81 · 셸",
+    "question": "다음 중 셸 사용 시 기본으로 지원되는 언어를 확인하려 할 때 알맞은 것은?",
+    "choices": [
+      "echo $PWD",
+      "echo $TERM",
+      "echo $LANG",
+      "echo $USER"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-082",
+    "source": "2차 · 문82 · 셸",
+    "question": "다음 중 마지막에 실행한 명령부터 세어 8번째 전에 사용했던 명령어를 다시 실행하고자 할 때 사용할 수 있는 명령어로 알맞은 것은?",
+    "choices": [
+      "history -8",
+      "history 8",
+      "!-8",
+      "!8"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-083",
+    "source": "2차 · 문83 · 셸",
+    "question": "다음 중 가장 최근에 입력한 마지막 10개의 명령어 목록을 출력할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "!-10",
+      "10!",
+      "history 10",
+      "!!"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-084",
+    "source": "2차 · 문84 · 셸",
+    "question": "history 목록의 번호 중에서 7번에 해당하는 명령을 실행하기 위한 방법으로 알맞은 것은?",
+    "choices": [
+      "!!",
+      "7!",
+      "history 7",
+      "!7"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-085",
+    "source": "2차 · 문85 · 셸",
+    "question": "다음 중 가장 마지막에 실행한 명령을 재실행 하려고 할 때 알맞은 것은?",
+    "choices": [
+      "history",
+      "!!",
+      "!100",
+      "!a"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-087",
+    "source": "2차 · 문87 · 셸",
+    "question": "다음 중 history의 환경변수 중 틀린 것은?",
+    "choices": [
+      "HISTSIZE : 히스토리 스택의 크기가 지정되어 있는 변수로 단위는 명령의 개수이다.",
+      "HISTFILESIZE : 실질적인 히스토리 파일의 크기이다.",
+      "HISTFILE : 히스토리 파일의 위치를 보여준다.",
+      "HISTSIZEFILE : 이 변수에 지정한 값만큼만 history 명령 실행 시에 출력된다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-088",
+    "source": "2차 · 문88 · 셸",
+    "question": "다음 중 alias에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "존재하지 않는 명령어에 특정 명령을 지정하여 사용할 수 있다.",
+      "alias 명령을 실행하면 현재 설정된 alias 목록을 출력한다.",
+      "unalias 명령으로 alias된 특정 명령을 해제할 수 있다.",
+      "alias 명령은 csh 셸에서만 사용할 수 있다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-089",
+    "source": "2차 · 문89 · 셸",
+    "question": "다음 중 alias로 설정된 _mariadb을 해제하는 명령으로 알맞은 것은?",
+    "choices": [
+      "unalias",
+      "unalias _mariadb",
+      "_mariadb unalias",
+      "_mariadb"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-091",
+    "source": "2차 · 문91 · 셸",
+    "question": "alias cp='cp -i' 가 등록되어 있다. 다음 중 alias를 해제하기 위한 방법으로 가장 알맞은 것은?",
+    "choices": [
+      "alias cp=''",
+      "unalias cp",
+      "alias cp='cp -d'",
+      "unalias cp='cp -i'"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-092",
+    "source": "2차 · 문92 · 셸",
+    "question": "리눅스 시스템에서 파일을 삭제할 때 실수를 방지하기 위하여 정말 삭제할 것인지 묻도록 설정하고자 한다. 다음 중 올바른 설정방법으로 알맞은 것은?",
+    "choices": [
+      "alias rm=rm -{i",
+      "alias rm='rm -i'",
+      "alias rm=(rm -9i)",
+      "alias rm=`rm -9i`"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-093",
+    "source": "2차 · 문93 · 셸",
+    "question": "/etc/profile 파일에 대한 설명으로 가장 알맞은 것은?",
+    "choices": [
+      "시스템 전체(모든 사용자)에 적용되는 환경변수와 시작관련 프로그램을 설정한다.",
+      "시스템 전체(모든 사용자)에 적용되는 alias와 함수를 설정한다.",
+      "개인사용자의 환경설정과 시작프로그램 설정과 관련이 있는 파일로 로그인 시에 읽어 들인다.",
+      "개인 사용자가 정의한 alias와 함수들이 있는 파일이다. alias를 지속적으로 사용하려면 이 파일에 설정한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-094",
+    "source": "2차 · 문94 · 셸",
+    "question": "다음 중 bash에서 개인 사용자가 로그아웃할 때 수행하는 설정을 지정하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/profile",
+      "/etc/bashrc",
+      "~/.bash_logout",
+      "/etc/shells"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-095",
+    "source": "2차 · 문95 · 셸",
+    "question": "다음 중 일반사용자가 alias와 함수들을 변경하려고 할 때 사용하는 파일로 가장 알맞은 것은?",
+    "choices": [
+      "/etc/profile",
+      "~/.bash_profile",
+      "~/.bash_history",
+      "~/.bashrc"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-096",
+    "source": "2차 · 문96 · 셸",
+    "question": "다음 중 PATH 설정 값에 /usr/local/mariadb/bin 경로를 추가하려고 할 때 알맞은 것은?",
+    "choices": [
+      "export PATH=/usr/local/mariadb/bin",
+      "export PATH=PATH:/usr/local/mariadb/bin",
+      "export PATH=$PATH:/usr/local/mariadb/bin",
+      "export $PATH=PATH:/usr/local/mariadb/bin"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-097",
+    "source": "2차 · 문97 · 셸",
+    "question": "다음 중 아래 조건을 만족하는 PATH 변수 설정으로 알맞은 것은?\n\n- 백업 스크립트(/home/ihd/bin/backup.sh)를 편하게 수행할 수 있도록 PATH 변수에 경로를 추가한다.\n- PATH 변수는 export 되어야 한다.",
+    "choices": [
+      "export PATH=PATH:/home/ihd/bin/backup.sh",
+      "export PATH=$PATH:/home/ihd/bin/backup.sh",
+      "export PATH=PATH:/home/ihd/bin",
+      "export PATH=$PATH:/home/ihd/bin"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-098",
+    "source": "2차 · 문98 · 셸",
+    "question": "다음 중 bash shell에서 실행 파일을 찾는 디렉터리 경로를 나타내는 환경 변수로 알맞은 것은?",
+    "choices": [
+      "HOME",
+      "PATH",
+      "PWD",
+      "TERM"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-099",
+    "source": "2차 · 문99 · 프로세스",
+    "question": "다음 ( 괄호 ) 안에 들어갈 설명으로 알맞은 것은?\n하나의 프로세스가 다른 프로세스를 실행하기 위해 시스템 호출 받는 방법에는 (㉠)와 (㉡)가 있다. (㉠)는 새로운 프로세스를 위해 메모리를 할당 받아 복사본 형태의 프로세스를 실행하는 형태로 기존의 프로세스는 그대로 실행되어 있다. 새롭게 생성된 프로세스는 원래의 프로세스와 똑같은 코드를 기반으로 실행된다. (㉡)는 원래의 프로세스를 새로운 프로세스로 대체하는 형태로 호출한 프로세스의 메모리에 새로운 프로세스의 코드를 덮어씌워 버린다.",
+    "choices": [
+      "㉠ exec ㉡ fork",
+      "㉠ fork ㉡ exec",
+      "㉠ background ㉡ foreground",
+      "㉠ foreground ㉡ background"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-100",
+    "source": "2차 · 문100 · 프로세스",
+    "question": "다음 ( 괄호 )에 알맞은 것은?\n리눅스가 부팅을 시작하면 커널은 (    ) 프로세스라는 최초의 프로세스를 발생시키고, 이 프로세스는 PID 1번을 할당 받는다.",
+    "choices": [
+      "init",
+      "pstree",
+      "fork",
+      "exec"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-101",
+    "source": "2차 · 문101 · 프로세스",
+    "question": "다음 중 프로세스에 관련된 설명으로 알맞은 것은?",
+    "choices": [
+      "최초의 프로세스인 init은 PID 번호가 1이다.",
+      "리눅스 부팅 시에 발생하는 프로세스는 exec 방식이다.",
+      "하나의 프로세스가 다른 프로세스를 실행하기 위한 방법에는 inetd와 standalone 방식이 있다.",
+      "inetd 방식으로 관리되는 서비스들은 항상 메모리에 상주한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-102",
+    "source": "2차 · 문102 · 프로세스",
+    "question": "다음 중 백그라운드 프로세스와 가장 관련있는 특수 기호로 알맞은 것은?",
+    "choices": [
+      "?",
+      "!",
+      "/",
+      "&"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-103",
+    "source": "2차 · 문103 · 프로세스",
+    "question": "다음 중 포어그라운드(foreground) 프로세스를 백그라운드(background) 프로세스로 전환할 때 사용하는 인터럽트 키 조합으로 알맞은 것은?",
+    "choices": [
+      "[Ctrl]+[\\]",
+      "[Ctrl]+[c]",
+      "[Ctrl]+[z]",
+      "[Ctrl]+[d]"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-104",
+    "source": "2차 · 문104 · 프로세스",
+    "question": "다음 중 프로세스에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "init 프로세스의 pid는 1번을 갖는다.",
+      "fork는 새로운 프로세스 생성을 위한 시스템 호출 명령이다.",
+      "foreground로 실행되는 프로그램은 실행 중에 Ctrl+Z를 누르면 suspend 상태가 된다.",
+      "exec 명령은 프로세스의 강제 종료에 주로 사용된다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-105",
+    "source": "2차 · 문105 · 프로세스",
+    "question": "다음에서 설명하는 내용으로 알맞은 것은?\n원래의 프로세스를 새로운 프로세스로 대체하는 형태로 호출한 프로세스의 메모리에 새로운 프로세스의 코드를 덮어씌워 버린다.",
+    "choices": [
+      "inetd",
+      "exec",
+      "fork",
+      "foreground"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-106",
+    "source": "2차 · 문106 · 프로세스",
+    "question": "다음 그림에 해당하는 내용으로 알맞은 것은?\n[ihd@www ~]$ find / -name -type d 2>/dev/null > dir.txt &\n[1] 6924",
+    "choices": [
+      "foreground process",
+      "background process",
+      "inetd process",
+      "standalone process"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-107",
+    "source": "2차 · 문107 · 프로세스",
+    "question": "다음 중 [Ctrl]+[\\] 입력 시 전송되는 시그널의 번호로 알맞은 것은?",
+    "choices": [
+      "1",
+      "3",
+      "15",
+      "9"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-108",
+    "source": "2차 · 문108 · 프로세스",
+    "question": "다음 중 [Ctrl]+[c] 입력 시 전송되는 시그널의 번호로 알맞은 것은?",
+    "choices": [
+      "1",
+      "2",
+      "15",
+      "9"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-109",
+    "source": "2차 · 문109 · 프로세스",
+    "question": "다음 중 CTRL-\\를 입력했을 때 보내어 지는 시그널로 알맞은 것은?",
+    "choices": [
+      "HUP",
+      "QUIT",
+      "KILL",
+      "CONT"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-110",
+    "source": "2차 · 문110 · 프로세스",
+    "question": "프로세스에 자주 사용되는 시그널과 그 의미가 잘못 짝지어진 것은?",
+    "choices": [
+      "SIGHUP : 실행중인 프로그램에 정의되어 있는 정상적인 방법으로 종료하게 한다.",
+      "SIGINT : 현재 작동 중인 프로그램의 동작을 멈출 때 사용한다.",
+      "SIGQUIT : 사용자가 터미널에서 종료키(quit)를 누를 때 보내어진다.",
+      "SIGKILL : 무조건 실행중인 프로그램을 중지 시킨다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-111",
+    "source": "2차 · 문111 · 프로세스",
+    "question": "다음은 프로세스간의 통신을 위한 시그널(signal) 번호의 연결이다. 옳지 않은 것은?",
+    "choices": [
+      "SIGHUP - 0",
+      "SIGINT - 2",
+      "SIGSTOP - 19",
+      "SIGKILL - 9"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-112",
+    "source": "2차 · 문112 · 프로세스",
+    "question": "다음 중 kill 명령 사용 시 지정한 시그널이 없을 때 기본으로 보내지는 시그널로 알맞은 것은?",
+    "choices": [
+      "TERM - 가능한 정상 종료",
+      "QUIT - 실행종료",
+      "KILL - 무조건 종료",
+      "STOP - 무조건적으로 그리고 즉각적으로 정지"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-113",
+    "source": "2차 · 문113 · 프로세스",
+    "question": "다음 중 [Ctrl]+[z]를 입력했을 때 보내지는 시그널 번호로 알맞은 것은?",
+    "choices": [
+      "2",
+      "3",
+      "19",
+      "20"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-114",
+    "source": "2차 · 문114 · 프로세스",
+    "question": "다음 중 데몬에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "주기적이고 지속적인 서비스 요청을 처리하기 위해 계속 실행되는 프로세스이다.",
+      "데몬 프로세스를 실행하는 방법에는 standalone 방식과 inet 방식이 있다.",
+      "standalone 방식과 inet 방식은 관련된 모든 프로세스가 메모리에 상주하여 클라이언트 서비스 요청을 처리하는 방식이다.",
+      "리눅스에서는 서버 역할을 하는 프로그램들이 이에 해당하고 보통 이름 뒤에 데몬을 뜻하는 d를 붙인다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-115",
+    "source": "2차 · 문115 · 프로세스",
+    "question": "다음 내용은 무엇에 대한 설명인가?\n- 특정 서비스를 위한 백그라운드 상태에서 계속 실행되는 서버 프로세스이다.\n- 보통 리눅스 시스템 부팅 시 자동으로 실행이 된다.\n- service 명령어로 실행, 중지, 재시작 등을 할 수 있다.",
+    "choices": [
+      "데몬 (Daemon)",
+      "프로세스 (Process)",
+      "스레드 (Thread)",
+      "호출 (Call)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-116",
+    "source": "2차 · 문116 · 프로세스",
+    "question": "다음 중 현재 작업 중인 셸을 확인 할 때 사용하는 명령어로 알맞은 것은?",
+    "choices": [
+      "useradd",
+      "ps",
+      "groupadd",
+      "chkconfig"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-117",
+    "source": "2차 · 문117 · 프로세스",
+    "question": "ps 명령 수행 시 나타나는 정보에 대한 설명 중 틀린 것은?",
+    "choices": [
+      "USER : BSD 계열에서 나타나는 항목으로 프로세스 사용자의 이름",
+      "PID : 프로세스를 식별할 수 있는 번호가 출력이 된다.",
+      "RSS : 실제 사용하는 CPU의 사용량을 나타낸다.",
+      "PPID : 부모 프로세스에 대한 PID를 나타낸다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-118",
+    "source": "2차 · 문118 · 프로세스",
+    "question": "프로세스 상태코드의 STAT 값 중 \"Z\"가 의미하는 것으로 알맞은 것은?",
+    "choices": [
+      "죽어있는 상태를 뜻하며, 상태값으로 볼 수 없다.",
+      "메모리 안에서 페이지가 잠금된 상태",
+      "작업이 종료되었으나 부모 프로세스로부터 회수되지 않아 메모리를 차지하고 있는 상태",
+      "디스크 I/O에 의해 대기하고 있는 상태"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-121",
+    "source": "2차 · 문121 · 프로세스",
+    "question": "다음 중 pstree 명령어를 사용하여 실행한 명령 부분을 진하게 강조해서 출력할 때 사용하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-a",
+      "-h",
+      "-n",
+      "-p"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-122",
+    "source": "2차 · 문122 · 프로세스",
+    "question": "다음 중 프로세스의 상태를 트리(tree) 구조로 출력해주고, 각 프로세스의 명령행 인자까지 보여주는 명령으로 알맞은 것은?",
+    "choices": [
+      "tree -a",
+      "tree -h",
+      "pstree -a",
+      "pstree -h"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-123",
+    "source": "2차 · 문123 · 프로세스",
+    "question": "다음 중 프로세스 관련 명령어에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "lsof 명령어는 프로세스의 메모리 맵(Memory Map) 정보를 확인할 때 사용한다.",
+      "jobs 명령어는 백그라운드로 실행 중인 프로세스나 현재 중지된 프로세스의 목록을 출력해 준다.",
+      "top 명령어는 프로세스의 상태를 실시간으로 모니터링할 때 사용한다.",
+      "pstree 명령어는 프로세스의 상태를 트리(Tree) 구조로 출력해 준다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-125",
+    "source": "2차 · 문125 · 프로세스",
+    "question": "다음 중 리눅스에서 프로세스에 시그널을 전달하여 종료시킬 때 사용되는 명령으로 알맞은 것은?",
+    "choices": [
+      "rm",
+      "finish",
+      "kill",
+      "sigsend"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-126",
+    "source": "2차 · 문126 · 프로세스",
+    "question": "다음 중 kill 명령어에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "kill 명령은 PID를 사용한다.",
+      "여러 개의 프로세스에 시그널을 보낼 수 있다.",
+      "kill 명령은 작업번호를 사용해서 프로세스를 종료한다.",
+      "kill 명령 사용시 시그널을 지정하지 않으면 SIGKILL 시그널이 전송된다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-130",
+    "source": "2차 · 문130 · 프로세스",
+    "question": "다음 중 killall 명령어에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "같은 데몬의 여러 프로세스를 한번에 종료한다.",
+      "시그널을 지정하지 않으면 TERM 시그널로 보내진다.",
+      "프로세스명을 사용한다.",
+      "PID를 사용한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-132",
+    "source": "2차 · 문132 · 프로세스",
+    "question": "다음 중 nice 명령어에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "프로세스의 우선순위를 변경하는 명령으로 NI 값을 설정할 때 사용한다.",
+      "일반 사용자만이 NI값을 감소시켜 우선순위를 높일 수 있다.",
+      "NI 값이 작을수록 우선순위가 높다.",
+      "NI의 기본값은 0이고, 지정 가능한 값의 범위는 -20 ~ 19까지이다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-133",
+    "source": "2차 · 문133 · 프로세스",
+    "question": "다음 중 실행 중인 프로세스들의 우선순위를 변경하는 명령어는?",
+    "choices": [
+      "nice",
+      "kill",
+      "ps",
+      "signal"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-134",
+    "source": "2차 · 문134 · 프로세스",
+    "question": "다음 중 프로세스 우선순위 변경에 사용되는 NI값의 범위로 알맞은 것은?",
+    "choices": [
+      "-20 ~ 19",
+      "-20 ~ 20",
+      "-19 ~ 19",
+      "-19 ~ 20"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-136",
+    "source": "2차 · 문136 · 프로세스",
+    "question": "다음 renice 명령에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "프로세스명을 사용한다.",
+      "실행중인 프로세스의 우선순위를 변경한다.",
+      "PID 이외의 사용자명, 그룹ID로 사용가능하다.",
+      "실행중인 프로세스에 NI값이 즉시 부여된다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-137",
+    "source": "2차 · 문137 · 프로세스",
+    "question": "다음은 명령의 결과에 대한 설명이다. 틀린 것은?\n# renice -10 1222",
+    "choices": [
+      "위의 명령은 일반 사용자는 실행 할 수 없다.",
+      "기존의 값에서 -10이 된 NI값으로 설정 된다.",
+      "우선순위를 높인 것이다.",
+      "1222는 PID를 나타낸다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-139",
+    "source": "2차 · 문139 · 프로세스",
+    "question": "다음 중 사용자가 로그아웃하거나 작업 중인 터미널이 종료 되어도 실행 중인 프로세스를 백그라운드 프로세스로 계속 할 수 있도록 해주는 명령으로 알맞은 것은?",
+    "choices": [
+      "fg",
+      "nohup",
+      "hup",
+      "pmap"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-139b",
+    "source": "2차 · 문139b · 프로세스",
+    "question": "다음 중 root 사용자가 ihd 사용자의 cron 작업을 변경하려고 할 때 명령으로 알맞은 것은?",
+    "choices": [
+      "crontab -e ihd",
+      "crontab -u ihd",
+      "crontab -e -u ihd",
+      "crontab -u -e ihd"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-140",
+    "source": "2차 · 문140 · 프로세스",
+    "question": "다음 중 crontab 명령어를 사용하여 등록된 스케줄링 작업을 확인할 때 사용하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-e",
+      "-l",
+      "-t",
+      "-r"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-141",
+    "source": "2차 · 문141 · 프로세스",
+    "question": "다음 중 crontab에 설정된 내용을 삭제하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "crontab -d",
+      "crontab -r",
+      "crontab -l",
+      "crontab -D"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-142",
+    "source": "2차 · 문142 · 프로세스",
+    "question": "다음의 조건으로 crontab에 등록할 때 알맞은 것은?\n- 1월부터 12월까지 2개월마다 1일날 오전 1시 10분에 실행 되도록 한다.\n- 실행 파일의 경로(/home/messi/jalin.sh)",
+    "choices": [
+      "10 1 1-12/2 1 * /home/messi/jalin.sh",
+      "1 10 1-12/2 1 * /home/messi/jalin.sh",
+      "1 10 1 1-12/2 * /home/messi/jalin.sh",
+      "10 1 1 1-12/2 * /home/messi/jalin.sh"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-146",
+    "source": "2차 · 문146 · 에디터",
+    "question": "다음 중 리눅스에서 사용되는 에디터로 틀린 것은?",
+    "choices": [
+      "vi",
+      "emacs",
+      "pico",
+      "notepad"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-147",
+    "source": "2차 · 문147 · 에디터",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\npico는 자유 소프트웨어의 라이선스가 아니었기 때문에 소스의 수정이 불가능하였다. GNU 프로젝트에서는 pico의 복제버전(clone)인 (     ) 프로그램을 개발하였다.",
+    "choices": [
+      "emacs",
+      "vi",
+      "nano",
+      "mini"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-148",
+    "source": "2차 · 문148 · 에디터",
+    "question": "다음 중 vi 편집기와 호환되면서 독자적으로 다양한 기능을 추가하여 만든 편집기로 알맞은 것은?",
+    "choices": [
+      "vin",
+      "emacs",
+      "picon",
+      "vim"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-149",
+    "source": "2차 · 문149 · 에디터",
+    "question": "다음 중 emacs 최초 개발자로 알맞은 것은?",
+    "choices": [
+      "리누스 토발즈",
+      "리처드 스톨만",
+      "제임스 고슬링",
+      "브람 무레나르"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-150",
+    "source": "2차 · 문150 · 에디터",
+    "question": "다음 같은 특성을 갖는 편집기로 알맞은 것은?\n- 브람 무레나르(Bram Moolenaar)가 만든 편집기.\n- 편집시 다양한 색상을 이용하여 가시성을 높임.\n- ex 모드에서 히스토리 기능 제공.\n- 확장된 정규 표현식 문법, 강력한 문법 강조 기능.\n- 다중 되돌리기 기능 및 유니코드를 비롯한 다국어 지원, 문법 검사 등의 기능도 지원",
+    "choices": [
+      "emacs",
+      "vi",
+      "gedit",
+      "vim"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-151",
+    "source": "2차 · 문151 · 에디터",
+    "question": "다음 설명에 해당하는 편집기로 알맞은 것은?\n그놈 데스크톱 환경용으로 개발된 자유 소프트웨어인 텍스트 편집기이다. 마이크로소프트 윈도, 맥 OS X에서도 사용 할 수 있다. UTF-8과 호환하며, 프로그램 코드, 마크업 언어와 같은 구조화된 텍스트 문서를 편집하는 용도에 중점을 두었다. X 윈도 시스템에 맞춰 개발했으며, GTK+와 그놈 라이브러리를 이용하여 개발되었고, 그놈 파일 관리자인 노틸러스와의 사이에서 드래그 앤 드롭이 가능하다.",
+    "choices": [
+      "vi",
+      "gedit",
+      "vim",
+      "pico"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-153",
+    "source": "2차 · 문153 · 에디터",
+    "question": "다음 중 리눅스 에디터의 종류와 설명으로 틀린 것은?",
+    "choices": [
+      "vi는 유닉스 계열 시스템에서 가장 많이 쓰이는 편집기로 빌 조이가 개발하였다.",
+      "emacs는 리처드 스톨만이 매크로 기능이 있는 텍스트 교정 및 편집기로 개발하였다.",
+      "pico는 워싱턴대학에서 만든 유닉스용 편집기로 윈도우의 메모장처럼 사용이 간편하다.",
+      "nano는 자유 소프트웨어의 라이선스가 아니므로 소스의 수정이 불가능하다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-154",
+    "source": "2차 · 문154 · 에디터",
+    "question": "다음 중 pico 편집기에서 커서의 위치를 해당 줄의 끝으로 이동하는 조합으로 알맞은 것은?",
+    "choices": [
+      "[Ctrl]+[x]",
+      "[Ctrl]+[e]",
+      "[Ctrl]+[p]",
+      "[Ctrl]+[f]"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-155",
+    "source": "2차 · 문155 · 에디터",
+    "question": "다음 중 emacs에 대한 설명 중 틀린 것은?",
+    "choices": [
+      "방향키, PageUp/PageDown키도 사용 가능하다.",
+      "vi와 달리 입력모드와 명령모드가 없다.",
+      "종료하려면 [Ctrl]+[x]후에 [Ctrl]+[c]를 누른다.",
+      "시스템과의 호환성은 우수하지 않다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-156",
+    "source": "2차 · 문156 · 에디터",
+    "question": "다음 중 vi 편집기 실행 시 명령 모드에서 입력 모드로 전환할 때 사용하는 키(key)로 틀린 것은?",
+    "choices": [
+      "w",
+      "i",
+      "a",
+      "o"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-157",
+    "source": "2차 · 문157 · 에디터",
+    "question": "다음 중 vi 편집기에서 나머지 셋과 성격이 틀린 명령은?",
+    "choices": [
+      "i",
+      "a",
+      "o",
+      "j"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-158",
+    "source": "2차 · 문158 · 에디터",
+    "question": "vi로 messi.txt라는 파일을 편집하는 중에 비정상적으로 종료가 되었다. 다음 중 작업 중이던 파일을 불러오는 방법은?",
+    "choices": [
+      "vi -c messi.txt",
+      "vi -r messi.txt",
+      "vi -C posin.txt",
+      "vi -R messi.txt"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-159",
+    "source": "2차 · 문159 · 에디터",
+    "question": "다음 중 vi 편집기에서 file.txt 파일을 편집 중 비정상 종료가 되었을 때 생기는 파일명으로 알맞은 것은?",
+    "choices": [
+      "file.txt.swap",
+      "file.txt.swp",
+      ".file.txt.swap",
+      ".file.txt.swp"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-160",
+    "source": "2차 · 문160 · 에디터",
+    "question": "다음 중 \"vi +15 index.html\"과 동일한 명령으로 알맞은 것은?",
+    "choices": [
+      "vi -c 15 index.html",
+      "vi -ir 15 index.html",
+      "vi -iR 15 index.html",
+      "vi -il 15 index.html"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-161",
+    "source": "2차 · 문161 · 에디터",
+    "question": "vi로 ihd.txt라는 파일을 열면서 커서의 위치를 20번째 줄로 위치시키려고 할 때 알맞은 것은?",
+    "choices": [
+      "vi +20 ihd.txt",
+      "vi -20 ihd.txt",
+      "vi + ihd.txt",
+      "vi -r ihd.txt"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-162",
+    "source": "2차 · 문162 · 에디터",
+    "question": "다음은 $HOME/.vimrc 파일의 설정 내용이다. 다음 중 설정에 대한 설명으로 틀린 것은?\nset nu\nset noai\nset ts=4\nmap q :wq!",
+    "choices": [
+      "행의 앞에 행번호를 표시하는 기능이 켜져 있다.",
+      "탭의 크기를 4로 설정한다.",
+      "자동들여쓰기 기능이 켜져 있다.",
+      "매크로가 선언되어 있고 기능이 켜져 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-163",
+    "source": "2차 · 문163 · 에디터",
+    "question": "다음 중 vi 편집기에서 문서의 각 라인 번호를 표시해 주는 명령으로 알맞은 것은?",
+    "choices": [
+      ":set nu",
+      ":set nonu",
+      ":set ai",
+      ":set noai"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-164",
+    "source": "2차 · 문164 · 에디터",
+    "question": "다음 중 vi 편집기의 환경 설정을 등록하여 실행시에 계속적으로 지정한 설정이 사용가능하게 해주는 파일로 알맞은 것은?",
+    "choices": [
+      ".exrc",
+      ".bash_history",
+      ".swap",
+      ".rhosts"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-165",
+    "source": "2차 · 문165 · 에디터",
+    "question": "vi 명령어 중 편집 중인 파일을 저장만 수행하는 명령으로 알맞은 것은?",
+    "choices": [
+      ":w",
+      ":wq",
+      ":wq!",
+      ":q!"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-166",
+    "source": "2차 · 문166 · 에디터",
+    "question": "다음 vi 명령모드에서 현재 행 위치 부터 3행을 복사하는 명령어로 알맞은 것은?",
+    "choices": [
+      "3p",
+      "pp3",
+      "y3",
+      "3yy"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-167",
+    "source": "2차 · 문167 · 에디터",
+    "question": "다음 중 vi 에디터 set 명령의 설명으로 틀린 것은?",
+    "choices": [
+      ":set nu - 행 번호 보이기",
+      ":set ts=4 - [tab] 키를 입력 하였을 때 이동하는 크기 조정",
+      ":set notnu - 행 번호 보이지 않기",
+      ":set all - 전체 환경설정 확인"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-168",
+    "source": "2차 · 문168 · 에디터",
+    "question": "vi 에디터에서 편집 중인 문서의 줄 번호를 보여 주지 않게 하는 명령어로 알맞은 것은?",
+    "choices": [
+      ":set nonu",
+      ":!set nu",
+      ":set notnu",
+      ":set nu"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-169",
+    "source": "2차 · 문169 · 에디터",
+    "question": "vi 편집기에서 각 라인별로 번호를 붙여 주는 명령으로 알맞은 것은?",
+    "choices": [
+      ":set number",
+      ":set list",
+      ":set atoindent",
+      ":set nolist"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-172",
+    "source": "2차 · 문172 · 에디터",
+    "question": "vi 편집모드에서 [Enter]키를 입력하여 다음 행으로 이동했을 때 위 줄과 같은 열에 커서를 위치 시키려고 한다. 다음 중 vi 편집기에서 지정하는 환경 설정으로 알맞은 것은?",
+    "choices": [
+      ":set all",
+      ":set ai",
+      ":set sm",
+      ":set ic"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-173",
+    "source": "2차 · 문173 · 에디터",
+    "question": "다음 중 vi로 편집중인 file.txt 파일을 강제적으로 저장하고 빠져 나올 때 사용하는 ex 모드 명령으로 알맞은 것은?",
+    "choices": [
+      ":w!",
+      ":wq!",
+      ":wq",
+      ":q!"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-175",
+    "source": "2차 · 문175 · 소프트웨어 설치",
+    "question": "다음 중 소스 파일로 프로그램을 설치하는 단계로 알맞은 것은?",
+    "choices": [
+      "configure -> make -> make install",
+      "configure -> make install -> make",
+      "make -> configure -> make install",
+      "make -> make install -> configure"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-176",
+    "source": "2차 · 문176 · 소프트웨어 설치",
+    "question": "다음 중 cmake에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "소프트웨어 빌드에 특화된 언어로 독자적인 설정 스크립트를 이용한다.",
+      "크로스 컴파일을 할 수 없다.",
+      "SWIG, Qt, FLTK 등을 지원한다.",
+      "평행 빌드(Parallel builds)를 지원한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-177",
+    "source": "2차 · 문177 · 소프트웨어 설치",
+    "question": "다음 중 RPM 패키지의 이름 형식에 대한 설명으로 알맞은 것은?\nsendmail-8.12.8-6.i386.rpm",
+    "choices": [
+      "sendmail : 패키지 버전",
+      "8.12.8 : 패키지 릴리즈",
+      "6 : 패키지 이름",
+      "i386 : 패키지 아키텍처"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-178",
+    "source": "2차 · 문178 · 소프트웨어 설치",
+    "question": "다음 중 RedHat에서 개발한 패키지 관리 기법으로 알맞은 것은?",
+    "choices": [
+      "yum",
+      "rpm",
+      "dpkg",
+      "YaST"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-179",
+    "source": "2차 · 문179 · 소프트웨어 설치",
+    "question": "다음 중 데비안 리눅스의 패키지 관리 기법과 가장 관련이 없는 것은?",
+    "choices": [
+      "alien",
+      "dpkg",
+      "dselect",
+      "yast"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-180",
+    "source": "2차 · 문180 · 소프트웨어 설치",
+    "question": "다음 중 tar 명령의 옵션에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "-p : 모든 퍼미션 정보를 유지한다.",
+      "-f : 처리 과정을 자세히 보여준다.",
+      "-c : 새 저장 파일을 만든다.",
+      "-m : 파일의 변경 시간정보를 유지하지 않는다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-181",
+    "source": "2차 · 문181 · 소프트웨어 설치",
+    "question": "다음 중 tar 명령의 옵션에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "-r : 기존의 tar 파일 뒤에 파일을 추가한다.",
+      "-c : 파일을 tar 파일로 묶는다.",
+      "-x : 생성된 tar 파일을 푼다.",
+      "-f : 파일이 생성되었을 때의 권한을 그대로 유지하게 해준다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-182",
+    "source": "2차 · 문182 · 소프트웨어 설치",
+    "question": "다음 중 tar 옵션에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "-Z : compress 관련 옵션으로 예전 UNIX 계열 표준 압축 파일인 tar.Z에 사용한다.",
+      "-z : gzip 관련 옵션으로 압축 파일인 tar.gz에 사용한다.",
+      "-j : bzip2 관련 옵션으로 압축 파일인 tar.bz2에 사용한다.",
+      "-J : jz 관련 옵션으로 압축 파일인 tar.jz에 사용한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-183",
+    "source": "2차 · 문183 · 소프트웨어 설치",
+    "question": "다음은 test.tar에 묶여 있는 파일 목록을 확인 하는 과정이다. ( 괄호 ) 안에 들어갈 옵션으로 알맞은 것은?\n[root@ihd ~]# tar (    ) test.tar",
+    "choices": [
+      "cvf",
+      "xvf",
+      "evf",
+      "tvf"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-184",
+    "source": "2차 · 문184 · 소프트웨어 설치",
+    "question": "다음 중 etc.tgz 파일에 httpd.conf 파일이 포함되었는지 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "tar -xvf ./etc.tgz | grep \"httpd\\.conf\"",
+      "tar -dvf ./etc.tgz | grep \"httpd\\.conf\"",
+      "tar -tvf ./etc.tgz | grep \"httpd\\.conf\"",
+      "tar -rvf ./etc.tgz | grep \"httpd\\.conf\""
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-185",
+    "source": "2차 · 문185 · 소프트웨어 설치",
+    "question": "다음 tar 옵션 중 compress 형식으로 압축하거나 해제 할 때 사용하는 것으로 알맞은 것은?",
+    "choices": [
+      "-j",
+      "-z",
+      "-J",
+      "-Z"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-186",
+    "source": "2차 · 문186 · 소프트웨어 설치",
+    "question": "다음 중 gzip 명령어의 옵션에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "-l : 디렉터리에 포함된 모든 파일을 압축한다.",
+      "-d : 강제로 압축 한다.",
+      "-v : 압축 혹은 해제 시 정보를 출력한다.",
+      "-r : 압축파일을 테스트한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-187",
+    "source": "2차 · 문187 · 소프트웨어 설치",
+    "question": "다음 중 messages.xz 파일의 압축을 해제하기 위한 명령으로 알맞은 것은?",
+    "choices": [
+      "xz -dv messages.xz",
+      "xz -tv messages.xz",
+      "xz -zv messages.xz",
+      "xz -Vv messages.xz"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-188",
+    "source": "2차 · 문188 · 소프트웨어 설치",
+    "question": "다음 rpm 설치 옵션 중 패키지를 실제로 설치하지 않고 충돌 사항이 있는지 점검하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "--upgrade",
+      "--test",
+      "--oldpackage",
+      "--root <dir>"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-189",
+    "source": "2차 · 문189 · 소프트웨어 설치",
+    "question": "rpm 패키지 설치시에 의존성을 검사하지 않기 위해 사용하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "--noscripts",
+      "--nodeps",
+      "--hash",
+      "--percent"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-190",
+    "source": "2차 · 문190 · 소프트웨어 설치",
+    "question": "다음 중 rpm 명령어 옵션에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "rpm -i : 패키지를 설치한다.",
+      "rpm -U : 패키지를 업그레이드한다.",
+      "rpm -e : 패키지를 제거한다.",
+      "rpm -h : 도움말을 보여준다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-191",
+    "source": "2차 · 문191 · 소프트웨어 설치",
+    "question": "다음은 httpd 패키지를 제거하는 과정이다. ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n# rpm ( ) httpd",
+    "choices": [
+      "-d",
+      "-e",
+      "-r",
+      "-f"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-192",
+    "source": "2차 · 문192 · 소프트웨어 설치",
+    "question": "다음은 시스템에 설치된 모든 패키지 중에 mail 이라는 문자열이 들어있는 패키지를 검색하는 과정이다. ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n\n# rpm ( ) | grep mail",
+    "choices": [
+      "-qa",
+      "-qi",
+      "-ql",
+      "-qp"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-193",
+    "source": "2차 · 문193 · 소프트웨어 설치",
+    "question": "다음 중 설치된 파일로 rpm 패키지 이름을 알아내려고 할 때 사용하는 명령어 형식으로 알맞은 것은?",
+    "choices": [
+      "rpm -qf /bin/ls",
+      "rpm -qc /bin/ls",
+      "rpm -qa /bin/ls",
+      "rpm -qp /bin/ls"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-194",
+    "source": "2차 · 문194 · 소프트웨어 설치",
+    "question": "다음 rpm 명령어의 옵션 중 패키지 관련 문서 및 man 페이지 파일 정보를 출력할 때 옵션으로 알맞은 것은?",
+    "choices": [
+      "-qf",
+      "-qd",
+      "-qR",
+      "-qc"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-195",
+    "source": "2차 · 문195 · 소프트웨어 설치",
+    "question": "다음 조건일 때 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n가. vsftpd 패키지가 설치한 파일이나 디렉터리 목록을 출력한다.\n나. sendmail에 대한 정보를 출력한다.\n# rpm (㉠) vsftpd\n# rpm (㉡) sendmail",
+    "choices": [
+      "㉠ -qp ㉡ -qf",
+      "㉠ -qf ㉡ -qp",
+      "㉠ -qi ㉡ -ql",
+      "㉠ -ql ㉡ -qi"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-196",
+    "source": "2차 · 문196 · 소프트웨어 설치",
+    "question": "다음 중 /sbin/ifconfig 파일을 포함하는 rpm 패키지를 알아내려고 할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "rpm -qF /sbin/ifconfig",
+      "rpm -qf /sbin/ifconfig",
+      "rpm -qi /sbin/ifconfig",
+      "rpm -qp /sbin/ifconfig"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-197",
+    "source": "2차 · 문197 · 소프트웨어 설치",
+    "question": "다음 rpm 옵션 중에서 설치된 패키지의 문서파일 경로를 출력하는 것으로 알맞은 것은?",
+    "choices": [
+      "-qc",
+      "-qa",
+      "-qf",
+      "-qd"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-198",
+    "source": "2차 · 문198 · 소프트웨어 설치",
+    "question": "다음 rpm으로 설치된 패키지를 검증 시 검증코드에 관한 설명으로 틀린 것은?",
+    "choices": [
+      "S : 파일 크기 변경",
+      "M : 파일 모드 변경",
+      "L : 링크 파일 경로 불일치",
+      "G : 소유자 변경"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-199",
+    "source": "2차 · 문199 · 소프트웨어 설치",
+    "question": "다음 rpm 사용법 중 시스템에 설치된 모든 패키지를 검증하는 명령으로 알맞은 것은?",
+    "choices": [
+      "rpm -qa",
+      "rpm -qR",
+      "rpm -Va",
+      "rpm -qv"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-200",
+    "source": "2차 · 문200 · 소프트웨어 설치",
+    "question": "다음 중 rpm 패키지가 임의로 변경되었는지 파일크기, 심볼릭 링크, 장치파일 변경 등을 검사할 때 사용하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-D",
+      "-E",
+      "-V",
+      "-K"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-201",
+    "source": "2차 · 문201 · 소프트웨어 설치",
+    "question": "yum 명령어 사용 설명 중 틀린 것은?",
+    "choices": [
+      "yum install [패키지 이름] - 패키지 설치시 사용",
+      "yum remove [패키지 이름] - 패키지 삭제시 사용",
+      "yum -y install [패키지 이름] - 패키지 재설치시 사용",
+      "yum update [패키지 이름] - 패키지 업데이트시 사용"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-202",
+    "source": "2차 · 문202 · 소프트웨어 설치",
+    "question": "yum 명령어 중 “Development Tools” 그룹 설치 방법이 알맞은 것은?",
+    "choices": [
+      "yum install -group “Development Tools”",
+      "yum groupinstall “Development Tools”",
+      "yum install “Development Tools”",
+      "yum -g install “Development Tools”"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-203",
+    "source": "2차 · 문203 · 소프트웨어 설치",
+    "question": "다음 중 yum을 이용하여 업데이트가 필요한 패키지에 대한 정보를 출력하는 명령으로 알맞은 것은?",
+    "choices": [
+      "yum info updates",
+      "yum list updates",
+      "yum update",
+      "yum updates"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-204",
+    "source": "2차 · 문204 · 소프트웨어 설치",
+    "question": "다음 중 yum 명령으로 play라는 문자열이 포함된 패키지를 찾으려고 할 때 알맞은 것은?",
+    "choices": [
+      "yum info play",
+      "yum list play",
+      "yum search play",
+      "yum find play"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-205",
+    "source": "2차 · 문205 · 소프트웨어 설치",
+    "question": "다음 중 vim 패키지가 설치한 파일 목록을 보려고 할 때 괄호 안에 들어갈 내용으로 알맞은 것은?\ndpkg (    ) vim",
+    "choices": [
+      "-l",
+      "-L",
+      "--list",
+      "--unpack"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-206",
+    "source": "2차 · 문206 · 소프트웨어 설치",
+    "question": "다음의 조건일 때 ( 괄호 ) 안에 들어갈 내용은?\ndpkg로 패키지를 제거할 때 (  ) 옵션을 사용하면 환경 설정 파일을 포함하여 모두 제거하나 (  ) 옵션을 사용하면 환경 설정 파일은 제거되지 않는다.",
+    "choices": [
+      "-r, -F",
+      "-P, -F",
+      "-P, -r",
+      "-r, -P"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-207",
+    "source": "2차 · 문207 · 소프트웨어 설치",
+    "question": "다음 중 apt-get 명령으로 nautilus라는 패키지를 설치하는 명령으로 알맞은 것은?",
+    "choices": [
+      "apt-get install nautilus",
+      "apt-get nautilus install",
+      "apt-get build nautilus",
+      "apt-get nautilus build"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-208",
+    "source": "2차 · 문208 · 소프트웨어 설치",
+    "question": "다음 중 apt-get 사용 시에 의존성 및 충돌성을 해결하기 위해 관련 정보를 기록하는 파일로 알맞은 것은?",
+    "choices": [
+      "/var/cache/apt/archive",
+      "/var/cache/archive",
+      "/etc/apt/sources.list",
+      "/etc/yum/sources.list"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-209",
+    "source": "2차 · 문209 · 소프트웨어 설치",
+    "question": "다음 중 apt-get 명령으로 install할 때 관련 deb 파일이 생성되는 디렉터리로 알맞은 것은?",
+    "choices": [
+      "/etc/apt/sources.list",
+      "/var/cache/archive",
+      "/var/cache/apt/archive",
+      "/etc/yum/sources.list"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-210",
+    "source": "2차 · 문210 · 소프트웨어 설치",
+    "question": "다음의 조건일 때 (    ) 안에 들어갈 말은?\n데비안 리눅스에서 설치 시에 발생할 수 있는 의존성을 해결하기 위해 (  )를 사용하고, 레드햇 리눅스에서는 (  )를 사용한다.",
+    "choices": [
+      "apt-get, yum",
+      "apt-get, yast",
+      "yum, yast",
+      "yum, apt-get"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-211",
+    "source": "2차 · 문211 · 장치 설정",
+    "question": "다음 중 애플이 개발한 오픈 소스 프린팅 시스템으로 유닉스 계열 운영체제의 시스템을 프린터 서버로 사용 가능하게 해주는 시스템으로 알맞은 것은?",
+    "choices": [
+      "LPRng",
+      "CUPS",
+      "LPRM",
+      "IPP"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-212",
+    "source": "2차 · 문212 · 장치 설정",
+    "question": "다음 중 CUPS에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "웹을 통해 관련 장치의 제어가 가능하다.",
+      "애플이 개발한 오픈 소스 프린팅 시스템이다.",
+      "lpadmin이라는 명령어를 사용한다.",
+      "설정한 정보는 /etc/printcap 파일에 저장된다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-213",
+    "source": "2차 · 문213 · 장치 설정",
+    "question": "다음 중 LPRng에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "버클리 프린팅 시스템으로 BSD계열 유닉스에서 사용하기 위해 개발되었다.",
+      "설정한 정보는 /etc/printcap 파일에 저장되었다.",
+      "RFC 1279로 정의되어 있다.",
+      "관련 사이트는 http://www.lprng.org이다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-214",
+    "source": "2차 · 문214 · 장치 설정",
+    "question": "다음 중 CUPS에서 프린터 큐 관련 환경 설정 파일로 lpadmin 명령을 이용하거나 웹을 통해 제어할 수 있는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/cups/cupsd.conf",
+      "/etc/cups/printers.conf",
+      "/etc/cups/classes.conf",
+      "cupsd"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-215",
+    "source": "2차 · 문215 · 장치 설정",
+    "question": "다음 중 CUPS 관련 파일에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "/etc/cups/cupsd.conf : 프린터 데몬의 환경 설정 파일",
+      "/etc/printcap : 프린터 큐 관련 환경 설정 파일",
+      "/etc/cups/classes.conf : 프린터 데몬의 클래스(class) 설정 파일",
+      "cupsd : 프린터 데몬"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-216",
+    "source": "2차 · 문216 · 장치 설정",
+    "question": "리눅스 프린팅 시스템에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "리눅스 초기에는 LPRng를 기본으로 사용했으나, 최근 배포판에서는 CUPS라는 시스템을 추가로 사용하고 있다.",
+      "리눅스의 프린팅 시스템인 LPRng는 네트워크 프린터 서버 기능을 사용할 수 없다.",
+      "CUPS는 애플에서 개발한 오픈소스 프린팅 시스템으로 유닉스 계열 운영체제의 시스템을 지원하기 위해 개발되었으며, 윈도우 등에서 사용되는 프린터는 사용할 수 없다.",
+      "리눅스 시스템에 프린터를 직접 연결하면 병렬 포트에 연결시 /dev/lp0, USB 포트에 연결시 /dev/lpusb0 장치 파일이 생성된다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-217",
+    "source": "2차 · 문217 · 장치 설정",
+    "question": "다음 중 LPRng의 설명으로 틀린 것은?",
+    "choices": [
+      "애플이 개발한 오픈 소스 프린팅 시스템이다.",
+      "BSD계열 유닉스에서 사용하기 위해 개발되었다.",
+      "설정 정보는 /etc/printcap에 저장된다.",
+      "프린터 스풀링과 네트워크 프린터 서버를 지원한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-218",
+    "source": "2차 · 문218 · 장치 설정",
+    "question": "다음 설명으로 알맞은 것은?\n- 버클리 프린팅 시스템으로 BSD계열 유닉스에서 사용하기 위해 개발되었다.\n- 라인 프린터 데몬 프로토콜을 사용하여 프린터 스풀링과 네트워크 프린터 서버를 지원한다.",
+    "choices": [
+      "LPRng",
+      "CUPS",
+      "ALSA",
+      "OSS"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-219",
+    "source": "2차 · 문219 · 장치 설정",
+    "question": "다음 중 프린터 작업을 요청하여 인쇄를 할 때 사용 가능한 명령어 조합으로 알맞은 것은?",
+    "choices": [
+      "lp, lpstat",
+      "lpr, lpc",
+      "lpc, lpstat",
+      "lpr, lp"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-221",
+    "source": "2차 · 문221 · 장치 설정",
+    "question": "다음 중 lpr 명령을 사용하여 지정한 문서 파일을 인쇄한 후에 관련 파일을 삭제할 때 사용하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-#",
+      "-r",
+      "-e",
+      "-d"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-222",
+    "source": "2차 · 문222 · 장치 설정",
+    "question": "다음 중 BSD 계열의 프린터 명령으로 틀린 것은?",
+    "choices": [
+      "lpr",
+      "lp",
+      "lpq",
+      "lprm"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-223",
+    "source": "2차 · 문223 · 장치 설정",
+    "question": "다음 중 프린터 큐(Queue)에 있는 작업의 목록을 출력하는 명령어로 알맞은 것은?",
+    "choices": [
+      "lp queue",
+      "lpq",
+      "lprm",
+      "lpc"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-224",
+    "source": "2차 · 문224 · 장치 설정",
+    "question": "다음 중 리눅스에서 BSD계열에 사용하는 프린트 큐에 대기 중인 작업을 삭제하는 명령어는?",
+    "choices": [
+      "lpc",
+      "lprm",
+      "lpq",
+      "lpr"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-225",
+    "source": "2차 · 문225 · 장치 설정",
+    "question": "다음 중 BSD 계열 프린터 명령으로 알맞은 것은?",
+    "choices": [
+      "lp",
+      "lpstat",
+      "lpc",
+      "cancel"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-226",
+    "source": "2차 · 문226 · 장치 설정",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n( ㉠ )는 ( ㉡ )의 지원을 받아 하드웨어 기반 미디 합성, 다중 채널 하드웨어 믹싱, 전이중 통신, 다중 프로세서와의 조화, 스레드 안전 장치 드라이버 등의 기능을 지원한다.",
+    "choices": [
+      "㉠ ALSA ㉡ OSS",
+      "㉠ ALSA ㉡ FSF",
+      "㉠ OSS ㉡ ALSA",
+      "㉠ OSS ㉡ FSF"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-227",
+    "source": "2차 · 문227 · 장치 설정",
+    "question": "다음 중 오디오 CD에서 음악 파일을 추출할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "alsamixer",
+      "cdparanoia",
+      "xcam",
+      "scan"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-229",
+    "source": "2차 · 문229 · 장치 설정",
+    "question": "다음 중 커서(ncurses) 라이브러리 기반의 오디오 프로그램으로 알맞은 것은?",
+    "choices": [
+      "alsamixer",
+      "cdparanoia",
+      "scanadf",
+      "xcam"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-231",
+    "source": "2차 · 문231 · 장치 설정",
+    "question": "다음 중 USB 및 SCSI 스캐너와 관련 장치 파일을 찾아주는 명령으로 알맞은 것은?",
+    "choices": [
+      "alsactl",
+      "scanner-find",
+      "sane-find-scanner",
+      "scan-find"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-232",
+    "source": "2차 · 문232 · 장치 설정",
+    "question": "다음 중 이미지를 50*50 mm 크기로 스캔하고 이미지 파일 형식을 pnm으로 하여 image.pnm으로 저장하는 명령어로 알맞은 것은?",
+    "choices": [
+      "scanimage -x 50 -y 50 --format=pnm >image.pnm",
+      "scan -x 50 -y 50 --format=pnm >image.pnm",
+      "scanimage -x 50 -y 50 --format=pnm | image.pnm",
+      "scan -x 50 -y 50 --format=pnm | image.pnm"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-235",
+    "source": "2차 · 문235 · X 윈도",
+    "question": "다음 중 X 윈도에서 사용되는 클라이언트 라이브러리로 윈도우창 생성, 이벤트 처리, 창 조회, 키보드 처리와 같은 라이브러리를 제공하는 것으로 알맞은 것은?",
+    "choices": [
+      "GTK",
+      "glibc",
+      "Qt",
+      "xlib"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-236",
+    "source": "2차 · 문236 · X 윈도",
+    "question": "다음 중 X 윈도의 설명으로 틀린 것은?",
+    "choices": [
+      "네트워크 프로토콜에 기반을 둔 그래픽 사용자 인터페이스 환경이다.",
+      "다양한 종류의 컴퓨터에서 구동될 수 있을 정도로 이식성이 뛰어나다.",
+      "X Server와 X Client의 서버/클라이언트 구조이다.",
+      "원격 연결(Remote Connection)은 지원하지 못한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-237",
+    "source": "2차 · 문237 · X 윈도",
+    "question": "다음 중 X 윈도에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "Bob Scheifler가 1986년 오픈소스 프로젝트로 만들었다.",
+      "그래픽 환경의 인터페이스를 사용자가 원하는 모양으로 만들 수 있다.",
+      "X Protocol을 사용한다.",
+      "특정 디스플레이 장치에 의존적이다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-239",
+    "source": "2차 · 문239 · X 윈도",
+    "question": "다음 중 리눅스 부팅 시에 X 윈도가 실행되도록 관련 파일을 수정하려고 할 때 설정하는 내용으로 알맞은 것은?",
+    "choices": [
+      "initdefault:3:id:",
+      "id:3:initdefault:",
+      "initdefault:5:id:",
+      "id:5:initdefault:"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-240",
+    "source": "2차 · 문240 · X 윈도",
+    "question": "다음 중 리눅스 부팅 시에 X 윈도를 실행하기 위해 설정하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/xdm",
+      "/etc/fstab",
+      "/etc/inittab",
+      "/etc/xdisplay"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-241",
+    "source": "2차 · 문241 · X 윈도",
+    "question": "다음 X 윈도의 구성 요소 중에 사용자 로그인 및 세션 관리 역할을 수행하는 것으로 알맞은 것은?",
+    "choices": [
+      "윈도 매니저",
+      "디스플레이 매니저",
+      "데스크톱 환경",
+      "사용자 인터페이스"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-242",
+    "source": "2차 · 문242 · X 윈도",
+    "question": "다음 중 X 윈도우 설정을 위해 사용하는 명령으로 틀린 것은?",
+    "choices": [
+      "xf86cfg",
+      "Xconfigurator",
+      "xwindows-env-setup",
+      "system-config-display"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-243",
+    "source": "2차 · 문243 · X 윈도",
+    "question": "다음 중 X 윈도 기반의 프린터 설정 도구를 실행하는 명령으로 알맞은 것은?",
+    "choices": [
+      "xprinttool",
+      "printtoolx",
+      "system-config-printer",
+      "system-config-xprinter"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-244",
+    "source": "2차 · 문244 · X 윈도",
+    "question": "다음 중 XFree86으로 X 윈도를 사용하려 할 때 사용하는 명령으로 틀린 것은?",
+    "choices": [
+      "system-config-display",
+      "xf86cfg",
+      "Xconfigurator",
+      "redhat-config-xfree86"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-248",
+    "source": "2차 · 문248 · X 윈도",
+    "question": "다음 중 리눅스에서 사용하는 디스플레이 매니저와 가장 거리가 먼 것은?",
+    "choices": [
+      "XDM",
+      "GDM",
+      "KDM",
+      "Xlib"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-249",
+    "source": "2차 · 문249 · X 윈도",
+    "question": "다음 중 X 윈도 구성요소에서 사용자 로그인 및 세션 관리를 수행하는 것으로 알맞은 것은?",
+    "choices": [
+      "Display Manager",
+      "Window Manager",
+      "GNOME",
+      "User Interface"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-252",
+    "source": "2차 · 문252 · X 윈도",
+    "question": "다음 중 KDE의 기반이 되는 라이브러리로 알맞은 것은?",
+    "choices": [
+      "QT",
+      "GTK+",
+      "Motif",
+      "Xaw"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-253",
+    "source": "2차 · 문253 · X 윈도",
+    "question": "다음 중 KDE에서 사용하는 웹 브라우저 및 파일 관리 프로그램으로 알맞은 것은?",
+    "choices": [
+      "konqueror",
+      "nautilus",
+      "gimp",
+      "eog"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-254",
+    "source": "2차 · 문254 · X 윈도",
+    "question": "다음 KDE 프로그램들 중에서 텍스트 편집기로 알맞은 것은?",
+    "choices": [
+      "dolphin",
+      "Rhythmbox",
+      "KRuler",
+      "kwrite"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-255",
+    "source": "2차 · 문255 · X 윈도",
+    "question": "다음 중 GNOME 3 버전의 기본 윈도 매니저로 알맞은 것은?",
+    "choices": [
+      "Enlightenment",
+      "Metacity",
+      "Mutter",
+      "Kwin"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-256",
+    "source": "2차 · 문256 · X 윈도",
+    "question": "다음 중 X 윈도우 데스크톱 환경에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "GNOME과 KDE는 윈도우 매니저이다.",
+      "윈도우 매니저, 파일 매니저, 도움말 시스템, 제어판, 바탕화면 등 다양한 도구를 제공한다.",
+      "다른 윈도우와 차별화된 고유한 특징과 GUI로 구성되어 있다.",
+      "통일된 디자인을 가진 애플리케이션과 아이콘, 오피스 슈트, 네트워크 관리 도구 등을 제공한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-257",
+    "source": "2차 · 문257 · X 윈도",
+    "question": "GNOME에서 사용하는 파일 관리 프로그램을 실행하기 위해 X 윈도의 터미널 창에 입력해야 할 명령으로 알맞은 것은?",
+    "choices": [
+      "konqueror",
+      "nautilus",
+      "gimp",
+      "eog"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-258",
+    "source": "2차 · 문258 · X 윈도",
+    "question": "다음 중 GNOME과 관련된 응용프로그램으로 가장 거리가 먼 것은?",
+    "choices": [
+      "evince",
+      "gimp",
+      "konqueror",
+      "totem"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-259",
+    "source": "2차 · 문259 · X 윈도",
+    "question": "다음 중 GNOME 환경에서 널리 사용되는 문서 편집기로 알맞은 것은?",
+    "choices": [
+      "evince",
+      "gimp",
+      "gedit",
+      "kwrite"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-260",
+    "source": "2차 · 문260 · X 윈도",
+    "question": "다음 중 GNOME에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "GPL 라이선스만 따른다.",
+      "대표적인 윈도우 매니저이다.",
+      "GNU 프로젝트에 의해서 만들어졌다.",
+      "Qt 라이브러리 기반으로 만들어졌다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-261",
+    "source": "2차 · 문261 · X 윈도",
+    "question": "다음 중 X 서버에 접근하는 192.168.12.22번 IP주소의 X 클라이언트를 허가하려고 할 때 알맞은 것은?",
+    "choices": [
+      "xhost 192.168.12.22",
+      "xhost + 192.168.12.22",
+      "xhost - 192.168.12.22",
+      "xhost add 192.168.12.22"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-263",
+    "source": "2차 · 문263 · X 윈도",
+    "question": "다음 X 서버에서 보내온 키 값을 설치하려고 할 때 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\n[root@x_client ~]# xauth (    ) $DISPLAY . cb050f6145a84aa3ecab81de685ea074",
+    "choices": [
+      "echo",
+      "cat",
+      "add",
+      "xhost"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-264",
+    "source": "2차 · 문264 · X 윈도",
+    "question": "다음 중 그래픽이나 로고 디자인, 사진 편집, 이미지 합성, 이미지 포맷 변환 등을 할 때 가장 유용할 프로그램으로 알맞은 것은?",
+    "choices": [
+      "evince",
+      "gimp",
+      "ImageMagick",
+      "eog"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-265",
+    "source": "2차 · 문265 · X 윈도",
+    "question": "다음 중 X 윈도 환경에서 사용 가능한 멀티미디어 프로그램이 아닌 것은?",
+    "choices": [
+      "Totem",
+      "KMid",
+      "Krfb",
+      "Dragon Player"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-266",
+    "source": "2차 · 문266 · X 윈도",
+    "question": "이미지 뷰어 프로그램인 ImageMagick를 실행하기 위해 X 윈도의 터미널 창에 입력해야 할 명령으로 알맞은 것은?",
+    "choices": [
+      "evince",
+      "Okular",
+      "eog",
+      "display"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-267",
+    "source": "2차 · 문267 · X 윈도",
+    "question": "다음 중 통합형 음악 관리 프로그램으로 알맞은 것은?",
+    "choices": [
+      "Rhythmbox",
+      "LibreOffice",
+      "kdegraphics",
+      "eog"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-268",
+    "source": "2차 · 문268 · X 윈도",
+    "question": "다음 중 GNOME 데스크톱 기반의 Movie Player로 알맞은 것은?",
+    "choices": [
+      "totem",
+      "ImageMagick",
+      "Gimp",
+      "eog"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-269",
+    "source": "2차 · 문269 · X 윈도",
+    "question": "다음 중 스프레드 시트(Spread Sheet) 프로그램으로 알맞은 것은?",
+    "choices": [
+      "LibreOffice Impress",
+      "LibreOffice Draw",
+      "LibreOffice Calc",
+      "LibreOffice Writer"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-271",
+    "source": "2차 · 문271 · X 윈도",
+    "question": "다음 중 문서 뷰어 프로그램으로 알맞은 것은?",
+    "choices": [
+      "gwenview",
+      "kolourpaint",
+      "okular",
+      "ksnapshot"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-272",
+    "source": "2차 · 문272 · X 윈도",
+    "question": "다음 중 X 윈도에서 사용 가능한 응용 프로그램에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "KSnapshot : 비디오 재생 프로그램",
+      "gThumb : 파일 관리 프로그램",
+      "eog : 이미지 뷰어 프로그램",
+      "LibreOffice : 동영상 편집기"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-273",
+    "source": "2차 · 문273 · 인터넷 활용",
+    "question": "LAN 구성 방식 중 장애 발생 시에도 다른 시스템에 영향이 적고, 우회할 수 있는 방법이 존재하여 가장 신뢰성이 높은 방식으로 알맞은 것은?",
+    "choices": [
+      "링형",
+      "망형",
+      "버스형",
+      "스타형"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-274",
+    "source": "2차 · 문274 · 인터넷 활용",
+    "question": "LAN 구성 방식 중 관리하는 중앙 컴퓨터 고장에 가장 큰 문제점을 유발하는 방식으로 알맞은 것은?",
+    "choices": [
+      "링형",
+      "망형",
+      "버스형",
+      "스타형"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-275",
+    "source": "2차 · 문275 · 인터넷 활용",
+    "question": "다음 설명으로 알맞은 것은?\n- 분산 제어와 검사, 회복이 가능\n- 논리적인 순환형 토폴로지로 하나의 노드 장애가 전체 토폴로지에 영향을 미침\n- 고속 네트워크로 자주 네트워크 환경이 바뀌지 않을 경우 구성",
+    "choices": [
+      "망 토폴로지(형)",
+      "링 토폴로지(형)",
+      "버스 토폴로지(형)",
+      "스타 토폴로지(형)"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-276",
+    "source": "2차 · 문276 · 인터넷 활용",
+    "question": "다음 중 이더넷(Ethernet) 매체 종류와 배선 방식에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "100BASE-TX : 100Mbps의 전송 속도에 전송 매체는 UTP-5 또는 STP를 사용",
+      "100BASE-FX : 100Mbps의 전송 속도에 전송 매체는 광케이블을 사용",
+      "1000BASE-T : 1000Mbps의 전송 속도에 전송 매체는 UTP-5를 사용",
+      "1000BASE-LX : 단파장의 광섬유를 사용하는 규격으로 최대 220~550M까지 가능"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-277",
+    "source": "2차 · 문277 · 인터넷 활용",
+    "question": "다음 중 100Mbps의 전송속도에 전송매체는 UTP-5 또는 STP를 사용하는 케이블로 알맞은 것은?",
+    "choices": [
+      "100BASE-2",
+      "100BASE-5",
+      "100BASE-TX",
+      "100BASE-FX"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-278",
+    "source": "2차 · 문278 · 인터넷 활용",
+    "question": "다음 중 이더넷 환경에서 다중 접속의 반송파 감지 및 충돌 탐지 방식을 뜻하는 용어로 알맞은 것은?",
+    "choices": [
+      "CSMA/CA",
+      "CSMA/CD",
+      "FDDI",
+      "DQDB"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-279",
+    "source": "2차 · 문279 · 인터넷 활용",
+    "question": "다음의 설명으로 알맞은 것은?\n- 각 기기들이 48비트 길이의 고유한 MAC 주소를 기반으로 상호간에 데이터를 주고받을 수 있도록 만들어졌다.\n- BNC, UTP 등의 케이블이 사용되고, 허브, 스위치 장치를 사용한다.",
+    "choices": [
+      "FDDI",
+      "Token Ring",
+      "Ethernet",
+      "X.25"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-280",
+    "source": "2차 · 문280 · 인터넷 활용",
+    "question": "다음 중 회선교환방식 및 패킷교환방식에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "패킷교환방식은 이론상 호스트의 무제한 수용이 가능하다.",
+      "회선교환방식은 고정된 대역폭을 할당받아 전송된다.",
+      "회선교환방식의 대표적인 예가 전화이다.",
+      "패킷교환방식은 회선교환방식에 비해 지연이 덜하다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-281",
+    "source": "2차 · 문281 · 인터넷 활용",
+    "question": "다음에서 설명하는 통신기술 방식으로 알맞은 것은?\nATM(Asynchronous Transfer Mode)라 더 많이 알려져 있으며, 53Byte의 고정 길이 패킷을 이용해서 순서대로 자료를 전송하는 방식이다.",
+    "choices": [
+      "프레임 릴레이(Frame Relay)",
+      "셀 릴레이(Cell Relay)",
+      "FDDI",
+      "X.25"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-283",
+    "source": "2차 · 문283 · 인터넷 활용",
+    "question": "다음 설명으로 알맞은 것은?\n전송 매체를 광섬유 케이블(Optical Fiber Cable)을 사용하여 설계된 링 구조의 통신망으로 네트워크 액세스를 제어하기 위해 토큰 패싱 방법을 사용한다. 1982년 10월에 미국표준협회의 X3T9.5 커미티에서 표준화되었고, ISO 규격으로 승인되었다.",
+    "choices": [
+      "Token Ring",
+      "FDDI",
+      "X.25",
+      "Ethernet"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-284",
+    "source": "2차 · 문284 · 인터넷 활용",
+    "question": "다음 중 DQDB(Distributed Queue Dual Bus)와 관련 있는 구성 방식으로 알맞은 것은?",
+    "choices": [
+      "LAN",
+      "MAN",
+      "WAN",
+      "Wi-Fi"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-285",
+    "source": "2차 · 문285 · 인터넷 활용",
+    "question": "다음 중 OSI 모델 기준으로 가장 많은 계층을 지원하는 장치로 알맞은 것은?",
+    "choices": [
+      "허브(HUB)",
+      "리피터(Repeater)",
+      "라우터(Router)",
+      "브릿지(Bridge)"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-286",
+    "source": "2차 · 문286 · 인터넷 활용",
+    "question": "다음 중 입력된 신호를 증폭하여 중계하는 장치는?",
+    "choices": [
+      "리피터(Repeater)",
+      "허브(HUB)",
+      "라우터(Router)",
+      "브릿지(Bridge)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-287",
+    "source": "2차 · 문287 · 인터넷 활용",
+    "question": "다음 중 여러 개의 네트워크 세그먼트를 연결해 주고 통신량을 조절하여 트래픽을 관리할 수 있는 장치는?",
+    "choices": [
+      "리피터(Repeater)",
+      "브릿지(Bridge)",
+      "라우터(Router)",
+      "허브(HUB)"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-288",
+    "source": "2차 · 문288 · 인터넷 활용",
+    "question": "다음 설명에 해당하는 통신장비로 알맞은 것은?\nLAN을 연결시켜주는 망 연동 장치로서 통신망에서 정보를 전송하기 위해 경로를 설정하는 역할을 제공하는 핵심적인 통신장비이다.",
+    "choices": [
+      "라우터",
+      "리피터",
+      "브리지",
+      "스위칭 허브"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-289",
+    "source": "2차 · 문289 · 인터넷 활용",
+    "question": "다음 중 라우터의 장점에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "대규모 통신망을 쉽게 구성할 수 있다.",
+      "다양한 경로를 따라 통신량을 분산할 수 있다.",
+      "전체 네트워크의 성능을 개선할 수 있다.",
+      "모든 프로토콜을 지원하고 있다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-290",
+    "source": "2차 · 문290 · 인터넷 활용",
+    "question": "다음 중 프로토콜의 기본 구성 요소 3가지가 아닌 것은?",
+    "choices": [
+      "오버헤드",
+      "구문",
+      "의미",
+      "순서"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-291",
+    "source": "2차 · 문291 · 인터넷 활용",
+    "question": "다음 프로토콜 구성 요소에 대한 설명으로 알맞은 것은?\n전송의 조작이나 오류 제어를 위한 제어 정보에 대한 규정이다.",
+    "choices": [
+      "구문",
+      "의미",
+      "순서",
+      "소켓"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-292",
+    "source": "2차 · 문292 · 인터넷 활용",
+    "question": "다음에서 설명하는 프로토콜 구성 요소로 알맞은 것은?\n데이터의 구조나 형식을 말하는 것으로 부호화, 신호 레벨 등을 규정한다.",
+    "choices": [
+      "구문(Syntax)",
+      "의미(Semantics)",
+      "순서(Timing)",
+      "소켓(Socket)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-293",
+    "source": "2차 · 문293 · 인터넷 활용",
+    "question": "다음 중 LAN용 트위스트 페어 케이블 규격인 T568B를 제정한 기관으로 알맞은 것은?",
+    "choices": [
+      "ISO",
+      "IEEE",
+      "ANSI",
+      "EIA"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-294",
+    "source": "2차 · 문294 · 인터넷 활용",
+    "question": "다음 중 OSI 7계층 프로토콜을 제정한 기관은?",
+    "choices": [
+      "IEEE",
+      "ISO",
+      "ANSI",
+      "OSI"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-295",
+    "source": "2차 · 문295 · 인터넷 활용",
+    "question": "다음 중 TCP 및 UDP 프로토콜의 특징 비교에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "TCP는 연결지향 전송 프로토콜이다.",
+      "UDP는 ACK 패킷을 주고받으면서 전송 여부를 확인한다.",
+      "TCP가 UDP에 비해 안정성과 신뢰성이 뛰어나다.",
+      "UDP가 TCP에 비해 전송 속도는 빠르다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-296",
+    "source": "2차 · 문296 · 인터넷 활용",
+    "question": "다음 중 TCP 및 UDP 프로토콜과 가장 연관이 있는 OSI 계층으로 알맞은 것은?",
+    "choices": [
+      "데이터링크 계층",
+      "네트워크 계층",
+      "전송계층",
+      "세션계층"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-298",
+    "source": "2차 · 문298 · 인터넷 활용",
+    "question": "다음 중 TCP/IP의 응용 계층에 속하는 것은?",
+    "choices": [
+      "Ethernet",
+      "TCP",
+      "NFS",
+      "ICMP"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-301",
+    "source": "2차 · 문301 · 인터넷 활용",
+    "question": "다음 중 각 프로토콜에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "SNMP : TCP/IP 프로토콜을 사용하는 인터넷에서 장치들을 관리하기 위한 프로토콜",
+      "TFTP : 단순한 파일 복사를 수행하는 FTP의 기능을 강화한 프로토콜",
+      "ARP : 물리주소를 IP주소로 변환시키는 프로토콜",
+      "ICMP : IP 프로토콜의 기존 오류 보고와 오류 수정 기능을 향상시키기 위한 프로토콜"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-304",
+    "source": "2차 · 문304 · 인터넷 활용",
+    "question": "다음 중 OSI 7 계층 모델에서 데이터링크 계층이 제공하는 인접한 개방형 시스템 간에 데이터 전송 기능을 이용하여 연결성과 통신경로선택(Routing)을 제공하는 계층으로 알맞은 것은?",
+    "choices": [
+      "물리 계층",
+      "데이터링크 계층",
+      "네트워크 계층",
+      "전송 계층"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-305",
+    "source": "2차 · 문305 · 인터넷 활용",
+    "question": "다음 중 OSI 7 계층과 해당 계층과 관련된 내용으로 알맞은 것은?",
+    "choices": [
+      "어플리케이션 계층 : TCP/IP, HTTP, Telnet",
+      "트랜스포트 계층 : TCP, UDP, ICMP, IGMP",
+      "네트워크 계층 : TCP/IP, MAC",
+      "데이터링크 계층 : CSMA/CD, CRC"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-306",
+    "source": "2차 · 문306 · 인터넷 활용",
+    "question": "다음 중 OSI 모델의 세션 계층과 가장 관련이 깊은 프로토콜로 알맞은 것은?",
+    "choices": [
+      "SSL",
+      "TCP",
+      "HTTP",
+      "IGMP"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-307",
+    "source": "2차 · 문307 · 인터넷 활용",
+    "question": "다음 중 OSI의 물리, 데이터 링크 계층에서의 프로토콜로 틀린 것은?",
+    "choices": [
+      "이더넷",
+      "토큰링",
+      "FDDI",
+      "ARP"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-308",
+    "source": "2차 · 문308 · 인터넷 활용",
+    "question": "다음 중 OSI의 응용 계층에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "telnet : 네트워크를 통한 원격로그인을 제공한다.",
+      "FTP : 단방향 파일 전송에 사용된다.",
+      "SMTP : 전자 메일을 전달한다.",
+      "HTTP : 네트워크를 통해 웹 페이지를 전송한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-309",
+    "source": "2차 · 문309 · 인터넷 활용",
+    "question": "다음 OSI 스택 중 TCP/UDP 프로토콜과 연관된 계층으로 알맞은 것은?",
+    "choices": [
+      "응용 계층",
+      "표현 계층",
+      "전송 계층",
+      "세션 계층"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-311",
+    "source": "2차 · 문311 · 인터넷 활용",
+    "question": "다음 중 일반 사용자가 메일을 받을 때 사용하는 프로토콜로 알맞은 것은?",
+    "choices": [
+      "FTP",
+      "POP3",
+      "SMTP",
+      "SNMP"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-312",
+    "source": "2차 · 문312 · 인터넷 활용",
+    "question": "다음 중 SMTP 프로토콜의 포트 번호를 알기 위해 참고해야 할 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/protocols",
+      "/etc/services",
+      "/etc/ports",
+      "/etc/numbers"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-313",
+    "source": "2차 · 문313 · 인터넷 활용",
+    "question": "다음 중 프로토콜 및 프로토콜 번호를 확인할 수 있는 파일은?",
+    "choices": [
+      "/etc/protocols",
+      "/etc/services",
+      "/etc/ports",
+      "/etc/numbers"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-314",
+    "source": "2차 · 문314 · 인터넷 활용",
+    "question": "다음 중 SSH(Secure Shell) 프로토콜의 포트 번호로 알맞은 것은?",
+    "choices": [
+      "21",
+      "22",
+      "23",
+      "25"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-315",
+    "source": "2차 · 문315 · 인터넷 활용",
+    "question": "다음 중 주요 포트번호와 주요 사용 서비스가 알맞게 짝지어진 것은?",
+    "choices": [
+      "22 : Telnet에서 사용",
+      "23 : SSH에서 사용",
+      "25 : SMTP에 사용",
+      "80 : DNS에서 사용"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-316",
+    "source": "2차 · 문316 · 인터넷 활용",
+    "question": "다음 중 WWW에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "World Wide Web의 약어로 인터넷상에서 멀티미디어와 하이퍼텍스트를 통합한 것이다.",
+      "WWW 서비스를 위해서는 특정 클라이언트 프로그램인 브라우저가 필요하다.",
+      "인터넷에 연결된 전 세계 컴퓨터의 모든 문서들을 연결하여 언제 어디서든 정보 검색이 가능하게 해 주는 서비스이다.",
+      "문자 환경 서비스로서 전문가들이 사용하고, 다양한 컴퓨팅 환경에서 사용할 수 있다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-317",
+    "source": "2차 · 문317 · 인터넷 활용",
+    "question": "다음 중 월드와이드 웹(WWW)의 특징으로 틀린 것은?",
+    "choices": [
+      "연결된 문서를 언제 어디서든 검색 가능하다.",
+      "그래픽 유저 인터페이스 사용이 가능하다.",
+      "다양한 컴퓨터 환경하에서도 사용이 가능하다.",
+      "FTP, E-Mail, Telnet 사용이 가능하다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-318",
+    "source": "2차 · 문318 · 인터넷 활용",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\nFTP 서버에 접속 후 파일을 다운로드하려면 ( ㉠ ) 명령을 사용하고, 파일을 업로드하려면 ( ㉡ ) 명령을 사용한다.",
+    "choices": [
+      "㉠ open ㉡ close",
+      "㉠ close ㉡ open",
+      "㉠ get ㉡ put",
+      "㉠ put ㉡ get"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-319",
+    "source": "2차 · 문319 · 인터넷 활용",
+    "question": "다음 중 FTP 서버에 접속하여 원격지의 파일 이름을 변경할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "mv",
+      "rename",
+      "passive",
+      "bi"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-320",
+    "source": "2차 · 문320 · 인터넷 활용",
+    "question": "FTP는 2개의 포트 번호를 사용한다. 다음 중 전통적으로 사용되는 FTP 관련 포트 번호의 조합으로 알맞은 것은?",
+    "choices": [
+      "20번과 21번",
+      "21번과 22번",
+      "21번과 23번",
+      "22번과 23번"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-321",
+    "source": "2차 · 문321 · 인터넷 활용",
+    "question": "다음 FTP에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "FTP 서버를 구축하기 위해서는 Proftpd나 Vsftpd 등을 설치해야 한다.",
+      "공개 소프트웨어를 제공하는 대부분의 FTP 서버에서는 anonymous라는 계정을 제공한다.",
+      "FTP 서버에서는 21번 포트 하나만 열어두면 파일 전송이 가능하다.",
+      "ftp라는 클라이언트 명령어를 사용해서 FTP 서버에 접속할 수 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-322",
+    "source": "2차 · 문322 · 인터넷 활용",
+    "question": "다음 중 ftp 서비스에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "Server/Client 구조의 서비스이다.",
+      "텔넷과 동일하게 아이디와 패스워드를 이용하여 로그인 한다.",
+      "ftp 명령 뒤에 호스트명 또는 IP 주소를 입력하여 리모트 시스템에 연결한다.",
+      "telnet과 ssh와 같이 리모트 시스템을 제어할 때 주로 사용된다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-323",
+    "source": "2차 · 문323 · 인터넷 활용",
+    "question": "다음 중 telnet 명령을 이용해서 192.168.12.22번 IP주소를 사용하는 웹 서버 포트를 점검하는 방법으로 알맞은 것은?",
+    "choices": [
+      "telnet -p 80 192.168.12.22",
+      "telnet -P 80 192.168.12.22",
+      "telnet 192.168.12.22:80",
+      "telnet 192.168.12.22 80"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-325",
+    "source": "2차 · 문325 · 인터넷 활용",
+    "question": "IP 주소가 192.168.5.3인 시스템의 ssh 서비스 포트번호가 180번이다. 다음 중 해당 서버에 접속하는 방법으로 알맞은 것은?",
+    "choices": [
+      "ssh 192.168.5.3 180",
+      "ssh -s 180 192.168.5.3",
+      "ssh -l 180 192.168.5.3",
+      "ssh -p 180 192.168.5.3"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-326",
+    "source": "2차 · 문326 · 인터넷 활용",
+    "question": "다음 설명과 동일한 명령으로 알맞은 것은?\n[messi@www ~]$ ssh yuloje@192.168.5.13",
+    "choices": [
+      "ssh -l yuloje 192.168.5.13",
+      "ssh -u yuloje 192.168.5.13",
+      "ssh -p yuloje 192.168.5.13",
+      "ssh -n yuloje 192.168.5.13"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-328",
+    "source": "2차 · 문328 · 인터넷 활용",
+    "question": "다음 중 SSH 서버 접속할 때 패스워드 입력없이 로그인하기 위해 생성하는 파일로 알맞은 것은?",
+    "choices": [
+      ".forward",
+      ".rhosts",
+      "authorized_keys",
+      "ssh_config"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-329",
+    "source": "2차 · 문329 · 인터넷 활용",
+    "question": "다음 중 삼바 서비스와 관련 있는 프로토콜의 조합으로 알맞은 것은?",
+    "choices": [
+      "SMB, RPC",
+      "SMB, CIFS",
+      "RPC, CIFS",
+      "NFS, CIFS"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-330",
+    "source": "2차 · 문330 · 인터넷 활용",
+    "question": "다음에서 설명하는 내용으로 알맞은 것은?\n실시간 채팅 프로토콜로 여러 사용자가 모여 대화를 할 수 있는 서비스이다. 사용자 간의 대화와 파일 전송 기능도 제공한다.",
+    "choices": [
+      "Usenet",
+      "Gopher",
+      "Newsgroup",
+      "IRC"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-331",
+    "source": "2차 · 문331 · 인터넷 활용",
+    "question": "다음 ( 괄호 ) 안에 들어갈 내용으로 알맞은 것은?\nNFS는 NIS(Network Information Service)와 더불어 ( ) 프로토콜 기반으로 작동하므로, 해당 서비스를 해주는 portmap 데몬의 실행이 필수이다.",
+    "choices": [
+      "IRC",
+      "CIFS",
+      "RPC",
+      "imap"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-332",
+    "source": "2차 · 문332 · 인터넷 활용",
+    "question": "다음 중 로컬 루프백(Local Loopback)을 나타내는 장치명과 IP 주소의 조합으로 알맞은 것은?",
+    "choices": [
+      "lo, 127.0.0.0",
+      "lo, 127.0.0.1",
+      "loop, 127.0.0.0",
+      "loop, 127.0.0.1"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-334",
+    "source": "2차 · 문334 · 인터넷 활용",
+    "question": "다음 중 리눅스가 지원하는 네트워크 인터페이스에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "lo : 루프백 인터페이스로서 자기 자신을 가리킨다.",
+      "dl : 다이렉트 인터페이스로서 이더넷에서 사용된다.",
+      "plip : 패러럴 라인 인터페이스이다.",
+      "sl : SLIP 인터페이스를 말한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-335",
+    "source": "2차 · 문335 · 인터넷 활용",
+    "question": "다음 중 B 클래스의 사설 IP(Private IP) 대역에 속한 주소로 알맞은 것은?",
+    "choices": [
+      "172.15.24.36",
+      "172.31.12.22",
+      "172.168.5.13",
+      "172.192.168.3"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-336",
+    "source": "2차 · 문336 · 인터넷 활용",
+    "question": "다음 중 B클래스에 속하는 IP주소로 알맞은 것은?",
+    "choices": [
+      "127.10.17.253",
+      "128.211.12.22",
+      "192.168.3.221",
+      "223.45.62.124"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-337",
+    "source": "2차 · 문337 · 인터넷 활용",
+    "question": "다음 중 일반적인 목적으로 사용하는 IP주소로 틀린 것은?",
+    "choices": [
+      "12.127.0.12",
+      "172.16.220.44",
+      "223.105.8.9",
+      "193.223.202.4"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-338",
+    "source": "2차 · 문338 · 인터넷 활용",
+    "question": "다음 중 사설 IP 주소 대역으로 틀린 것은?",
+    "choices": [
+      "192.168.15.31",
+      "192.168.16.33",
+      "10.192.168.2",
+      "172.32.168.2"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-339",
+    "source": "2차 · 문339 · 인터넷 활용",
+    "question": "다음 중 IP 주소(Internet Protocol Address)의 설명으로 틀린 것은?",
+    "choices": [
+      "IP 주소는 특수한 번호로 각 컴퓨터마다 고유한 값으로 제공한다.",
+      "IPv4는 32비트의 이진 숫자로 구성된다.",
+      "IP 주소는 0.0.0.0∼255.255.255.255 사이의 값을 갖는다.",
+      "IP 주소는 첫 4비트 영역의 값에 따라 A, B, C, D 총 4개의 클래스로 나뉜다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-340",
+    "source": "2차 · 문340 · 인터넷 활용",
+    "question": "다음 설명에 해당하는 항목으로 알맞은 것은?\n서로 다른 통신망이나 프로토콜을 사용하는 네트워크 간의 통신을 가능하게 하는 컴퓨터나 소프트웨어를 통칭해서 일컫는다.",
+    "choices": [
+      "넷마스크",
+      "네임서버",
+      "브로드캐스트",
+      "게이트웨이"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-341",
+    "source": "2차 · 문341 · 인터넷 활용",
+    "question": "다음의 네트워크 설정파일과 명령어를 통해서 공통적으로 변경되는 항목으로 알맞은 것은?\n- 네트워크 설정파일 : /etc/sysconfig/network\n- 명령어 : route add default gw 192.168.1.1 eth0",
+    "choices": [
+      "Network Address",
+      "IP Address",
+      "Gateway Address",
+      "DNS Address"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-342",
+    "source": "2차 · 문342 · 인터넷 활용",
+    "question": "다음 중 A 클래스의 기본 서브넷마스크 값으로 알맞은 것은?",
+    "choices": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.255"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-343",
+    "source": "2차 · 문343 · 인터넷 활용",
+    "question": "다음 중 기본 서브넷마스크 값을 갖는 B 클래스의 호스트 IP 주소 개수로 알맞은 것은?",
+    "choices": [
+      "128",
+      "256",
+      "65,536",
+      "16,777,216"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-344",
+    "source": "2차 · 문344 · 인터넷 활용",
+    "question": "다음 조건일 때 생성되는 서브네트워크의 호스트 수로 알맞은 것은?\n가. C 클래스 IP 주소 대역을 사용 중이다.\n나. 넷마스크값은 255.255.255.192이다.",
+    "choices": [
+      "4",
+      "64",
+      "128",
+      "192"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-345",
+    "source": "2차 · 문345 · 인터넷 활용",
+    "question": "다음 조건일 때 생성되는 서브네트워크의 호스트 수로 알맞은 것은?\n가. C 클래스 IP 주소 대역을 사용 중이다.\n나. 넷마스크값은 255.255.255.128이다.",
+    "choices": [
+      "4",
+      "128",
+      "64",
+      "192"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-348",
+    "source": "2차 · 문348 · 인터넷 활용",
+    "question": "다음에서 설명하는 관련 기구로 알맞은 것은?\n국제도메인관리기구 또는 국제인터넷주소관리기구라고 부르는데, 비영리기관으로 인터넷 도메인 관리와 정책을 결정하는 국제기구이다.",
+    "choices": [
+      "IEEE",
+      "ICANN",
+      "KISA",
+      "ISO"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-349",
+    "source": "2차 · 문349 · 인터넷 활용",
+    "question": "다음 중 IPv4 및 IPv6의 특징 비교에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "IPv6에서는 임의의 큰 크기로 패킷을 주고받을 수 있다.",
+      "IPv6의 헤더는 IPv4의 헤더와 비교해서 구조가 단순하다.",
+      "IPv6에서 사용하는 주소는 A~E 클래스로 나누어져 있다.",
+      "IPv6 기반의 호스트는 IPv6 네트워크에 접속하는 순간에 주소를 할당받는다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-350",
+    "source": "2차 · 문350 · 인터넷 활용",
+    "question": "다음 중 국제인터넷 주소자원 관리기관에서 인터넷 초창기에 만든 7개의 일반 최상위 도메인에 속하지 않는 것은?",
+    "choices": [
+      "edu",
+      "int",
+      "biz",
+      "mil"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-351",
+    "source": "2차 · 문351 · 인터넷 활용",
+    "question": "다음 중 1단계 도메인에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "edu : 교육기관",
+      "mil : 군사기관",
+      "int : 국제기구",
+      "net : 비영리기관"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-353",
+    "source": "2차 · 문353 · 인터넷 활용",
+    "question": "다음 중 비영리(Non-Profit) 목적의 기관으로 최상위 도메인으로 알맞은 것은?",
+    "choices": [
+      "COM",
+      "NET",
+      "ORG",
+      "GOV"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-355",
+    "source": "2차 · 문355 · 인터넷 활용",
+    "question": "다음 중 netstat의 status 결과와 내용으로 알맞은 것은?",
+    "choices": [
+      "TIME-WAIT : 패킷 처리가 끝났지만 분실되었을지 모를 느린 세그먼트를 위해 당분간 소켓을 닫고 유지하는 상태",
+      "CLOSING : 정상적으로 확인 메시지를 받고 소켓을 종료하는 상태",
+      "LAST_ACK : 원격 호스트가 종료를 위해 소켓을 열어놓고 마지막 ACK 패킷을 기다리는 상태",
+      "SYS-SENT : 로컬 시스템의 클라이언트 애플리케이션이 원격 호스트에 연결을 요청한 상태"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-356",
+    "source": "2차 · 문356 · 인터넷 활용",
+    "question": "다음 중 ifconfig 명령으로 확인할 수 있는 항목으로 틀린 것은?",
+    "choices": [
+      "IP 주소",
+      "넷마스크 값",
+      "MAC 주소",
+      "게이트웨이 주소"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-359",
+    "source": "2차 · 문359 · 인터넷 활용",
+    "question": "다음 중 ifconfig 명령어를 통해 확인할 수 있는 정보로 틀린 것은?",
+    "choices": [
+      "MAC",
+      "MTU",
+      "BroadCast",
+      "ARP"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-360",
+    "source": "2차 · 문360 · 인터넷 활용",
+    "question": "다음 중 Kernel IP routing table을 확인할 수 있는 명령으로 알맞은 것은?",
+    "choices": [
+      "netstat",
+      "traceroute",
+      "hostname",
+      "ifconfig"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-361",
+    "source": "2차 · 문361 · 인터넷 활용",
+    "question": "다음 중 인터넷 서비스를 사용하기 위해 사용하는 명령과 가장 거리가 먼 것은?",
+    "choices": [
+      "ifconfig",
+      "route",
+      "traceroute",
+      "netconfig"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-362",
+    "source": "2차 · 문362 · 인터넷 활용",
+    "question": "다음 중 같은 네트워크 대역에 속한 특정 호스트의 MAC 주소를 조회하려고 할 때 사용하는 명령어로 알맞은 것은?",
+    "choices": [
+      "ifconfig",
+      "arp",
+      "mii-tool",
+      "netstat"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-363",
+    "source": "2차 · 문363 · 인터넷 활용",
+    "question": "다음 중 arp 명령의 옵션과 설명으로 알맞은 것은?",
+    "choices": [
+      "-a : ARP 캐시 테이블에 저장된 특정 값의 속성을 변경한다.",
+      "-r : ARP 캐시 테이블에 저장된 특정 MAC 주소를 삭제한다.",
+      "-s : ARP 캐시 테이블에 저장된 특정 IP에 대한 MAC 주소를 변경한다.",
+      "-n : IP 주소를 숫자 대신 심볼릭 호스트 명으로 변환하여 출력한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-365",
+    "source": "2차 · 문365 · 인터넷 활용",
+    "question": "다음 중 네트워크 인터페이스의 물리적 연결 여부를 확인할 수 있는 명령어로 가장 알맞은 것은?",
+    "choices": [
+      "ifconfig",
+      "arp",
+      "mii-tool",
+      "netstat"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-369",
+    "source": "2차 · 문369 · 인터넷 활용",
+    "question": "다음 중 네트워크 인터페이스의 환경 설정과 관련된 파일이 저장되는 디렉터리로 알맞은 것은?",
+    "choices": [
+      "/etc/sysconfig",
+      "/etc/sysconfig/network",
+      "/etc/sysconfig/network-scripts",
+      "/etc/sysconfig/network-scripts/ifcfg-eth0"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-370",
+    "source": "2차 · 문370 · 인터넷 활용",
+    "question": "다음 중 현재 사용 중인 DNS 서버의 IP 주소가 등록된 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/hosts",
+      "/etc/host.conf",
+      "/etc/sysconfig/network",
+      "/etc/resolv.conf"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-371",
+    "source": "2차 · 문371 · 인터넷 활용",
+    "question": "다음 설명에 해당하는 파일로 알맞은 것은?\n가. 네트워크 사용 유무 지정\n나. 호스트명 설정\n다. 게이트웨이 주소 및 장치 파일 설정\n라. NIS 도메인 이름 설정",
+    "choices": [
+      "/etc/hosts",
+      "/etc/resolv.conf",
+      "/etc/services",
+      "/etc/sysconfig/network"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-373",
+    "source": "2차 · 문373 · 인터넷 활용",
+    "question": "다음 중 두 번째 이더넷 카드의 IP 주소 정보가 기록되는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/networks",
+      "/etc/sysconfig/network",
+      "/etc/sysconfig/network-scripts/ifcfg-eth1",
+      "/etc/sysconfig/network-scripts/ifcfg-eth2"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-375",
+    "source": "2차 · 문375 · 인터넷 활용",
+    "question": "다음 중 DNS의 등장과 가장 밀접한 연관이 있는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/host.conf",
+      "/etc/hosts",
+      "/etc/services",
+      "/etc/protocols"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-376",
+    "source": "2차 · 문376 · 응용 분야",
+    "question": "다음 중 최적의 웹 서비스 제공을 위해 구성하는 클러스터링 기술 조합으로 가장 알맞은 것은?",
+    "choices": [
+      "고계산용 클러스터와 부하분산 클러스터",
+      "고계산용 클러스터와 고가용성 클러스터",
+      "부하분산 클러스터와 고가용성 클러스터",
+      "부하분산 클러스터와 임베디드 시스템"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-378",
+    "source": "2차 · 문378 · 응용 분야",
+    "question": "다음 설명에 해당하는 시스템으로 알맞은 것은?\n부동 소수점 연산을 위해 오래된 구형 컴퓨터 여러 대에 리눅스를 설치하고 고성능의 계산 능력을 발휘하도록 하나의 시스템인 것처럼 구성하였다.",
+    "choices": [
+      "임베디드 시스템",
+      "부하분산 클러스터",
+      "고가용성 클러스터",
+      "베어울프 클러스터"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-384",
+    "source": "2차 · 문384 · 응용 분야",
+    "question": "다음 중 임베디드 리눅스의 단점으로 알맞은 것은?",
+    "choices": [
+      "별도의 로열티나 라이선스 비용을 지불해야 한다.",
+      "변경 및 재배포가 쉽지 않다.",
+      "디바이스 드라이버 프레임워크가 단순하다.",
+      "사용자 모드와 커널 모드 메모리 접근이 복잡하다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-385",
+    "source": "2차 · 문385 · 응용 분야",
+    "question": "다음 중 임베디드 리눅스의 장점으로 틀린 것은?",
+    "choices": [
+      "커널과 루트 파일 시스템 등에 상대적으로 적은 메모리를 차지한다.",
+      "별도의 로열티나 라이센스 비용이 없다.",
+      "커널이 안정적이다.",
+      "소스가 공개되어 있어서 변경과 재배포가 용이하다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-387",
+    "source": "2차 · 문387 · 응용 분야",
+    "question": "다음 설명과 가장 관계가 깊은 기술로 알맞은 것은?\n가. 관련 하드웨어: 프로세서 및 컨트롤러, 메모리, I/O 장치, 네트워크 장치, 센서\n나. 관련 소프트웨어: 운영체제, 시스템 소프트웨어, 응용 프로그램",
+    "choices": [
+      "슈퍼 컴퓨터",
+      "클라우드 컴퓨팅",
+      "고가용성 클러스터",
+      "임베디드 시스템"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "c2-388",
+    "source": "2차 · 문388 · 응용 분야",
+    "question": "다음 중 XEN 가상화 기술에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "전가상화와 반가상화를 모두 지원한다.",
+      "호스트 운영체제(Dom 0)는 리눅스만 지원하지만, 게스트 운영체제(Dom U)는 리눅스, 윈도우즈 등 다양한 운영체제를 폭넓게 지원한다.",
+      "케임브리지 대학교에서 시작한 프로젝트로 2002년 공개 프로젝트로 전환되었다.",
+      "XEN 가상화 기술 기반으로 개발된 제품은 Virtual Iron, Oracle VM Server 등이 있다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-389",
+    "source": "2차 · 문389 · 응용 분야",
+    "question": "다음 중 공개형 서버 가상화 기술 중 다양한 하이퍼바이저를 통합 관리가 가능한 제3세대 서버 가상화 기술(클라우드 플랫폼)로 틀린 것은?",
+    "choices": [
+      "OpenStack",
+      "VirtualBox",
+      "CloudStack",
+      "Eucalyptus"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-390",
+    "source": "2차 · 문390 · 응용 분야",
+    "question": "다음 중 반가상화뿐만 아니라 전가상화도 지원하는 가상화 기술로 알맞은 것은?",
+    "choices": [
+      "KVM",
+      "VirtualBox",
+      "XEN",
+      "VMware"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-391",
+    "source": "2차 · 문391 · 응용 분야",
+    "question": "다음 중 KVM에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "이더넷 및 Disk I/O 반가상화를 지원한다.",
+      "CPU 및 그래픽 카드 반가상화를 지원한다.",
+      "QEMU을 이용한 CPU 에뮬레이터 방식이다.",
+      "CPU 가상화 기술인 인텔의 VT 및 AMD-V 기반으로 동작한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-394",
+    "source": "2차 · 문394 · 응용 분야",
+    "question": "다음 중 다양한 하이퍼바이저를 통합 관리가 가능한 플랫폼형 서버 가상화 기술로 틀린 것은?",
+    "choices": [
+      "Oracle VM",
+      "OpenStack",
+      "Eucalyptus",
+      "CloudStack"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "c2-396",
+    "source": "2차 · 문396 · 응용 분야",
+    "question": "다음 빅데이터 관련 기술 중 분석된 데이터의 의미와 가치를 시각적으로 표현하기 위한 기술로 알맞은 것은?",
+    "choices": [
+      "Hadoop",
+      "R",
+      "NoSQL",
+      "HBase"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-398",
+    "source": "2차 · 문398 · 응용 분야",
+    "question": "다음 빅데이터 관련 기술 중 파일 시스템과 같이 인프라 구축과 가장 관계가 깊은 기술로 알맞은 것은?",
+    "choices": [
+      "R",
+      "Hadoop",
+      "NoSQL",
+      "Cassandra"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "c2-400",
+    "source": "2차 · 문400 · 응용 분야",
+    "question": "다음에서 설명하는 운영체제의 종류로 알맞은 것은?\n인텔, 삼성을 주축으로 리눅스재단, MeeGo 개발자 등이 만든 리눅스 기반의 무료 공개형 모바일 운영체제이다.",
+    "choices": [
+      "모블린",
+      "마에모",
+      "타이젠",
+      "안드로이드"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-401",
+    "source": "2차 · 문401 · 응용 분야",
+    "question": "다음 중 리눅스 커널을 사용하지 않는 운영체제로 알맞은 것은?",
+    "choices": [
+      "Android",
+      "Tizen",
+      "QNX",
+      "Bada OS"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-403",
+    "source": "2차 · 문403 · 응용 분야",
+    "question": "다음 중 리눅스 기반 모바일 운영체제로 틀린 것은?",
+    "choices": [
+      "안드로이드",
+      "Tizen",
+      "iOS",
+      "Bada OS"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "c2-406",
+    "source": "2차 · 문406 · 응용 분야",
+    "question": "다음 설명하는 내용으로 알맞은 것은?\n각종 사물에 컴퓨터 칩과 통신 기능을 내장하여 인터넷을 연결하는 기술을 의미하며, 사물과 사람과의 통신을 주된 목적으로 한다.",
+    "choices": [
+      "IoT(Internet of Things)",
+      "NFV(Network Function Virtualization)",
+      "SDN(Software Defined Networking)",
+      "Big Data"
+    ],
+    "answer": 0
+  }
+]

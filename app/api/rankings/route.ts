@@ -26,7 +26,7 @@ export async function GET(request: Request) {
       return Response.json({ error: "category가 올바르지 않습니다." }, { status: 400 });
     }
 
-    const db = getDb();
+    const db = await getDb();
     const rows = await db
       .select()
       .from(rankings)
@@ -77,7 +77,7 @@ export async function POST(request: Request) {
     }
 
     const percent = Math.round((correct / total) * 100);
-    const db = getDb();
+    const db = await getDb();
     const [entry] = await db
       .insert(rankings)
       .values({ name, category, correct, total, percent })
