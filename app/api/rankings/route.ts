@@ -2,7 +2,7 @@ import { and, asc, desc, eq } from "drizzle-orm";
 import { getDb } from "../../../db";
 import { rankings } from "../../../db/schema";
 
-const VALID_CATEGORIES = new Set(["cha1", "cha2"]);
+const VALID_CATEGORIES = new Set(["cha1", "cha2", "geup1"]);
 const MAX_NAME_LENGTH = 12;
 const RANKING_LIMIT = 20;
 

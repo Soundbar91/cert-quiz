@@ -18,9 +18,9 @@ export async function generateMetadata(): Promise<Metadata> {
     requestHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
   const metadataBase = new URL(`${protocol}://${host}`);
-  const title = "리눅스 마스터 2급 랜덤 퀴즈";
+  const title = "리눅스 마스터 랜덤 퀴즈";
   const description =
-    "리눅스 마스터 2급 1차·2차 족보에서 무작위로 문제를 풀고 분야별 랭킹에 도전하세요.";
+    "리눅스 마스터 2급 1차·2차 족보와 1급 1차 기출에서 무작위로 문제를 풀고 분야별 랭킹에 도전하세요.";
 
   return {
     metadataBase,

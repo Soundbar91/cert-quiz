@@ -1,0 +1,5666 @@
+[
+  {
+    "id": "g1-20170311-001",
+    "source": "1급 2017.03.11 · 1번 · 리눅스 실무의 이해",
+    "question": "다음 중 운영체제의 목적으로 틀린 것은?",
+    "choices": [
+      "효율적 사용(efficient use)",
+      "사용자 편리성(user convenience)",
+      "비간섭(noninterference)",
+      "대화형 처리(Interactive Processing)"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-003",
+    "source": "1급 2017.03.11 · 3번 · 리눅스 실무의 이해",
+    "question": "다음 중 모바일 기기에서 사용되는 리눅스 운영체제로 틀린 것은?",
+    "choices": [
+      "Android",
+      "LiMo",
+      "Bada OS",
+      "Mint"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-005",
+    "source": "1급 2017.03.11 · 5번 · 리눅스 실무의 이해",
+    "question": "다음 중 아시아눅스의 개발에 참여한 국가와 기업의 조합으로 틀린 것은?",
+    "choices": [
+      "홍기 리눅스 - 중국",
+      "한글과컴퓨터 - 한국",
+      "엔터프라이즈 테크놀로지 - 미국",
+      "비에트 소프트웨어 - 베트남"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-007",
+    "source": "1급 2017.03.11 · 7번 · 리눅스 실무의 이해",
+    "question": "리눅스 디렉터리 구조 중 시스템 설정과 관련된 파일이 있는 위치로 알맞은 것은?",
+    "choices": [
+      "/bin",
+      "/conf",
+      "/opt",
+      "/etc"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-010",
+    "source": "1급 2017.03.11 · 10번 · 리눅스 실무의 이해",
+    "question": "현재 리눅스를 비롯하여 유닉스의 대부분이 이 프로젝트 기반의 X윈도 시스템을 사용하고 있으며, freedesktop.org와 함께 X윈도를 지속적으로 발전시키고 있는 곳으로 알맞은 것은?",
+    "choices": [
+      "x-window.org",
+      "x-win.org",
+      "x.org",
+      "x-window.com"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-014",
+    "source": "1급 2017.03.11 · 14번 · 리눅스 실무의 이해",
+    "question": "다음 중 데몬을 실행하는 방법으로 틀린 것은?",
+    "choices": [
+      "/etc/init.d/httpd restart",
+      "/etc/rc.d/init.d/httpd start",
+      "service httpd start",
+      "service start httpd"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-021",
+    "source": "1급 2017.03.11 · 21번 · 리눅스 시스템 관리",
+    "question": "다음 중 접속한 계정에 대한 정보를 알 수 있는 명령어로 틀린 것은?",
+    "choices": [
+      "who",
+      "who i am",
+      "whoiam",
+      "whoami"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-022",
+    "source": "1급 2017.03.11 · 22번 · 리눅스 시스템 관리",
+    "question": "다음 중 사용자 ID 생성 및 관리와 관련된 내용으로 틀린 것은?",
+    "choices": [
+      "/etc/passwd: 시스템 자원을 이용할 수 있는 로그인 사용자 목록이 저장된 파일이다.",
+      "/etc/default/useradd: useradd 명령 실행 시, 참조하는 기본 정보 파일이다.",
+      "/etc/shadow: passwd의 비밀번호 부분을 암호화 하여 관리하는 파일이다.",
+      "/etc/default/skel: 계정 생성 시 해당 디렉터리의 파일을 사용자에게 기본 제공한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-023",
+    "source": "1급 2017.03.11 · 23번 · 리눅스 시스템 관리",
+    "question": "다음 중 ihd 계정 생성 시 wheel을 2차 그룹으로 지정하고 UID를 1080으로 설정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "useradd -u 1080 ihd -G wheel",
+      "useradd ihd -U 1080 -g wheel",
+      "useradd -U 1080 -G wheel ihd",
+      "useradd -u 1080 -g wheel ihd"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-024",
+    "source": "1급 2017.03.11 · 24번 · 리눅스 시스템 관리",
+    "question": "현재 접속한 나의 계정 및 그룹에 관련한 정보를 동시에 확인할 수 있는 명령어로 알맞은 것은?",
+    "choices": [
+      "w",
+      "whoami",
+      "id",
+      "users"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-025",
+    "source": "1급 2017.03.11 · 25번 · 리눅스 시스템 관리",
+    "question": "다음 중 root 사용자로 변경 시 설정된 환경변수까지 반영하는 방법으로 알맞은 것은?",
+    "choices": [
+      "su",
+      "su -",
+      "su -u",
+      "su -u root"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-026",
+    "source": "1급 2017.03.11 · 26번 · 리눅스 시스템 관리",
+    "question": "$HOME/.ssh/id_rsa 파일은 private key로써 반드시 유저를 제외한 그룹 및 모든 다른 사용자에게 읽기, 쓰기, 실행 권한이 없어야만 한다. 다음 명령 중 틀린 것은?",
+    "choices": [
+      "chmod g-rwx,o-rwx $HOME/.ssh/id_rsa",
+      "chmod go-rwx ~/.ssh/id_rsa",
+      "chmod 600 $HOME/.ssh/id_rsa",
+      "chmod 006 $HOME/.ssh/id_rsa"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-028",
+    "source": "1급 2017.03.11 · 28번 · 리눅스 시스템 관리",
+    "question": "다음 중 디렉터리 안에 숨겨진 파일을 포함한 모든 리스트 상세정보를 아이노드 번호와 함께 출력하는 명령으로 알맞은 것은?",
+    "choices": [
+      "ls -alF",
+      "ls -ali",
+      "ll",
+      "ls -sAil"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-029",
+    "source": "1급 2017.03.11 · 29번 · 리눅스 시스템 관리",
+    "question": "디렉터리 내에 모든 파일 및 디렉터리 리스트 정보 중 일반파일만(d, l, s 등을 제외한 '-'로 표시되는 파일)을 출력하는 명령으로 알맞은 것은?",
+    "choices": [
+      "ls -al |grep -v \"^[a-zA-Z]\"",
+      "ls -ali |grep -Ev \"^[d,l,s]\"",
+      "ls -ali |grep -v \"^[d,l,s]\"",
+      "ls -al |fgrep -v \"^[a-zA-Z]\""
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-031",
+    "source": "1급 2017.03.11 · 31번 · 리눅스 시스템 관리",
+    "question": "vi 편집기를 사용하여 파일을 수정 중 <Ctrl+z> 키가 입력되어 편집 도중에 셸 화면으로 전환되었다. 다음 중 다시 편집을 계속하기 위한 명령으로 알맞은 것은?",
+    "choices": [
+      "undo",
+      "redo",
+      "bg",
+      "fg"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-032",
+    "source": "1급 2017.03.11 · 32번 · 리눅스 시스템 관리",
+    "question": "다음 중 웹서버 데몬의 상태를 확인하는 방법으로 가장 알맞은 것은?",
+    "choices": [
+      "pstree aux |grep httpd",
+      "grep httpd | ps -ef",
+      "top -ef | grep httpd",
+      "ps aux | grep httpd"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-033",
+    "source": "1급 2017.03.11 · 33번 · 리눅스 시스템 관리",
+    "question": "다음 중 tailf라는 단어가 포함된 모든 프로세스를 찾아서 강제 종료하는 명령어로 알맞은 것은?",
+    "choices": [
+      "killall -9 tailf",
+      "ps aux | grep tailf |awk '{print $1}' | xargs -9 kill",
+      "pstree -p | grep tailf |awk '{print $2}' | xargs kill -9",
+      "ps aux | grep tailf |awk '{print $2}' | xargs kill -9"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-035",
+    "source": "1급 2017.03.11 · 35번 · 리눅스 시스템 관리",
+    "question": "다음 중 백그라운드로 작업 중인 프로세스나 현재 suspend 상태인 프로세스 목록의 PID만 추출하여 출력하는 명령으로 알맞은 것은?",
+    "choices": [
+      "jobs -r",
+      "jobs -p",
+      "pstree -p",
+      "pstree -r"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-036",
+    "source": "1급 2017.03.11 · 36번 · 리눅스 시스템 관리",
+    "question": "다음 중 현재 경로에 있는 vsftp-2.2.2-11.el6.i686.rpm 패키지를 설치하는 명령으로 알맞은 것은?",
+    "choices": [
+      "dpkg -Uvh vsftp-2.2.2-11.el6.i686.rpm",
+      "rpm -Uvh vsftp-2.2.2-11.el6.i686.rpm",
+      "yum install vsftp",
+      "dpkg -i vsftp-2.2.2-11.el6.i686.rpm"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-037",
+    "source": "1급 2017.03.11 · 37번 · 리눅스 시스템 관리",
+    "question": "다음 중 신규 yum repository를 추가하기 위해 해야 하는 작업과 디렉터리로 알맞은 것은?",
+    "choices": [
+      "/etc/yum.d/ 디렉터리에 새로운 저장소 파일(.repo)을 추가 후, yum clean 명령을 실행 한다.",
+      "/etc/yum.repo.d/ 디렉터리에 새로운 저장소 파일(.repo)을 추가 후, yum clean all 명령을 실행 한다.",
+      "/etc/yum.conf/ 디렉터리에 새로운 저장소 파일(.repo)을 추가 후, yum refresh all 명령을 실행한다.",
+      "/etc/yum.repos.d/ 디렉터리에 새로운 저장소 파일(.repo)을 추가 후, yum clean all 명령을 실행 한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-038",
+    "source": "1급 2017.03.11 · 38번 · 리눅스 시스템 관리",
+    "question": "다음 중 yum을 통해 telnet 패키지를 검색하여 바로 설치하는 과정으로 알맞은 것은?",
+    "choices": [
+      "yum find telnet 검색 후, yum install telnet -y 명령어로 바로 설치",
+      "yum find telnet 검색 후, yum -Uvh telnet 명령어로 바로 설치",
+      "yum search telnet 검색 후, yum install telnet -y 명령어로 바로 설치",
+      "yum search telnet 검색 후, rpm -Uvh telnet 명령어로 바로 설치"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-039",
+    "source": "1급 2017.03.11 · 39번 · 리눅스 시스템 관리",
+    "question": "다음 중 tar로 하나로 묶어진 파일의 내용을 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "tar tgv ihd.tar",
+      "tar vtf ihd.tar",
+      "tar xvf ihd.tar",
+      "tar cfv ihd.tar"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-040",
+    "source": "1급 2017.03.11 · 40번 · 리눅스 시스템 관리",
+    "question": "다음 중 압축파일을 압축 해제하는 명령으로 틀린 것은?",
+    "choices": [
+      "zip -d ihd.zip",
+      "tar zxvf ihd.tz",
+      "gzip -d ihd.tz",
+      "gunzip ihd.tz"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-041",
+    "source": "1급 2017.03.11 · 41번 · 리눅스 시스템 관리",
+    "question": "커널 컴파일(Compile)에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "커널 소스를 다운로드하여 사용하는 시스템에 최적화된 커널을 만드는 과정이다.",
+      "커널 컴파일 과정을 통해 불필요한 항목을 제거할 수 있다.",
+      "커널 컴파일을 통해 사용하는 시스템의 안정성과 성능을 향상 할 수 있다.",
+      "커널 컴파일 전 먼저 커널 버전의 소스를 /usr/src/kernel 디렉터리에 다운로드한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-044",
+    "source": "1급 2017.03.11 · 44번 · 리눅스 시스템 관리",
+    "question": "다음 중 커널 소스의 설정 값을 초기화 하는 명령으로 알맞은 것은?",
+    "choices": [
+      "make bzimage",
+      "make modules",
+      "make install",
+      "make mrproper"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-046",
+    "source": "1급 2017.03.11 · 46번 · 리눅스 시스템 관리",
+    "question": "다음 중 디스크 추가 장착 시 인식 여부를 확인 하는 명령으로 알맞은 것은?",
+    "choices": [
+      "fdisk -l",
+      "fdisk -L",
+      "fdisk -v",
+      "fdisk -s"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-047",
+    "source": "1급 2017.03.11 · 47번 · 리눅스 시스템 관리",
+    "question": "다음 중 리눅스 부팅 시 자동으로 마운트 되도록 설정하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/autofs",
+      "/etc/grub",
+      "/etc/inittab",
+      "/etc/fstab"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-050",
+    "source": "1급 2017.03.11 · 50번 · 리눅스 시스템 관리",
+    "question": "다음 중 GUI 기반으로 평판 스캐너나 카메라로부터 이미지를 스캔해 주는 도구로 알맞은 것은?",
+    "choices": [
+      "sane-find-scanner",
+      "alsa",
+      "scanadf",
+      "xcam"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-051",
+    "source": "1급 2017.03.11 · 51번 · 리눅스 시스템 관리",
+    "question": "다음 중 logrotate에 관한 설명으로 알맞은 것은?",
+    "choices": [
+      "자동 로테이션, 압축 및 암호화 기능을 지원한다.",
+      "로그파일을 여러 개로 분할, 통합 할 수 있다.",
+      "로그 설정은 /etc/logrotate.conf에서 가능하다.",
+      "시, 분, 초 단위로 로테이션 할 수 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-053",
+    "source": "1급 2017.03.11 · 53번 · 리눅스 시스템 관리",
+    "question": "다음 중 ihd 사용자의 로그인 정보를 확인하는 명령어로 틀린 것은?",
+    "choices": [
+      "dmesg ihd",
+      "last ihd",
+      "lastlog -u ihd",
+      "lastb ihd"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-054",
+    "source": "1급 2017.03.11 · 54번 · 리눅스 시스템 관리",
+    "question": "다음 중 ihd 사용자의 로그인 실패한 기록만 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "last ihd",
+      "lastb ihd",
+      "lastlog -u ihd",
+      "lastlog -t 3"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-055",
+    "source": "1급 2017.03.11 · 55번 · 리눅스 시스템 관리",
+    "question": "다음 중 인증키를 이용한 SSH 서버 접속과 가장 거리가 먼 것은?",
+    "choices": [
+      "ssh-keygen",
+      ".ssh/id_rsa.pub",
+      ".ssh/authorized_keys",
+      "/lib/security"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-057",
+    "source": "1급 2017.03.11 · 57번 · 리눅스 시스템 관리",
+    "question": "다음 중 SELinux의 상태와 관련된 모드로 틀린 것은?",
+    "choices": [
+      "active",
+      "disabled",
+      "enforcing",
+      "permissive"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-060",
+    "source": "1급 2017.03.11 · 60번 · 리눅스 시스템 관리",
+    "question": "다음 중 rsync에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "그룹을 포함한 소유권, 허가권을 유지하여 복사가 가능하지만 디바이스 파일은 복사가 불가능하다.",
+      "ftp를 이용하여 전송이 가능하고 root 권한이 필요하지 않다.",
+      "하위디렉터리의 그룹 소유권까지 보존하여 복사하는 옵션은 -r 이다.",
+      "root 계정으로 네트워크를 이용하여 원격지에 파일 동기화가 가능하다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-061",
+    "source": "1급 2017.03.11 · 61번 · 네트워크 및 서비스의 활용",
+    "question": "아파치 웹 서버는 DSO(Dynamic Shared Object) 방식을 지원하여 좀 더 유연한 웹서버를 구성할 수 있게 해준다. 다음 중 DSO 방식에 대한 단점의 내용으로 틀린 것은?",
+    "choices": [
+      "DSO 매커니즘은 프로그램 코드를 알맞은 주소 공간에 동적으로 적재시킬 수 있는 기능을 지원하지 않는 특정 운영체제에서는 사용할 수 없다.",
+      "DSO 방식을 사용하지 않는 것과 비교해서 일반적으로 웹 서버를 구동하는 데에 필요한 시간이 좀 더 많이 필요하다.",
+      "웹 서버를 운영하는 데에 있어서 DSO 방식을 사용하지 않는 것과 비교하여 일반적으로 성능이 떨어진다고 알려져 있다.",
+      "웹 서버에 DSO 모듈들을 적재시켜야 하므로, 다른 모듈이 추가적으로 필요한 경우 웹서버 전체를 다시 컴파일 하여야 하는 단점이 존재한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-065",
+    "source": "1급 2017.03.11 · 65번 · 네트워크 및 서비스의 활용",
+    "question": "DHCP 서버에서 Mac address를 이용해서 서버나 호스트의 위치를 알아낼 때 사용하는 프로토콜은?",
+    "choices": [
+      "ARP (Address Resolution Protocol)",
+      "TCP (Transmission Control Protocol)",
+      "IGRP (Internet Gateway Routing Protocol)",
+      "ICP (Internet Cache Protocol)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-066",
+    "source": "1급 2017.03.11 · 66번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 LDAP 속성에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "o : 최상의 조직",
+      "ou : 조직의 부서",
+      "cn : 가장 일반적인 이름",
+      "objectClass : 학교에서 사용하는 조직"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-067",
+    "source": "1급 2017.03.11 · 67번 · 네트워크 및 서비스의 활용",
+    "question": "proftpd를 운영하고 있는 서버에 일반 사용자 계정으로는 로그인이 가능하지만 anonymous 계정으로는 로그인되지 않는다. 다음 중 관련 설명으로 틀린 것은?",
+    "choices": [
+      "설정 파일 안에 <Anonymous> ..</Anonymous> 지시자가 없다.",
+      "RequireValidShell 지시자의 값이 Off이다.",
+      "/etc/passwd 파일에 ftp 사용자에 대한 설정이 없다.",
+      "ftp 사용자의 홈 디렉터리에 대한 소유자나 권한이 잘못 설정되어 있다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-068",
+    "source": "1급 2017.03.11 · 68번 · 네트워크 및 서비스의 활용",
+    "question": "nfs 클라이언트에서 nfs 서버인 ihd의 특정 디렉터리를 마운트 하기 위한 /etc/fstab 파일의 설정으로 알맞은 것은?",
+    "choices": [
+      "/ihd/proc /mnt/ihd nfs defaults 0 0",
+      "ihd:/home /mnt/ihd nfs defaults 0 0",
+      "/mnt/ihd ihd:/tmp nfs defaults 0 0",
+      "/home:ihd /mnt/ihd defaults 0 0"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-070",
+    "source": "1급 2017.03.11 · 70번 · 네트워크 및 서비스의 활용",
+    "question": "NTP는 클럭소스 수준의 계층적, 반 계층화(Semi-layered)된 시스템을 사용하고 이 계층 구조의 각 수준을 계급(Stratum)이라 한다. 다음 중 계급에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "계급 수준은 레퍼런스 시계에서 거리를 정의 한다.",
+      "계급 구조의 순환 종속성을 방지하기 위해 존재한다.",
+      "계급 3 시간 소스보다 계급 2 시간 소스가 더 품질이 우수하다.",
+      "계급 0은 원자시계 GPS 시계 또는 다른 무선 시계 같은 장치이다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-071",
+    "source": "1급 2017.03.11 · 71번 · 네트워크 및 서비스의 활용",
+    "question": "프록시 서버의 일종인 squid에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "squid는 사용자가 요청한 파일을 서버에 남겨둠으로써 같은 파일에 대한 추후 요청보다 신속하게 서비스 한다.",
+      "squid는 다수의 서비스(예를 들어 ftp, telnet, http 등)를 동시에 지원하지 못하며 따라서 초기 설정 시 캐싱을 지원하고자 하는 서비스를 지정하여야 한다.",
+      "squid.conf 설정 파일을 이용하여 사용할 캐싱 공간의 크기를 지정할 수 있다.",
+      "squid를 정상적으로 설정하기 위해서는 시스템에 squid라는 사용자를 추가해야 한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-072",
+    "source": "1급 2017.03.11 · 72번 · 네트워크 및 서비스의 활용",
+    "question": "현재 리눅스 가상화에서 가장 많이 사용되는 KVM에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "KVM은 CPU에서 가상화를 지원해야 한다.",
+      "Kernel 2.6.20부터 리눅스 커널 메인라인에 들어간 커널 모듈 형태이다.",
+      "KVM은 모든 장치에 대해 전가상화만을 제공한다.",
+      "호스트 서버에서 보면 게스트 서버는 하나의 프로세스로 간주되기 때문에 오버헤드가 거의 없다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-073",
+    "source": "1급 2017.03.11 · 73번 · 네트워크 및 서비스의 활용",
+    "question": "스팸메일(SpamMail)로부터 센드메일(SendMail)을 보호하기 위한 /etc/mail/access 파일의 메일 릴레이 기능에 대한 설정 중 행동 양식에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "Relay - 지정된 도메인에서 들어오는 메일의 중계 허용",
+      "Reject - 지정된 도메인에서 들어오는 메일을 거부 메시지 없이 폐기",
+      "501 - 지정된 메일 주소와 일치하는 메일 수신 거부",
+      "550 - 지정된 도메인과 관련된 모든 메일 수신 거부"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-078",
+    "source": "1급 2017.03.11 · 78번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 아파치에서 사용자 인증 파일을 생성하고 관리해 주는 명령어로 알맞은 것은?",
+    "choices": [
+      "apxs",
+      "chpasswd",
+      "ab",
+      "htpasswd"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-079",
+    "source": "1급 2017.03.11 · 79번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 192.168.12.22번의 IP 주소를 사용하는 윈도우 시스템의 공유 폴더를 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "smbclient -M 192.168.12.22",
+      "smbclient -L 192.168.12.22",
+      "smbclient -D 192.168.12.22",
+      "smbclient -U 192.168.12.22"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-082",
+    "source": "1급 2017.03.11 · 82번 · 네트워크 및 서비스의 활용",
+    "question": "아파치 웹 서버의 환경 설정에서 서버의 설정, 에러 로그파일 등이 기록되는 서버 루트 디렉터리의 기본 경로를 지정해 주는 항목으로 알맞은 것은?",
+    "choices": [
+      "DocumentRoot \"/usr/local/apache/htdocs\"",
+      "PidFile /usr/local/apache/logs/httpd.pig",
+      "ServerRoot \"/usr/local/apache\"",
+      "ScoreBoardFile /usr/local/apache/logs/httpd.scoreboard"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-083",
+    "source": "1급 2017.03.11 · 83번 · 네트워크 및 서비스의 활용",
+    "question": "요청 받은 Name Resolution의 결과 데이터를 일정기간 별도로 저장하고 만일 같은 내용에 대한 요청이 들어오면 저장해 둔 데이터를 가지고 즉시 답변 해주는 DNS 서버의 종류로 알맞은 것은?",
+    "choices": [
+      "Primary Server",
+      "Secondary Server",
+      "Caching Server",
+      "Proxy Server"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-084",
+    "source": "1급 2017.03.11 · 84번 · 네트워크 및 서비스의 활용",
+    "question": "프록시 서버에 대한 설명으로 가장 알맞은 것은?",
+    "choices": [
+      "네트워크상의 모든 호스트가 동일한 계정을 가지게 하여 마치 단일 시스템처럼 보이게 한다.",
+      "도메인 내부에 들어오는 요청을 필터링 함으로써 일종의 방화벽 역할을 할 수 있다.",
+      "원격 호스트의 프로세스 생성에 관여한다.",
+      "프린터와 같은 각종 주변 기기를 공유하는데 사용하기도 한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-085",
+    "source": "1급 2017.03.11 · 85번 · 네트워크 및 서비스의 활용",
+    "question": "xinetd의 설정 파일인 /etc/xinetd.conf에서 사용되는 변수에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "socket_type : stream, dgram, raw 값을 지정할 수 있다.",
+      "user : 서비스를 사용할 사용자의 이름이다.",
+      "wait : 서비스 처리에 걸리는 시간을 지정한다.",
+      "server : 서비스가 연결되었을 때 실행할 프로그램이다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-086",
+    "source": "1급 2017.03.11 · 86번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 Xen에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "커널의 소스에 삽입되어 무겁고 다양한 인터페이스를 제공해 무거운 용량과 다양한 인터페이스를 제공한다.",
+      "대부분 메인 컨트롤 스택은 소스를 수정할 수 있는 리눅스에만 설치된다.",
+      "가상머신 내에서 실행하는 주장치 드라이버를 허용하는 기능이 있다.",
+      "Xen은 반가상화 전용으로 개발되어 다른 하이퍼바이저에 비해 빠르다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-087",
+    "source": "1급 2017.03.11 · 87번 · 네트워크 및 서비스의 활용",
+    "question": "sendmail의 alias 기능에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "사용자들에게 정상 이메일 주소 이외에 다른 이름을 부여해줄 수 있다.",
+      "메일링 리스트를 작성할 수 있다.",
+      "수신된 메일 메시지와 이를 처리하는 외부 프로그램을 연계 시켜줄 수 있다.",
+      "특정 호스트로부터 보내진 메일을 거부할 수 있다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-088",
+    "source": "1급 2017.03.11 · 88번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NoSQL에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "SQL 인터페이스를 제공하지 않는 경량형 데이터베이스이다.",
+      "NoSQL은 관계형 데이터 모델이 아닌 키-값 모델이다.",
+      "NoSQL은 데이터의 정합성에 대한 요구 사항보다는 단절내성에 대한 요구사항이 더 중요하다.",
+      "SQLite, MongoDB, Cassandra 등이 NoSQL에 속한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170311-090",
+    "source": "1급 2017.03.11 · 90번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS 도메인명을 부팅 시 적용할 때 설정하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/hosts",
+      "/etc/sysconfig/network",
+      "/etc/resolv.conf",
+      "/etc/networks"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-091",
+    "source": "1급 2017.03.11 · 91번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 vsftpd.conf 설정에서 하나의 IP 주소 당 허용할 최대 접속수를 지정하는 항목으로 알맞은 것은?",
+    "choices": [
+      "max_per_ip=3",
+      "max_per_client=3",
+      "max_per_address=3",
+      "max_per_ip_address=3"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-092",
+    "source": "1급 2017.03.11 · 92번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 일종의 대리인 역할을 수행하는 프로그램으로 메일 박스에 도착한 메일을 대행해서 가져오거나 전달하는 역할을 수행하는 프로그램으로 알맞은 것은?",
+    "choices": [
+      "MDA (Mail Delivery Agent)",
+      "MUA (Mail User Agent)",
+      "MTA (Mail Transfer Agent)",
+      "IMAP (Internet Mail Access Protocol)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-093",
+    "source": "1급 2017.03.11 · 93번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 발신 도메인을 강제적으로 지정하기 위해 사용하는 sendmail.cf 파일 항목으로 알맞은 것은?",
+    "choices": [
+      "Cw",
+      "Fw",
+      "Dj",
+      "Dw"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170311-095",
+    "source": "1급 2017.03.11 · 95번 · 네트워크 및 서비스의 활용",
+    "question": "xinetd 관련 로그를 별도의 파일인 /var/log/xinetd.log에 저장하려고 한다. 다음 중 관련 설정으로 알맞은 것은?",
+    "choices": [
+      "log_type = FILE /var/log/xinetd.log",
+      "log_type = SYSLOG /var/log/xinetd.log",
+      "log_type = /var/log/xinetd.log",
+      "log_file = /var/log/xinetd.log"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170311-098",
+    "source": "1급 2017.03.11 · 98번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 iptables의 3가지 체인으로 틀린 것은?",
+    "choices": [
+      "INPUT",
+      "DROP",
+      "OUTPUT",
+      "FORWARD"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170311-099",
+    "source": "1급 2017.03.11 · 99번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 badman.com에서 ssh를 통해 침입을 시도 하려고 한다. 해당 도메인의 침입을 막기 위해 조치 할 수 있는 명령어 혹은 파일로 틀린 것은?",
+    "choices": [
+      "/etc/sysconfig/iptables",
+      "/etc/hosts.deny",
+      "iptables",
+      "selinux"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-001",
+    "source": "1급 2017.09.09 · 1번 · 리눅스 실무의 이해",
+    "question": "다음 중 최근 운영체제의 동향으로 틀린 것은?",
+    "choices": [
+      "편리한 사용자 인터페이스를 제공한다.",
+      "단일 사용자 시스템과 단일 작업 시스템만 지원한다.",
+      "가상화 기술을 지원하여 자원의 효율성을 최대화 한다.",
+      "스마트폰과 태블릿 등 모바일 운영체제가 보편화 되었다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-003",
+    "source": "1급 2017.09.09 · 3번 · 리눅스 실무의 이해",
+    "question": "공개 소프트웨어 라이선스 중 GPL(General Public License)에 대한 특징으로 틀린 것은?",
+    "choices": [
+      "프로그램의 소스코드를 용도에 따라 변경할 수 있다.",
+      "변경된 프로그램 역시 소스코드를 반드시 공개 배포해야 한다.",
+      "법으로 제한하는 행위를 포함한 어떠한 목적으로든지 사용할 수 있다.",
+      "변경된 프로그램 역시 똑같은 라이선스인 GPL 라이선스를 적용해야 한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-005",
+    "source": "1급 2017.09.09 · 5번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스 배포판의 종류와 설명으로 틀린 것은?",
+    "choices": [
+      "수세 : 1994년 독일에서 배포된 상용 소프트웨어로 패키지 관리를 위해 YaST 유틸리티를 제공한다.",
+      "우분투 : 데비안 리눅스를 기초로 만든 리눅스 배포판으로 고유한 데스크탑 환경인 유니티를 사용한다.",
+      "레드햇 : 레드햇 리눅스의 약자는 RHEL로 현재까지 무상으로 배포되고 있으며, RPM 패키지 방식을 사용한다.",
+      "데비안 : 패키지의 설치, 삭제 등은 dpkg 명령어로 수행되며, apt를 이용하면 쉬운 설치나 업데이트가 가능하다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-006",
+    "source": "1급 2017.09.09 · 6번 · 리눅스 실무의 이해",
+    "question": "다음 중 10GB 용량의 하드디스크 4개를 이용해서 RAID-5를 구성했을 경우 실제 사용 가능한 용량으로 알맞은 것은?",
+    "choices": [
+      "40GB",
+      "30GB",
+      "26.4GB",
+      "20GB"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-007",
+    "source": "1급 2017.09.09 · 7번 · 리눅스 실무의 이해",
+    "question": "다음 중 텍스트 기반의 콘솔(Console) 창에서 로그아웃하는 방법으로 틀린 것은?",
+    "choices": [
+      "exit 명령을 실행한다.",
+      "logout 명령을 실행한다.",
+      "[Ctrl]+[c] 키를 누른다.",
+      "[Ctrl]+[d] 키를 누른다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-008",
+    "source": "1급 2017.09.09 · 8번 · 리눅스 실무의 이해",
+    "question": "다음 중 ext4 파일 시스템의 매직 넘버(magic number) 값으로 알맞은 것은?",
+    "choices": [
+      "0xEF53",
+      "0xEF80",
+      "0xEF81",
+      "0xEF82"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-009",
+    "source": "1급 2017.09.09 · 9번 · 리눅스 실무의 이해",
+    "question": "다음 중 디스플레이 매니저에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "X 클라이언트와 X 서버간의 통신을 담당한다.",
+      "런 레벨 5로 부팅 시 로그인 창을 통해 사용자 인증을 수행한다.",
+      "GUI 환경을 이용하기 위해 사용자에게 제공되는 인터페이스 스타일을 지칭한다.",
+      "C 언어로 구현된 클라이언트 프로그램으로 X 서버와 대화를 해주는 역할을 수행한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-010",
+    "source": "1급 2017.09.09 · 10번 · 리눅스 실무의 이해",
+    "question": "다음 중 evince 프로그램이 지원하는 문서 포맷으로 틀린 것은?",
+    "choices": [
+      "PS",
+      "PDF",
+      "PSD",
+      "XPS"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-011",
+    "source": "1급 2017.09.09 · 11번 · 리눅스 실무의 이해",
+    "question": "다음 중 C 셸을 개발한 사람으로 알맞은 것은?",
+    "choices": [
+      "켄 톰프슨(Ken Tompson)",
+      "데니스 리치(Dennis Ritchie)",
+      "빌 조이(Bill Joy)",
+      "브라이언 폭스(Brian Fox)"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-013",
+    "source": "1급 2017.09.09 · 13번 · 리눅스 실무의 이해",
+    "question": "다음 중 [Ctrl]+[c] 입력 시에 전송되는 시그널 및 번호의 조합으로 알맞은 것은?",
+    "choices": [
+      "2, SIGINT",
+      "2, SIGQUIT",
+      "3, SIGINT",
+      "3, SIGQUIT"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-019",
+    "source": "1급 2017.09.09 · 19번 · 리눅스 실무의 이해",
+    "question": "네트워크 장애 발생으로 통신 여부를 확인하기 위해 특정 호스트까지 라우팅 되는 과정을 출력해주는 명령어로 알맞은 것은?",
+    "choices": [
+      "ping",
+      "route",
+      "nslookup",
+      "traceroute"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-020",
+    "source": "1급 2017.09.09 · 20번 · 리눅스 실무의 이해",
+    "question": "다음 중 시스템에서 사용하는 네임 서버(DNS 서버)를 설정하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/hosts",
+      "/etc/network",
+      "/etc/resolv.conf",
+      "/etc/sysconfig/network"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-022",
+    "source": "1급 2017.09.09 · 22번 · 리눅스 시스템 관리",
+    "question": "다음 중 사용자 계정에 부여되는 UID 값을 1000번부터 할당되도록 설정할 때 이용하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/passwd",
+      "/etc/login.defs",
+      "/etc/skel",
+      "/etc/default/useradd"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-023",
+    "source": "1급 2017.09.09 · 23번 · 리눅스 시스템 관리",
+    "question": "회사에서 근무 중인 ihduser 사용자가 올해 말로 퇴사한다고 하여 계정만기일을 지정하려고 한다. 다음 중 관련 명령으로 알맞은 것은?",
+    "choices": [
+      "useradd -e 2017-12-31 ihduser",
+      "useradd -D -e 2017-12-31 ihduser",
+      "usermod -E 2017-12-31 ihduser",
+      "usermod -e 2017-12-31 ihduser"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-024",
+    "source": "1급 2017.09.09 · 24번 · 리눅스 시스템 관리",
+    "question": "다음 중 kait라는 그룹의 이름을 ihd로 변경할 때 관련 명령으로 알맞은 것은?",
+    "choices": [
+      "groupmod -n ihd kait",
+      "groupmod -n kait ihd",
+      "groupmod -l ihd kait",
+      "groupmod -l kait ihd"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-032",
+    "source": "1급 2017.09.09 · 32번 · 리눅스 시스템 관리",
+    "question": "다음 중 프로세스 우선순위인 NI의 설정값 범위로 알맞은 것은?",
+    "choices": [
+      "-20 ~ 19",
+      "-19 ~ 20",
+      "-20 ~ 20",
+      "-19 ~ 19"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-035",
+    "source": "1급 2017.09.09 · 35번 · 리눅스 시스템 관리",
+    "question": "다음 중 백그라운드로 수행 중인 작업 번호 2번 프로세스를 포어그라운드 프로세스로 전환할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "bg 2",
+      "bg %2",
+      "fg -2",
+      "fg %2"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-041",
+    "source": "1급 2017.09.09 · 41번 · 리눅스 시스템 관리",
+    "question": "다음 중 커널 컴파일을 위해 소스 파일을 다운로드하는 디렉터리로 가장 알맞은 것은?",
+    "choices": [
+      "/usr/local/src",
+      "/usr/local/kernels",
+      "/usr/src/kernels",
+      "/sys/kernel"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-042",
+    "source": "1급 2017.09.09 · 42번 · 리눅스 시스템 관리",
+    "question": "커널 컴파일 과정에서 설정된 작업을 초기화하려고 한다. 다음 중 가장 강력하게 제거하는 명령으로 알맞은 것은?",
+    "choices": [
+      "make clean",
+      "make clean all",
+      "make mrproper",
+      "make distclean"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-043",
+    "source": "1급 2017.09.09 · 43번 · 리눅스 시스템 관리",
+    "question": "다음 중 커널 컴파일 옵션 설정 시 X 윈도 환경의 Qt 기반 설정 도구를 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "make menuconfig",
+      "make qconfig",
+      "make xconfig",
+      "make nconfig"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-046",
+    "source": "1급 2017.09.09 · 46번 · 리눅스 시스템 관리",
+    "question": "다음 중 fdisk를 이용해서 기존의 Linux 파티션으로 이용되던 영역을 Swap 영역으로 변경할 때 설정하는 ID 값으로 알맞은 것은?",
+    "choices": [
+      "82",
+      "83",
+      "8e",
+      "fd"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-048",
+    "source": "1급 2017.09.09 · 48번 · 리눅스 시스템 관리",
+    "question": "다음 중 전통적으로 Sys V 계열 유닉스에서 사용했던 프린터 관련 명령어로 틀린 것은?",
+    "choices": [
+      "lp",
+      "lpr",
+      "lpstat",
+      "cancel"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-049",
+    "source": "1급 2017.09.09 · 49번 · 리눅스 시스템 관리",
+    "question": "다음 중 디스크의 파티션을 분할할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "parted",
+      "partprobe",
+      "findfs",
+      "partfs"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-050",
+    "source": "1급 2017.09.09 · 50번 · 리눅스 시스템 관리",
+    "question": "다음 중 주변 장치와 관련 프로그램의 조합으로 틀린 것은?",
+    "choices": [
+      "CUPS - 프린터",
+      "OSS - 스캐너",
+      "LPRng - 프린터",
+      "ALSA - 사운드카드"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-053",
+    "source": "1급 2017.09.09 · 53번 · 리눅스 시스템 관리",
+    "question": "다음 중 최근 3일 이내에 마지막 로그인한 사용자 정보를 출력하는 명령으로 알맞은 것은?",
+    "choices": [
+      "lastlog 3",
+      "lastlog -3",
+      "lastlog -d 3",
+      "lastlog -t 3"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-054",
+    "source": "1급 2017.09.09 · 54번 · 리눅스 시스템 관리",
+    "question": "다음 중 특별한 명령어를 이용하지 않고, cat 명령으로 확인 가능한 로그 파일로 알맞은 것은?",
+    "choices": [
+      "/var/log/secure",
+      "/var/log/lastlog",
+      "/var/log/wtmp",
+      "/var/log/btmp"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-055",
+    "source": "1급 2017.09.09 · 55번 · 리눅스 시스템 관리",
+    "question": "다음 중 단순한 패스워드를 사용하는 계정을 찾아낼 때 사용하는 보안 도구로 가장 알맞은 것은?",
+    "choices": [
+      "tcpdump",
+      "nmap",
+      "wireshark",
+      "John the Ripper"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-056",
+    "source": "1급 2017.09.09 · 56번 · 리눅스 시스템 관리",
+    "question": "다음 중 grub 셸 프롬프트에서 암호화된 패스워드를 설정하기 위해 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "md5",
+      "md5sum",
+      "md5crypt",
+      "crypt"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-057",
+    "source": "1급 2017.09.09 · 57번 · 리눅스 시스템 관리",
+    "question": "다음 중 비활성화된 SELinux를 활성화시킬 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "setenforce 0",
+      "setenforce 1",
+      "setenforce on",
+      "setenforce start"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-058",
+    "source": "1급 2017.09.09 · 58번 · 리눅스 시스템 관리",
+    "question": "다음 중 리눅스에서 백업 대상이 되는 디렉터리로 가장 알맞은 것은?",
+    "choices": [
+      "/tmp",
+      "/sys",
+      "/var",
+      "/lib"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-062",
+    "source": "1급 2017.09.09 · 62번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 'Not Found'에 해당하는 HTTP 상태코드로 알맞은 것은?",
+    "choices": [
+      "401",
+      "402",
+      "403",
+      "404"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-063",
+    "source": "1급 2017.09.09 · 63번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 아파치 웹 서버 프로그램을 소스로 설치할 때 설치되는 디렉터리를 지정하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "--prefix",
+      "--enable-root",
+      "--server-root",
+      "--document-root"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-064",
+    "source": "1급 2017.09.09 · 64번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 하나의 IP 주소에 여러 도메인을 사용하는 경우에 설정하는 아파치 웹 서버 환경 설정 파일로 알맞은 것은?",
+    "choices": [
+      "httpd-userdir.conf",
+      "httpd-info.conf",
+      "httpd-vhosts.conf",
+      "httpd-mpm.conf"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-065",
+    "source": "1급 2017.09.09 · 65번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 apachectl을 이용해서 기존의 연결된 접속을 해제하지 않고 아파치 웹 서버를 재시작할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "restart",
+      "reload",
+      "status",
+      "graceful"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-066",
+    "source": "1급 2017.09.09 · 66번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 LDAP 관련된 설명으로 틀린 것은?",
+    "choices": [
+      "IP 프로토콜을 기반으로 사용자, 시스템, 네트워크 서비스 정보 등의 디렉터리 정보를 공유할 수 있다.",
+      "디렉터리는 논리, 계급 등을 기준으로 조직화 되어 있다.",
+      "일반적으로 RDBMS에 비해 검색 속도가 빨라서 쓰기 위주의 서비스에 좋은 성능을 발휘한다.",
+      "이름, 주소와 같이 하나 이상의 속성을 가진 객체로 구성된다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-070",
+    "source": "1급 2017.09.09 · 70번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS를 이용한 사용자 인증이 가능한 서비스 조합으로 알맞은 것은?",
+    "choices": [
+      "ssh, dns",
+      "samba, dns",
+      "telnet, dns",
+      "ssh, samba"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-071",
+    "source": "1급 2017.09.09 · 71번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 smb.conf 파일에서 ihd 그룹에 속한 사용자들이 파일 생성 및 삭제가 가능하도록 지정하는 항목으로 알맞은 것은?",
+    "choices": [
+      "writable = ihd",
+      "writable = @ihd",
+      "write list = ihd",
+      "write list = @ihd"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-073",
+    "source": "1급 2017.09.09 · 73번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 /etc/exports 파일에 설정하는 root_squash에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "root를 포함하여 모든 사용자의 권한을 nfsnobody로 매핑시킨다.",
+      "root를 제외한 일반 사용자의 권한을 nfsnobody로 매핑시킨다.",
+      "일반 사용자의 권한을 인정하고, root만 nfsnobody로 매핑시킨다.",
+      "일반 사용자의 접근은 불허하고, root만 nfsnobody로 매핑시킨다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-076",
+    "source": "1급 2017.09.09 · 76번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 메일 서버 역할(MTA)을 수행하는 프로그램으로 알맞은 것은?",
+    "choices": [
+      "postfix",
+      "procmail",
+      "dovecot",
+      "evolution"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-078",
+    "source": "1급 2017.09.09 · 78번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 sendmail.cf 파일 설정에서 특정 도메인(ihd.or.kr)을 강제로 지정하려고 할 때 관련 항목으로 알맞은 것은?",
+    "choices": [
+      "Fwihd.or.kr",
+      "Djihd.or.kr",
+      "FR-o ihd.or.kr",
+      "Dnihd.or.kr"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-079",
+    "source": "1급 2017.09.09 · 79번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 /etc/aliases 파일 변경 후에 실행하는 명령으로 알맞은 것은?",
+    "choices": [
+      "mailq",
+      "makemap hash /etc/aliases </etc/aliases",
+      "sendmail -bi",
+      "sendmail -bp"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-081",
+    "source": "1급 2017.09.09 · 81번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 /etc/named.conf 파일에서 사용하는 주석으로 틀린 것은?",
+    "choices": [
+      ";를 행 앞에 지정한다.",
+      "#를 행 앞에 지정한다.",
+      "//를 행 앞에 지정한다.",
+      "여러 행인 경우에 /* ~ */ 안에 지정한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-083",
+    "source": "1급 2017.09.09 · 83번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DNS 서버에서의 zone 파일에서 PTR 타입을 선언하는 이유로 가장 알맞은 것은?",
+    "choices": [
+      "도메인에 대한 질의 시 IP 주소가 조회되도록 설정한다.",
+      "IP 주소에 대한 질의 시 도메인 주소가 조회되도록 설정한다.",
+      "도메인에 대한 일종의 별칭을 지정할 때 사용한다.",
+      "IP 주소에 대한 일종의 별칭을 지정할 때 사용한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-086",
+    "source": "1급 2017.09.09 · 86번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 버추얼박스를 이용해서 가상 머신을 생성한 후에 CentOS69라는 이름으로 리눅스를 설치했을 때 생성되는 파일명으로 가장 알맞은 것은?",
+    "choices": [
+      "CentOS69.vbox",
+      "CentOS69.vmx",
+      "CentOS69.vdi",
+      "CentOS69.vmdk"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-087",
+    "source": "1급 2017.09.09 · 87번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 KVM이 반가상화를 지원하지 않는 하드웨어로 알맞은 것은?",
+    "choices": [
+      "CPU",
+      "Ethernet Card",
+      "Disk I/O",
+      "Graphic Card"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-088",
+    "source": "1급 2017.09.09 · 88번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 리눅스 가상화 기술인 XEN에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "CPU 반가상화 지원으로 다른 기술과 비교해서 물리적 서버 대비 효율성이 가장 좋다.",
+      "반가상화 구성 시에 호스트와 다른 아키텍처의 게스트는 실행할 수 없다.",
+      "전가상화 구성 시에는 QEMU 기반으로 동작한다.",
+      "상용화된 제품으로는 RHEV가 있다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20170909-089",
+    "source": "1급 2017.09.09 · 89번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 XEN, KVM과 같은 다양한 하이퍼바이저를 통합 관리하기 위한 플랫폼으로 틀린 것은?",
+    "choices": [
+      "Cloudstack",
+      "Docker",
+      "Openstack",
+      "OpenNebula"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20170909-093",
+    "source": "1급 2017.09.09 · 93번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 dhcpd.conf 파일에서 할당되는 IP 주소의 범위를 지정하는 항목으로 알맞은 것은?",
+    "choices": [
+      "fixed-address",
+      "default-address",
+      "range",
+      "dynamic-address"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-096",
+    "source": "1급 2017.09.09 · 96번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 메모리 누수(Memory Leak)와 가장 관련 있는 C언어 함수로 알맞은 것은?",
+    "choices": [
+      "write()",
+      "fread()",
+      "malloc()",
+      "fork()"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20170909-098",
+    "source": "1급 2017.09.09 · 98번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 터널링(Tunneling) 기법을 사용해 공중망에 접속해 있는 두 네트워크 사이의 연결을 마치 전용회선을 이용해 연결한 것과 같은 효과를 내는 가상 네트워크 보안기술로 알맞은 것은?",
+    "choices": [
+      "VPN",
+      "IDS",
+      "IPS",
+      "ESM"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-099",
+    "source": "1급 2017.09.09 · 99번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 iptables의 nat 테이블에서 사용 가능한 사슬(Chain)로 틀린 것은?",
+    "choices": [
+      "INPUT",
+      "OUTPUT",
+      "PREROUTING",
+      "POSTROUTING"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20170909-100",
+    "source": "1급 2017.09.09 · 100번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 현재 설정되어 있는 iptables 정책을 파일로 저장하는 명령으로 알맞은 것은?",
+    "choices": [
+      "iptables-save firewall.sh",
+      "iptables-save -s firewall.sh",
+      "iptables-save >firewall.sh",
+      "iptables-save <firewall.sh"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-004",
+    "source": "1급 2018.03.10 · 4번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스의 특징으로 틀린 것은?",
+    "choices": [
+      "리눅스는 이더넷(Ethernet), SLIP, PPP 등의 다양한 네트워크 환경을 지원하며 TCP/IP, IPX 등의 네트워크 프로토콜도 지원한다.",
+      "리눅스는 다른 운영체제에 비해 이식성, 확장성 등이 뛰어나지만, 특정 하드웨어에 설치가 어렵고 모든 플랫폼에서 작동하지는 않는다.",
+      "리눅스는 서버, 개발용, PC용 등 다양한 목적으로 사용할 수 있고, 이에 따른 다양한 배포판이 존재하며, 유료 버전과 무료 버전이 존재한다.",
+      "리눅스는 Windows FAT32, NTFS, 네트워크 파일시스템인 SMB, CIFS 등의 다양한 파일 시스템을 지원하지만, 시스템 충돌 및 전원 문제로 복구 가능한 저널링 파일시스템을 아직 지원하지 않는다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-005",
+    "source": "1급 2018.03.10 · 5번 · 리눅스 실무의 이해",
+    "question": "다음 중 운영체제의 특징으로 틀린 것은?",
+    "choices": [
+      "운영체제는 커널, 미들웨어, 응용 프로그램 실행 환경과 사용자 인터페이스 프레임워크를 모두 포괄하여 정의될 수 있다.",
+      "운영체제의 처리방식은 단순 순차처리 → 분산 네트워크 → 다중 프로그래밍 → 모바일 및 임베디드 형식으로 발전되어 왔다.",
+      "스마트폰과 태블릿에 설치되는 모바일 운영체제, 웹 브라우저만 있으면 사용 가능한 웹 운영체제도 사용되고 있다.",
+      "최근의 운영체제는 유휴 자원의 효율적 활용을 위해 가상화 기술을 기본적으로 내장하거나 커널(Kernel) 단에서 지원하고 있다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180310-006",
+    "source": "1급 2018.03.10 · 6번 · 리눅스 실무의 이해",
+    "question": "다음 중 원격지에서 사용자 기반 인증 X 클라이언트를 이용하기 위해 관련된 명령어 또는 환경 변수로 틀린 것은?",
+    "choices": [
+      "xhost",
+      "xauth",
+      "DISPLAY 환경 변수",
+      "TERM 환경 변수"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-008",
+    "source": "1급 2018.03.10 · 8번 · 리눅스 실무의 이해",
+    "question": "root 패스워드를 분실해서 싱글모드로 부팅 후 패스워드를 초기화 하려고 한다. 다음 중 GRUB 부트 화면에서 키 입력 순서로 알맞은 것은?",
+    "choices": [
+      "\"a\"키 누른 후 맨 뒤에 \"1\" 입력",
+      "\"e\"키 누른 후 맨 뒤에 \"b\" 입력",
+      "\"c\"키 누른 후 맨 뒤에 \"1\" 입력",
+      "\"c\"키 누른 후 맨 뒤에 \"single\" 입력"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-009",
+    "source": "1급 2018.03.10 · 9번 · 리눅스 실무의 이해",
+    "question": "현재 터미널에서 아파치 웹 서버 데몬(httpd)을 실행하기 위한 명령으로 틀린 것은?",
+    "choices": [
+      "/etc/rc.d/init.d/httpd start",
+      "chkconfig httpd on",
+      "service httpd start",
+      "/etc/init.d/httpd start"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180310-011",
+    "source": "1급 2018.03.10 · 11번 · 리눅스 실무의 이해",
+    "question": "다음 중 RAID-6에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "최소 3개 이상의 디스크로 구성해야 한다.",
+      "2개의 디스크 오류가 발생하면 데이터를 복구할 수 없다.",
+      "200GB 하드디스크 8개를 RAID-6로 구성할 경우 가용 공간은 1.2TB이다.",
+      "단순한 알고리즘으로 처리 속도도 빠르고, 데이터에 대한 신뢰도도 높다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-012",
+    "source": "1급 2018.03.10 · 12번 · 리눅스 실무의 이해",
+    "question": "다음 중 저널링(Journaling) 기술의 특징으로 틀린 것은?",
+    "choices": [
+      "데이터를 디스크에 쓰기 전에 별도의 로그에 데이터를 남겨 놓는 기술이다.",
+      "저널링 기술이 적용된 파일시스템은 ext2, ext3, JFS, ReiserFS 등이 있다.",
+      "전원공급 문제나 시스템 오류와 같은 상황에 복구가 가능하다.",
+      "fsck로 복구하는 것보다 속도가 빠르고, 복구의 안정성도 뛰어나다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180310-013",
+    "source": "1급 2018.03.10 · 13번 · 리눅스 실무의 이해",
+    "question": "다음 중 LVM의 구성 요소에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "VG(Volume Group) : LV가 모여서 생성되는 하나의 큰 덩어리",
+      "PE(Physical Extent) : 실제 디스크에 물리적으로 분할한 파티션, /dev/sdb1, /dev/sdc1 등이 이에 해당",
+      "PV(Physical Volume) : Physical Extent에서 나누어 사용하는 일종의 블록 같은 영역, 보통 1PV가 4MB 정도씩 할당",
+      "LV(Logical Volume) : VG에서 사용자가 필요한 만큼 할당하여 만들어지는 공간, 물리적 디스크에서 분할하여 사용하는 파티션"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-014",
+    "source": "1급 2018.03.10 · 14번 · 리눅스 실무의 이해",
+    "question": "다음 중 셸(Shell)의 특징으로 알맞은 것은?",
+    "choices": [
+      "bash(배시 셸)는 TAB 키를 이용한 자동완성 기능을 제공한다.",
+      "사용자의 로그인 셸 정보는 /etc/passwd 파일의 6번째 필드에 기록되어 있다.",
+      "ksh(콘 셸)의 경우 히스토리 리스트 버퍼에 저장된 명령들은 위/아래 방향키를 사용하여 검색할 수 있다.",
+      "리눅스에서는 sh(본 셸)를 기본으로 bash(배시 셸)와 csh(C 셸) 계열의 장점만 결합한 ksh(콘 셸)을 표준으로 하고 있다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-018",
+    "source": "1급 2018.03.10 · 18번 · 리눅스 실무의 이해",
+    "question": "다음 중 IPv4 주소 체계와 비교해서 IPv6 주소 체계에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "주소 표시 공간이 32비트에서 64비트로 확장되면서 거의 무한에 가까운 주소를 제공한다.",
+      "IPv6 호스트는 네트워크에 접속하는 순간에 자동적으로 네트워크 주소를 할당받는다.",
+      "IPv4 헤더와 비교하여 헤더 구조가 단순화하여 전송 효율을 높일 수 있다.",
+      "흐름 제어 기능을 지원하는 필드인 플로 레이블을 도입해서 고품질의 서비스를 지원한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-020",
+    "source": "1급 2018.03.10 · 20번 · 리눅스 실무의 이해",
+    "question": "다음 중 설정된 IP 주소를 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "ip show",
+      "ip list",
+      "ip addr show",
+      "ip show addr"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-021",
+    "source": "1급 2018.03.10 · 21번 · 리눅스 시스템 관리",
+    "question": "다음 중 명령어와 설명으로 틀린 것은?",
+    "choices": [
+      "fdisk : 디스크 파티션을 확인하고 작업하는 명령어",
+      "mkfs : 파일시스템을 생성하는 명령어",
+      "mount : 현재 마운트를 확인하고 작업하는 명령어",
+      "eject : CD/DVD 장치를 마운트할 때 사용하는 명령어"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-023",
+    "source": "1급 2018.03.10 · 23번 · 리눅스 시스템 관리",
+    "question": "다음 중 top 명령어 실행 상태에서의 명령 설명으로 알맞지 않은 것은?",
+    "choices": [
+      "M : 프로세스의 RSS 값으로 정렬한다.",
+      "P : %CPU 값으로 정렬한다.",
+      "r : nice 값을 변경한다.",
+      "k : 화면 갱신하는 시간을 변경한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-038",
+    "source": "1급 2018.03.10 · 38번 · 리눅스 시스템 관리",
+    "question": "다음 중 root 사용자에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "슈퍼유저(Super User)라고도 불린다.",
+      "UID 값이 0이다.",
+      "su 명령어를 이용하여 다른 사용자로 전환할 수 있다.",
+      "/etc/hosts 파일에 사용자에 대한 기본 정보가 존재한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-041",
+    "source": "1급 2018.03.10 · 41번 · 리눅스 시스템 관리",
+    "question": "프린터를 병렬 포트에 연결했을 때 생성되는 장치 파일명으로 알맞은 것은?",
+    "choices": [
+      "/dev/sp0",
+      "/dev/sg0",
+      "/dev/lp0",
+      "/dev/sr0"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-043",
+    "source": "1급 2018.03.10 · 43번 · 리눅스 시스템 관리",
+    "question": "다음 중 커널 컴파일 단계에서 가장 마지막에 실행되는 명령으로 알맞은 것은?",
+    "choices": [
+      "make install",
+      "make bzImage",
+      "make mrproper",
+      "make menuconfig"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-048",
+    "source": "1급 2018.03.10 · 48번 · 리눅스 시스템 관리",
+    "question": "다음 중 커널 컴파일을 수행하기 전에 관련 도움말을 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "./configure --help",
+      "./make --help",
+      "make --help",
+      "make help"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-049",
+    "source": "1급 2018.03.10 · 49번 · 리눅스 시스템 관리",
+    "question": "'uname -r' 명령의 결과가 2.6.32-696.el6.i686이다. 다음 중 모듈 간의 의존성을 기록한 파일의 경로로 알맞은 것은?",
+    "choices": [
+      "/etc/modprobe.d/2.6.32-696.el6.i686/modules.dep",
+      "/usr/src/kernels/2.6.32-696.el6.i686/modules.dep",
+      "/lib/modules/2.6.32-696.el6.i686/modules.dep",
+      "/usr/local/src/2.6.32-696.el6.i686/modules.dep"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-051",
+    "source": "1급 2018.03.10 · 51번 · 리눅스 시스템 관리",
+    "question": "다음 중 rsync 명령에 관한 설명으로 틀린 것은?",
+    "choices": [
+      "네트워크로 연결된 원격지의 파일들을 동기화하는 유틸리티이다.",
+      "ssh나 rsh를 이용하여 전송 가능하고 root 권한이 필요 없다.",
+      "rcp에 비해 처리속도는 느리나 다양한 기능을 제공한다.",
+      "로컬 시스템 백업 시에는 별다른 서버 설정 없이 사용이 가능하다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-052",
+    "source": "1급 2018.03.10 · 52번 · 리눅스 시스템 관리",
+    "question": "다음 중 dd 명령어에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "파티션이나 디스크 단위로 백업할 때 사용한다.",
+      "많은 양의 데이터 작업에 대해 tar보다 빠르다.",
+      "디렉터리 단위로 데이터를 삭제할 때 사용한다.",
+      "사용자를 인증하고 접근을 제어할 때 사용한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-053",
+    "source": "1급 2018.03.10 · 53번 · 리눅스 시스템 관리",
+    "question": "SSH(Secure Shell)의 설명으로 틀린 것은?",
+    "choices": [
+      "원격복사(scp)를 지원한다.",
+      "안전한 파일전송(sftp)을 지원한다.",
+      "기본 사용 포트는 23이다.",
+      "rsh처럼 원격 셸을 지원한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-055",
+    "source": "1급 2018.03.10 · 55번 · 리눅스 시스템 관리",
+    "question": "다음 중 PAM(Pluggable Authentication Modules)의 구성 항목과 설명에 대해 알맞은 것은?",
+    "choices": [
+      "account : 생체인증과 같은 다른 인증을 통해 사용자를 판별한다.",
+      "auth : 사용자가 그들의 인증방법을 변경하기 위한 방법을 제공한다.",
+      "session : 사용자가 인증받기 전후에 해야 할 것을 나타낸다.",
+      "required : 사용자가 해당 서비스에 접근이 허용되는지 여부를 검사한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-056",
+    "source": "1급 2018.03.10 · 56번 · 리눅스 시스템 관리",
+    "question": "다음 중 가장 최근에 시스템이 재부팅된 정보를 하나만 출력하려 할 때 알맞은 명령은?",
+    "choices": [
+      "last -1 reboot",
+      "last -L 1 reboot",
+      "lastb -1 reboot",
+      "lastb -L 1 reboot"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-057",
+    "source": "1급 2018.03.10 · 57번 · 리눅스 시스템 관리",
+    "question": "다음 중 sudo에 관련된 설명이 아닌 것은?",
+    "choices": [
+      "특정 사용자 또는 특정 그룹에 root 사용자 권한을 가질 수 있게 하는 도구이다.",
+      "visudo는 환경설정파일을 편집할 때 사용하는 명령이다.",
+      "적용된 사용자는 'sudo 명령어' 형태로 실행하며 root 권한을 대행한다.",
+      "환경설정파일은 /etc/sudo 이다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-059",
+    "source": "1급 2018.03.10 · 59번 · 리눅스 시스템 관리",
+    "question": "다음 각 명령어와 관계있는 파일 연결이 틀린 것은?",
+    "choices": [
+      "last : /var/log/tmp",
+      "lastb : /var/log/btmp",
+      "lastlog : /var/log/lastlog",
+      "dmesg : /var/log/dmesg"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-062",
+    "source": "1급 2018.03.10 · 62번 · 네트워크 및 서비스의 활용",
+    "question": "웹 사이트에 접속하는 중 접근 금지 오류가 발생됐다. 다음 중 이에 해당하는 HTTP 상태 코드 번호로 알맞은 것은?",
+    "choices": [
+      "400",
+      "403",
+      "404",
+      "408"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180310-063",
+    "source": "1급 2018.03.10 · 63번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 LDAP 속성에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "sn : 조직(회사) 이름",
+      "ou : 조직의 부서 이름",
+      "dc : 도로명 주소(지번)",
+      "c : 주(우리나라의 도) 이름"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180310-064",
+    "source": "1급 2018.03.10 · 64번 · 네트워크 및 서비스의 활용",
+    "question": "NIS 서버를 구성하려고 한다. 다음 중 NIS에서 사용할 도메인을 재부팅 시에도 적용되도록 등록하기 위한 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/yp.conf",
+      "/etc/networks",
+      "/etc/ypserv.conf",
+      "/etc/sysconfig/network"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-065",
+    "source": "1급 2018.03.10 · 65번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 삼바(samba)에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "삼바는 GPL 기반의 자유소프트웨어이다.",
+      "삼바는 리눅스와 윈도우간 디렉터리 및 파일 공유 시 사용된다.",
+      "삼바는 3개의 데몬을 사용하는데 각 데몬 명은 smbd, nmbd, bmbd 이다.",
+      "삼바의 환경 설정 파일인 smb.conf 파일은 Global Setting과 Share Definitions의 영역으로 구분된다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-067",
+    "source": "1급 2018.03.10 · 67번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 PHP 5.3 이상 버전에서 파일 작성 시 사용되는 태그로 알맞은 것은?",
+    "choices": [
+      "<php ~ >",
+      "<!php ~ !>",
+      "<?php ~ ?>",
+      "<*php ~ *>"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-068",
+    "source": "1급 2018.03.10 · 68번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 smbclient 명령을 이용해 삼바(Samba) 서버의 공유 디렉터리 정보를 확인하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-L",
+      "-M",
+      "-N",
+      "-U"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-069",
+    "source": "1급 2018.03.10 · 69번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 메일 서버 역할(MTA)을 수행하는 프로그램으로 틀린 것은?",
+    "choices": [
+      "kmail",
+      "qmail",
+      "postfix",
+      "sendmail"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-070",
+    "source": "1급 2018.03.10 · 70번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 /etc/aliases의 정보를 읽어 들여 관련 DB 정보를 업데이트 하는 명령으로 알맞은 것은?",
+    "choices": [
+      "mailq -Ac",
+      "sendmail -bi",
+      "sendmail -bp",
+      "sendmail -bp -oQ"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180310-071",
+    "source": "1급 2018.03.10 · 71번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DNS 구성을 위한 named.conf 파일의 설명으로 틀린 것은?",
+    "choices": [
+      "주석은 유닉스계열에서 사용하는 \"#\"으로만 사용할 수 있다.",
+      "include 지시자를 선언하여 별도의 파일에 추가 정의할 수 있다.",
+      "named.conf 파일의 구성은 크게 주석문과 구문으로 구성되어 있다.",
+      "각 구문은 중괄호 \"{ }\"로 둘러싸고 끝날 때는 세미콜론 \";\"을 사용한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-072",
+    "source": "1급 2018.03.10 · 72번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DNS(Domain Name Server) 서버에서 Zone 파일 정의를 위한 SOA 레코드 항목으로 틀린 것은?",
+    "choices": [
+      "Serial_number",
+      "Retry_number",
+      "Expire_number",
+      "Maxinum_number"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-073",
+    "source": "1급 2018.03.10 · 73번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 리버스 존(Reverse zone) 파일에서만 사용되는 레코드 타입으로 알맞은 것은?",
+    "choices": [
+      "A",
+      "NS",
+      "CNAME",
+      "PTR"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-076",
+    "source": "1급 2018.03.10 · 76번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 네트워크 기반의 인증 관련 서비스로 틀린 것은?",
+    "choices": [
+      "NIS",
+      "SSL",
+      "LDAP",
+      "Active Directory"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180310-079",
+    "source": "1급 2018.03.10 · 79번 · 네트워크 및 서비스의 활용",
+    "question": "FTP 서버 구성 후 /etc/hosts.allow와 /etc/hosts.deny 파일을 이용한 접근제어를 설정하려고 한다. 다음 중 vsftpd.conf 파일에 수정되어야 할 항목으로 알맞은 것은?",
+    "choices": [
+      "tcp_wrappers",
+      "userlist_enable",
+      "session_support",
+      "pam_service_name"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-084",
+    "source": "1급 2018.03.10 · 84번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 가상화의 기능에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "공유(Sharing) : 다수의 많은 가상 자원들이 하나의 동일한 물리적 자원과 연결되어 있거나 가리키는 것을 말한다.",
+      "단일화(Aggregation) : 사용자는 마치 자기가 해당 자원을 혼자서만 사용하는 것과 같은 착각을 하게 해주는 것",
+      "에뮬레이션(Emulation) : 물리적 자원 자체에는 원래부터 존재하지 않았지만 가상 자원에는 어떤 기능들이나 특성들을 마치 처음부터 존재했던 것처럼 가질 수 있다.",
+      "절연(Insulation) : 가상화 자원들 또는 가상화 자원들을 사용하는 사용자에게 아무런 영향을 미치지 않으면서 물리적인 자원들이 교체될 수 있도록 해준다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180310-088",
+    "source": "1급 2018.03.10 · 88번 · 네트워크 및 서비스의 활용",
+    "question": "DHCP 서버를 구성해 클라이언트에 192.168.0.2 부터 192.168.0.254까지 IP를 할당하려고 한다. 다음 중 dhcpd.conf 파일에 설정되는 옵션으로 알맞은 것은?",
+    "choices": [
+      "range 192.168.0.2 192.168.0.254;",
+      "range 192.168.0.2-192.148.0.254;",
+      "range 192.168.0.2, 192.168.0.254;",
+      "range 192.168.0.2~192.168.0.254;"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180310-089",
+    "source": "1급 2018.03.10 · 89번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 VNC 서버에서 해상도를 변경하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/vnc.conf",
+      "/etc/vncservers",
+      "/etc/sysconfig/vnc.conf",
+      "/etc/sysconfig/vncservers"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180310-090",
+    "source": "1급 2018.03.10 · 90번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NTP에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "NTP란 컴퓨터간 시간을 동기화 하는데 사용되는 프로토콜이다.",
+      "NTP 서버를 이용해서 시간을 동기화 할 때 사용하는 명령어는 ntpdate이다.",
+      "NTP 서버는 여러 계층으로 구성되는데, 각 계층을 나타내는 용어로 Class를 사용한다.",
+      "NTP 서버를 등록하기 위해서는 환경 설정 파일인 /etc/ntp.conf 내에서 등록할 수 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-096",
+    "source": "1급 2018.03.10 · 96번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 ssh 포트로 들어오는 공격을 막기 위해 사용 가능한 보안 도구로 틀린 것은?",
+    "choices": [
+      "iptables",
+      "Tripwire",
+      "fail2ban",
+      "TCP wrapper"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180310-098",
+    "source": "1급 2018.03.10 · 98번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 성능 향상을 위한 TOS(Type of Service) 설정과 같이 패킷 데이터를 변경하는 특수 규칙을 적용하는 iptables의 테이블로 알맞은 것은?",
+    "choices": [
+      "filter",
+      "nat",
+      "mangle",
+      "raw"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180310-099",
+    "source": "1급 2018.03.10 · 99번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 나머지 셋과 다른 유형의 공격도구로 알맞은 것은?",
+    "choices": [
+      "Crypolocker",
+      "Stacheldraht",
+      "Trinoo",
+      "TFN"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-001",
+    "source": "1급 2018.09.08 · 1번 · 리눅스 실무의 이해",
+    "question": "다음 중 관련 라이선스가 적용된 소스코드를 수정하여 만든 2차적 저작물에 대해 소스코드의 비공개가 가능한 라이선스로 틀린 것은?",
+    "choices": [
+      "BSD",
+      "Apache License",
+      "MPL",
+      "MIT"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-002",
+    "source": "1급 2018.09.08 · 2번 · 리눅스 실무의 이해",
+    "question": "다음에 제시된 운영체제 관련 기술 중 하드디스크 공간의 효율성을 높여준 기술로 가장 알맞은 것은?",
+    "choices": [
+      "라이브러리",
+      "가상 메모리",
+      "가상 콘솔",
+      "파이프"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-003",
+    "source": "1급 2018.09.08 · 3번 · 리눅스 실무의 이해",
+    "question": "다음 중 레드햇 계열에 속하는 리눅스 배포판으로 틀린 것은?",
+    "choices": [
+      "CentOS",
+      "Scientific Linux",
+      "Vector Linux",
+      "Oracle Linux"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-005",
+    "source": "1급 2018.09.08 · 5번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스를 활용해서 고성능의 계산 능력이 제공되도록 시스템을 구성할 때 가장 알맞은 것은?",
+    "choices": [
+      "Embedded System",
+      "High Availability Cluster",
+      "Linux Virtual Server Cluster",
+      "High Performance Computing Cluster"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180908-009",
+    "source": "1급 2018.09.08 · 9번 · 리눅스 실무의 이해",
+    "question": "다음 중 X윈도에 관한 설명으로 틀린 것은?",
+    "choices": [
+      "현재 리눅스를 비롯하여 유닉스 대부분이 XFree86 기반의 X윈도 시스템을 사용하고 있다.",
+      "디스플레이 장치에 의존적이지 않고 서로 다른 이 기종을 함께 사용할 수 있다.",
+      "윈도 매니저는 X윈도 환경에서 윈도의 배치와 표현을 담당하는 시스템 소프트웨어이다.",
+      "X윈도는 서버와 클라이언트가 독립적으로 동작하는 네트워크 지향 시스템이다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-010",
+    "source": "1급 2018.09.08 · 10번 · 리눅스 실무의 이해",
+    "question": "다음 중 /etc/rc.d/rc.local 파일에 관한 설명으로 알맞은 것은?",
+    "choices": [
+      "부팅과 관련된 실행 레벨이 정의되어 있다.",
+      "시스템 초기화와 관련된 내용이 설정되어 있다.",
+      "부팅 시 각 레벨별로 진행되는 내용이 설정된 파일이다.",
+      "실행 레벨 2, 3, 5에서 가장 마지막에 실행되는 파일이다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180908-012",
+    "source": "1급 2018.09.08 · 12번 · 리눅스 실무의 이해",
+    "question": "다음 중 프로세스에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "실행(executing)중인 프로그램을 말한다.",
+      "PCB(Process Control Block)를 지닌 프로그램을 말한다.",
+      "사용자가 실행한 프로세스는 중간에 중지시킬 수 없다.",
+      "백그라운드 프로세스와 포어그라운드 프로세스로 나눌 수 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-014",
+    "source": "1급 2018.09.08 · 14번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스에 관한 설명으로 틀린 것은?",
+    "choices": [
+      "최근 리눅스 운영체제는 SSD(Solid State Drive)를 지원한다.",
+      "리눅스는 이더넷(ethernet) 등 대부분의 네트워크 인터페이스를 지원한다.",
+      "최근 64비트 리눅스 운영체제는 물리적 메모리 용량을 16GB 까지 지원한다.",
+      "대부분 리눅스 배포판에서는 인텔사의 x86 계열 CPU를 기본적으로 지원한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-015",
+    "source": "1급 2018.09.08 · 15번 · 리눅스 실무의 이해",
+    "question": "다음 중 시그널(Signal)에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "SIGKILL은 터미널이 시작될 때 보내오는 시그널이다.",
+      "SIGINT는 키보드로부터 오는 인터럽트 시그널로 실행을 중지시킨다.",
+      "SIGQUIT는 터미널에서 입력된 정지 시그널로 [CTRL]+[c] 입력시 보내진다.",
+      "SIGSTOP은 실행 정지 후 다시 실행하기 위해 대기시키는 시그널이다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180908-016",
+    "source": "1급 2018.09.08 · 16번 · 리눅스 실무의 이해",
+    "question": "다음 중 OSI 7 계층의 하위 계층부터 상위 계층 순으로 사용하는 전송 단위를 알맞게 나열한 것은?",
+    "choices": [
+      "bit-frame-packet-segment-data",
+      "bit-frame-segment-packet-data",
+      "data-segment-packet-frame-bit",
+      "data-packet-segment-frame-bit"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-017",
+    "source": "1급 2018.09.08 · 17번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스 시스템에 설정된 게이트웨이의 주소 값을 확인하는 명령으로 틀린 것은?",
+    "choices": [
+      "ip",
+      "route",
+      "ethtool",
+      "netstat"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-025",
+    "source": "1급 2018.09.08 · 25번 · 리눅스 시스템 관리",
+    "question": "다음 중 프로세스의 우선순위를 변경할 때 사용하는 명령으로 틀린 것은?",
+    "choices": [
+      "top",
+      "jobs",
+      "nice",
+      "renice"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180908-027",
+    "source": "1급 2018.09.08 · 27번 · 리눅스 시스템 관리",
+    "question": "다음 중 사용자 추가할 때 할당되는 UID의 값을 1000번부터 부여되도록 지정할 때 설정하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/skel",
+      "/etc/shadow",
+      "/etc/login.defs",
+      "/etc/default/useradd"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-031",
+    "source": "1급 2018.09.08 · 31번 · 리눅스 시스템 관리",
+    "question": "다음 중 시스템 전체에서 Set-UID가 설정된 파일을 전부 찾는 명령으로 알맞은 것은?",
+    "choices": [
+      "find / -type f -perm 4000",
+      "find / -type f -perm -4000",
+      "find / -type -f -perm 4000",
+      "find / -type -f -perm -4000"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180908-033",
+    "source": "1급 2018.09.08 · 33번 · 리눅스 시스템 관리",
+    "question": "다음 중 yum을 이용해서 telnet-server 패키지를 제거하는 명령으로 알맞은 것은?",
+    "choices": [
+      "yum erase telnet-server",
+      "yum eliminate telnet-server",
+      "yum delete telnet-server",
+      "yum remove telnet-server"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180908-035",
+    "source": "1급 2018.09.08 · 35번 · 리눅스 시스템 관리",
+    "question": "다음 중 백그라운드로 실행중인 프로세스나 현재 중지된 프로세스의 목록을 확인할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "bg",
+      "fg",
+      "jobs",
+      "pgrep"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-036",
+    "source": "1급 2018.09.08 · 36번 · 리눅스 시스템 관리",
+    "question": "다음 중 httpd와 같이 프로세스 이름을 인자값으로 사용하는 명령으로 틀린 것은?",
+    "choices": [
+      "kill",
+      "killall",
+      "pkill",
+      "nice"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-037",
+    "source": "1급 2018.09.08 · 37번 · 리눅스 시스템 관리",
+    "question": "다음 중 Change Time과 같이 파일에 대한 시간 관련 정보인 타임스탬프(Timestamp) 정보를 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "ls",
+      "info",
+      "stat",
+      "touch"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-038",
+    "source": "1급 2018.09.08 · 38번 · 리눅스 시스템 관리",
+    "question": "다음 중 파일 시스템을 검사하여 aquota.user와 같은 quota 기록 파일을 생성하는 명령으로 알맞은 것은?",
+    "choices": [
+      "quota",
+      "edquota",
+      "repquota",
+      "quotacheck"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180908-040",
+    "source": "1급 2018.09.08 · 40번 · 리눅스 시스템 관리",
+    "question": "다음 설명 중 올바른 root 사용자 관리 기법으로 틀린 것은?",
+    "choices": [
+      "무의미하게 장시간 로그인되어 있지 않도록 한다.",
+      "root 이외에 UID가 0인 사용자 하나를 추가로 생성한다.",
+      "ssh로 접근 시에 root로 직접 로그인되는 것을 막는다.",
+      "PAM(Pluggable Authentication Modules)을 이용해서 접근을 제어한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180908-041",
+    "source": "1급 2018.09.08 · 41번 · 리눅스 시스템 관리",
+    "question": "다음 중 리눅스 커널에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "리눅스에서 커널은 시스템 자원을 소유하고 관리하는 역할을 담당한다.",
+      "리눅스 커널 버전 확인은 'uname -r' 명령으로 할 수 있다.",
+      "프로그램이 하드웨어 자원을 직접적으로 접근할 수 있도록 해준다.",
+      "커널 컴파일은 커널 소스를 이용하여 시스템에 최적화된 커널을 만드는 과정이다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-042",
+    "source": "1급 2018.09.08 · 42번 · 리눅스 시스템 관리",
+    "question": "다음 중 셸에서 example.txt 파일을 프린터로 출력하는 명령으로 알맞은 것은?",
+    "choices": [
+      "lp -d example.txt",
+      "lpstat -p example.txt",
+      "pr example.txt <printer",
+      "cat example.txt >/dev/lp0"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180908-043",
+    "source": "1급 2018.09.08 · 43번 · 리눅스 시스템 관리",
+    "question": "다음 중 프린트 관련 명령어에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "리눅스에서 프린트 관련 명령어는 BSD계열과 System V계열로 나눌 수 있다.",
+      "BSD계열 명령어는 lp, lpc 등이 있다.",
+      "System V계열 명령어에는 lpstat, cancel 등이 있다.",
+      "대부분의 배포판에서는 이 두 계열의 명령어를 모두 지원한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180908-045",
+    "source": "1급 2018.09.08 · 45번 · 리눅스 시스템 관리",
+    "question": "다음 중 모듈 간의 의존성을 기록한 파일로 알맞은 것은?",
+    "choices": [
+      "modules.dep",
+      "modules.ko",
+      "modules.conf",
+      "modules.info"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-046",
+    "source": "1급 2018.09.08 · 46번 · 리눅스 시스템 관리",
+    "question": "다음 중 리눅스에서 프린터를 지원해주는 인쇄 시스템 조합으로 알맞은 것은?",
+    "choices": [
+      "CUPS, LPRng",
+      "LPRng, ALSA",
+      "ALSA, SANE",
+      "SANE, CUPS"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-047",
+    "source": "1급 2018.09.08 · 47번 · 리눅스 시스템 관리",
+    "question": "다음 중 모듈에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "리눅스에서 커널 모듈은 필요에 따라 커널 이미지에 합류시키거나 해제할 수 있다.",
+      "모듈 방식은 새로운 장치가 추가될 때마다 커널을 새롭게 만들어야 할 필요가 있다.",
+      "insmod 명령은 커널에 모듈을 적재하는 명령으로 자동으로 검색하고 삽입한다.",
+      "rmmod 명령은 커널에서 모듈을 제거하는 명령으로 사용 중인 모듈은 제거할 수 없다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180908-048",
+    "source": "1급 2018.09.08 · 48번 · 리눅스 시스템 관리",
+    "question": "다음 중 리눅스 시스템에 하드디스크를 추가하여 이용하는 과정에서 사용되는 명령으로 틀린 것은?",
+    "choices": [
+      "mount",
+      "mkfs",
+      "fdisk",
+      "backup"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180908-049",
+    "source": "1급 2018.09.08 · 49번 · 리눅스 시스템 관리",
+    "question": "다음 중 리눅스에서 사운드 카드용 장치에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "alsamixer는 오디오CD에서 wav파일로 추출하거나 재생할 때 사용하는 프로그램이다.",
+      "ALSA는 사운드 카드를 자동으로 구성하게 하고 다수의 사운드 장치 관리를 목적으로 한다.",
+      "OSS는 표준 유닉스 장치 시스템콜(POSIX read, write, ioctl 등)에 기반을 두고 있다.",
+      "alsactl 명령은 ALSA 사운드 카드를 초기화 하거나 정보를 환경설정파일에 저장할 수 있다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-050",
+    "source": "1급 2018.09.08 · 50번 · 리눅스 시스템 관리",
+    "question": "다음 중 scanadf 명령에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "스캐너, 디지털카메라, 디지털캠 등 다양한 장치에서 사용가능하다.",
+      "사용가능한 SCSI 및 USB스캐너를 찾아 자세한 정보를 출력할 때 사용하는 명령이다.",
+      "자동문서공급장치가 장착된 스캐너에서 여러 개의 사진을 스캔할 때 사용하는 명령이다.",
+      "GUI 기반으로 평판 스캐너나 카메라로부터 이미지를 스캔해주는 명령이다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-052",
+    "source": "1급 2018.09.08 · 52번 · 리눅스 시스템 관리",
+    "question": "다음 중 인증 관련 로그를 ihduser 사용자의 터미널에 나타나도록 rsyslog.conf 파일에 설정하는 내용으로 알맞은 것은?",
+    "choices": [
+      "authpriv.* ihduser",
+      "authpriv.* @ihduser",
+      "@ihduser authpriv.*",
+      "ihduser authpriv.*"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-058",
+    "source": "1급 2018.09.08 · 58번 · 리눅스 시스템 관리",
+    "question": "다음 중 재부팅(reboot)한 기록을 가장 쉽게 확인할 수 있는 명령으로 알맞은 것은?",
+    "choices": [
+      "last",
+      "lastb",
+      "lastlog",
+      "dmesg"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-059",
+    "source": "1급 2018.09.08 · 59번 · 리눅스 시스템 관리",
+    "question": "다음 중 vi 편집기를 사용하여 편집이 가능한 로그 파일로 알맞은 것은?",
+    "choices": [
+      "wtmp",
+      "secure",
+      "lastlog",
+      "btmp"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180908-066",
+    "source": "1급 2018.09.08 · 66번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 터미널 환경에서 가상 머신만을 대상으로 CPU 자원을 모니터링할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "virsh",
+      "vtop",
+      "virt-top",
+      "virt-manager"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-070",
+    "source": "1급 2018.09.08 · 70번 · 네트워크 및 서비스의 활용",
+    "question": "PHP 5.6 버전의 소스 파일을 다운로드하여 configure 작업을 진행하려고 한다. 다음 중 php.ini 파일의 경로를 지정하는 configure의 옵션으로 알맞은 것은?",
+    "choices": [
+      "--enable-config-file-path",
+      "--disable-config-file-path",
+      "--with-config-file-path",
+      "--prefix-config-file-path"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-071",
+    "source": "1급 2018.09.08 · 71번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS 서버 구성 시에 반드시 구동해야할 데몬으로 가장 거리가 먼 것은?",
+    "choices": [
+      "yppasswdd",
+      "ypxfrd",
+      "ypbind",
+      "rpcbind"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-074",
+    "source": "1급 2018.09.08 · 74번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NFS 클라이언트에서 NFS 서버에 익스포트(export)된 정보를 확인할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "rpcinfo",
+      "exportfs",
+      "showmount",
+      "nfsstat"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-075",
+    "source": "1급 2018.09.08 · 75번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 ihduser 사용자가 회사로 들어오는 메일을 외부의 다른 메일 서버로 전송하려고 할 때 가장 알맞은 것은?",
+    "choices": [
+      "/etc/aliases 파일에 관련 정보를 등록한다.",
+      "mailq 명령을 사용해서 관련 정보를 등록한다.",
+      "/etc/mail/virtusertable에 관련 정보를 등록한다.",
+      "홈 디렉터리에 .forward 파일을 생성하여 등록한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180908-078",
+    "source": "1급 2018.09.08 · 78번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DNS 서버 구성시에 리버스 존(Reverse zone) 파일을 생성하지 않았을 경우에 발생하는 가장 큰 문제점으로 알맞은 것은?",
+    "choices": [
+      "도메인에 대한 IP 주소 조회가 불가능하다.",
+      "IP 주소에 대한 도메인 조회가 불가능하다.",
+      "도메인을 사용해서 메일을 보낼 수가 없게 된다.",
+      "도메인을 사용해서 메일을 받을 수가 없게 된다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180908-081",
+    "source": "1급 2018.09.08 · 81번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 CentOS 6.9 버전에서 가상화 서비스 운영을 위해 관련 데몬을 실행하는 명령으로 알맞은 것은?",
+    "choices": [
+      "service libvirt start",
+      "service libvirtd start",
+      "service libvirt-daemon start",
+      "service virt-manager start"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20180908-082",
+    "source": "1급 2018.09.08 · 82번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 네트워크 서비스 종류가 다른 것은?",
+    "choices": [
+      "NFS",
+      "NIS",
+      "LDAP",
+      "Active Directory"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20180908-084",
+    "source": "1급 2018.09.08 · 84번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 vsftpd 패키지 설치 시에 생성되는 /etc/vsftpd/ftpusers 파일의 역할에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "원격지에서 접근할 수 있는 호스트의 IP 주소가 기입되어 있다.",
+      "원격지에서 접근할 수 없는 호스트의 IP 주소가 기입되어 있다.",
+      "서버로 접근할 수 있는 사용자의 계정이 기입되어 있다.",
+      "서버로 접근할 수 없는 사용자의 계정이 기입되어 있다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180908-086",
+    "source": "1급 2018.09.08 · 86번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 IMAP 및 POP3 서버로 사용되는 프로그램으로 알맞은 것은?",
+    "choices": [
+      "qmail",
+      "evolution",
+      "dovecot",
+      "postfix"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-089",
+    "source": "1급 2018.09.08 · 89번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 zone 파일이 위치하는 디렉터리로 가장 알맞은 것은?",
+    "choices": [
+      "/etc/named",
+      "/etc/named/chroot",
+      "/var/named",
+      "/var/named/chroot"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-091",
+    "source": "1급 2018.09.08 · 91번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 버추얼박스(VirtualBox)가 지원하는 디스크 이미지 형식으로 틀린 것은?",
+    "choices": [
+      "VDI",
+      "VHD",
+      "VMC",
+      "VMDK"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-092",
+    "source": "1급 2018.09.08 · 92번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 xinetd 데몬으로 관리하면 최적인 네트워크 서비스의 유형으로 가장 알맞은 것은?",
+    "choices": [
+      "사용자가 많고 빠른 응답이 요구되는 서비스",
+      "사용자는 적으나 빠른 응답이 요구되는 서비스",
+      "사용자는 많으나 빠른 응답이 요구되지 않는 서비스",
+      "사용자가 많지 않고 빠른 응답도 요구되지 않는 서비스"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20180908-093",
+    "source": "1급 2018.09.08 · 93번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 VNC 서버에 접근할 때 사용할 패스워드를 설정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "vncserver",
+      "vncconfig",
+      "vncpasswd",
+      "Xvnc"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-096",
+    "source": "1급 2018.09.08 · 96번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 iptables를 이용하여 192.168.10.11로부터 들어오는 패킷을 차단하는 정책을 추가하려고 할 때 알맞은 것은?",
+    "choices": [
+      "iptables -I INPUT 192.168.10.11 -j ACCEPT",
+      "iptables -I FORWARD 192.168.10.11 -j ACCEPT",
+      "iptables -A INPUT 192.168.10.11 -j DROP",
+      "iptables -A FORWARD 192.168.10.11 -j DROP"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20180908-100",
+    "source": "1급 2018.09.08 · 100번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DoS(Denial of Service)공격의 분류로 틀린 것은?",
+    "choices": [
+      "파괴 공격",
+      "사운드 자원 고갈 공격",
+      "시스템 자원 고갈 공격",
+      "네트워크 자원 고갈 공격"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-001",
+    "source": "1급 2019.03.16 · 1번 · 리눅스 실무의 이해",
+    "question": "다음 중 배포된 리눅스의 순서가 초기부터 최근 순으로 알맞게 나열된 것은?",
+    "choices": [
+      "SLS - SUSE - Slackware",
+      "SLS - Slackware - SUSE",
+      "Ubuntu - Debian - SLS",
+      "Debian - Ubuntu - SLS"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-007",
+    "source": "1급 2019.03.16 · 7번 · 리눅스 실무의 이해",
+    "question": "다음 중 6개의 하드디스크로 여분(spare)없이 RAID-6를 구성하는 경우, 실제 사용 가능한 디스크의 비율로 가장 알맞은 것은?",
+    "choices": [
+      "33.3%",
+      "50%",
+      "66.7%",
+      "83.3%"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-008",
+    "source": "1급 2019.03.16 · 8번 · 리눅스 실무의 이해",
+    "question": "다음 중 시그널(signal)이 발생하는 키 조합으로 틀린 것은?",
+    "choices": [
+      "[ctrl]+[c]",
+      "[ctrl]+[d]",
+      "[ctrl]+[z]",
+      "[ctrl]+[\\]"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-010",
+    "source": "1급 2019.03.16 · 10번 · 리눅스 실무의 이해",
+    "question": "다음 중 원격지에서 X 클라이언트를 이용하기 위한 설정을 사용자 기반의 키 인증을 진행할 때 사용하는 명령어와 관련 파일의 조합으로 알맞은 것은?",
+    "choices": [
+      "명령어: xhost, 관련 파일: .authorized_keys",
+      "명령어: xhost, 관련 파일: .Xauthority",
+      "명령어: xauth, 관련 파일: .authorized_keys",
+      "명령어: xauth, 관련 파일: .Xauthority"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-014",
+    "source": "1급 2019.03.16 · 14번 · 리눅스 실무의 이해",
+    "question": "다음 중 최근 입력한 명령어 5개를 출력하는 명령으로 알맞은 것은?",
+    "choices": [
+      "!5",
+      "!-5",
+      "history 5",
+      "history -5"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-015",
+    "source": "1급 2019.03.16 · 15번 · 리눅스 실무의 이해",
+    "question": "다음 중 X 관련 프로그램의 종류가 나머지 셋과 다른 것은?",
+    "choices": [
+      "Xfce",
+      "KWin",
+      "Metacity",
+      "Mutter"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-016",
+    "source": "1급 2019.03.16 · 16번 · 리눅스 실무의 이해",
+    "question": "다음 중 /etc/sysconfig/network-scripts/ifcfg-eth0 파일에 기록할 수 있는 설정 값으로 틀린 것은?",
+    "choices": [
+      "DNS1",
+      "NAME",
+      "PEERDNS",
+      "NETWORKING"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-018",
+    "source": "1급 2019.03.16 · 18번 · 리눅스 실무의 이해",
+    "question": "다음 중 도메인에 관한 설명으로 틀린 것은?",
+    "choices": [
+      "도메인은 역트리(Tree) 형태의 계층적 구조로 되어 있다.",
+      "도메인 네임은 국제인터넷 주소자원 관리 기관인 W3C에서 관리하고 있다.",
+      "최상위 도메인은 일반 최상위 도메인과 국가 코드 최상위 도메인으로 구분된다.",
+      "도메인 네임 시스템이 등장하기 이전에는 /etc/hosts 파일을 사용하여 IP주소를 매핑하였다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-019",
+    "source": "1급 2019.03.16 · 19번 · 리눅스 실무의 이해",
+    "question": "다음 중 OSI 7 계층에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "물리 계층은 상위 계층에서 전송된 데이터를 물리적인 전송 매체를 통해 전송 단위를 바이트(bytes) 형태로 전송한다.",
+      "전송 계층은 송신 프로세스와 수신 프로세스 간의 연결(connection) 기능을 제공하고 안전한 데이터 전송을 지원한다.",
+      "네트워크 계층은 데이터를 패킷(packet) 단위로 분할하여 전송하며 데이터 전송과 경로 선택에 관한 서비스를 제공한다.",
+      "데이터링크 계층은 상위 계층인 네트워크 계층에서 받은 데이터를 프레임(frame)이라는 논리적인 단위로 구성하고 필요한 정보를 덧붙여 물리 계층으로 전달한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-020",
+    "source": "1급 2019.03.16 · 20번 · 리눅스 실무의 이해",
+    "question": "다음 중 ihduser 사용자가 cron 작업을 등록했을 때 생성되는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/cron/ihduser",
+      "/etc/cron.d/ihduser",
+      "/var/cron.d/ihduser",
+      "/var/spool/cron/ihduser"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-024",
+    "source": "1급 2019.03.16 · 24번 · 리눅스 시스템 관리",
+    "question": "다음 중 1주일에 3회 실행되는 crontab 설정으로 알맞은 것은?",
+    "choices": [
+      "1,3,5 0 * * 0 /etc/work.sh",
+      "0 1,3,5 * * 0 /etc/work.sh",
+      "0 * * 1,3,5 0 /etc/work.sh",
+      "0 0 * * 1,3,5 /etc/work.sh"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-027",
+    "source": "1급 2019.03.16 · 27번 · 리눅스 시스템 관리",
+    "question": "다음 중 사용자의 패스워드에 적용되는 해시 알고리즘의 이름을 확인할 수 있는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/passwd",
+      "/etc/shadow",
+      "/etc/login.defs",
+      "/etc/default/useradd"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-029",
+    "source": "1급 2019.03.16 · 29번 · 리눅스 시스템 관리",
+    "question": "다음 중 30행인 lin.txt 파일에서 11번째 행부터 20번째 행까지만 출력하는 명령으로 알맞은 것은?",
+    "choices": [
+      "head -n 11 lin.txt | tail",
+      "head -n 20 lin.txt | tail",
+      "tail -n 10 lin.txt | head",
+      "tail -n 11 lin.txt | head"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-033",
+    "source": "1급 2019.03.16 · 33번 · 리눅스 시스템 관리",
+    "question": "find 명령이 실행 중인 상태이다. 다음 중 이 명령을 계속 실행하면서 다른 작업을 수행하기 위한 과정으로 알맞은 것은?",
+    "choices": [
+      "[ctrl]+[d]를 누른 후에 bg 명령을 실행한다.",
+      "[ctrl]+[d]를 누른 후에 fg 명령을 실행한다.",
+      "[ctrl]+[z]를 누른 후에 bg 명령을 실행한다.",
+      "[ctrl]+[z]를 누른 후에 fg 명령을 실행한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-034",
+    "source": "1급 2019.03.16 · 34번 · 리눅스 시스템 관리",
+    "question": "다음 중 데비안 패키지 관리 기법으로 거리가 먼 것은?",
+    "choices": [
+      "dselect",
+      "zypper",
+      "synaptic",
+      "aptitude"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-035",
+    "source": "1급 2019.03.16 · 35번 · 리눅스 시스템 관리",
+    "question": "다음 중 압축의 효율성이 좋은 프로그램부터 알맞게 나열된 것은?",
+    "choices": [
+      "gzip > bzip2 > xz",
+      "bzip2 > gzip > xz",
+      "xz > gzip > bzip2",
+      "xz > bzip2 > gzip"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-036",
+    "source": "1급 2019.03.16 · 36번 · 리눅스 시스템 관리",
+    "question": "다음 중 사용자 쿼터를 이용하기 위해 /etc/fstab 파일에 등록하는 설정 값으로 알맞은 것은?",
+    "choices": [
+      "quota.user",
+      "aquota.user",
+      "usrquota",
+      "userquota"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-037",
+    "source": "1급 2019.03.16 · 37번 · 리눅스 시스템 관리",
+    "question": "다음 중 분할된 디스크의 파티션 별로 사용량을 확인하는 명령은?",
+    "choices": [
+      "du",
+      "df",
+      "free",
+      "blkid"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-043",
+    "source": "1급 2019.03.16 · 43번 · 리눅스 시스템 관리",
+    "question": "다음 중 사용 가능한 모듈 목록을 출력할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "lsmod",
+      "depmod",
+      "modinfo",
+      "modprobe"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-045",
+    "source": "1급 2019.03.16 · 45번 · 리눅스 시스템 관리",
+    "question": "다음 중 프린터 관련 프로토콜인 IPP(Internet Printing Protocol)가 사용하는 포트번호로 알맞은 것은?",
+    "choices": [
+      "92",
+      "631",
+      "3096",
+      "3396"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-046",
+    "source": "1급 2019.03.16 · 46번 · 리눅스 시스템 관리",
+    "question": "다음 중 CentOS 6 버전에서 X 윈도 기반의 프린터 설정 도구를 실행하는 명령으로 알맞은 것은?",
+    "choices": [
+      "printconf",
+      "printtool",
+      "redhat-config-printer",
+      "system-config-printer"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-047",
+    "source": "1급 2019.03.16 · 47번 · 리눅스 시스템 관리",
+    "question": "다음 중 파일의 내용을 출력할 때 사용하는 명령어의 조합으로 알맞은 것은?",
+    "choices": [
+      "lp, lpr",
+      "lp, lpq",
+      "lpr, lpq",
+      "lpr, lpstat"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-048",
+    "source": "1급 2019.03.16 · 48번 · 리눅스 시스템 관리",
+    "question": "다음 중 리눅스에서 사용하는 프린팅 시스템의 조합으로 알맞은 것은?",
+    "choices": [
+      "CUPS, ALSA",
+      "CUPS, LPRng",
+      "LPRng, ALSA",
+      "LPRng, SANE"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-049",
+    "source": "1급 2019.03.16 · 49번 · 리눅스 시스템 관리",
+    "question": "다음 중 X 윈도 환경에서만 사용 가능한 커널 컴파일 도구로 알맞은 것은?",
+    "choices": [
+      "make config",
+      "make nconfig",
+      "make gconfig",
+      "make menuconfig"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-050",
+    "source": "1급 2019.03.16 · 50번 · 리눅스 시스템 관리",
+    "question": "다음 중 사운드카드를 제어하는 명령으로 알맞은 것은?",
+    "choices": [
+      "oss",
+      "xsane",
+      "alsactl",
+      "cdparanoia"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-051",
+    "source": "1급 2019.03.16 · 51번 · 리눅스 시스템 관리",
+    "question": "다음 중 시스템 백업에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "tar, cpio와 같은 유틸리티는 증분백업이 가능하다.",
+      "리눅스에서는 tar, dd, dump, cpio, rsync와 같은 유틸리티로 백업이 가능하다.",
+      "백업의 종류에는 전체 백업(Full Backup)과 부분 백업(Partial Backup)으로 구분된다.",
+      "부분 백업은 증분백업(Incremental Backup)과 차등 백업(Differential Backup)으로 구분된다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-053",
+    "source": "1급 2019.03.16 · 53번 · 리눅스 시스템 관리",
+    "question": "다음 중 로그 관련 파일의 설명으로 알맞은 것은?",
+    "choices": [
+      "/var/log/xferlog : FTP 접속과 관련된 작업이 기록된 파일",
+      "/var/log/lastlog : 시스템이 부팅할 때 출력되었던 로그들이 기록된 파일",
+      "/var/log/wtmp : 콘솔, telnet, ftp 등으로 접속이 실패한 경우가 기록된 파일",
+      "/var/log/btmp : 콘솔, telnet, ftp 등으로 접속한 사용자 기록, 시스템을 재부팅한 기록 등의 로그가 쌓이는 파일"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-054",
+    "source": "1급 2019.03.16 · 54번 · 리눅스 시스템 관리",
+    "question": "서버의 커널 변수를 제어하여 TCP 연결 상태를 3시간 동안 유지하도록 변경하려고 한다. 다음 중 커널 변수 값을 설정하기 위한 명령으로 알맞은 것은?",
+    "choices": [
+      "sysctl -w net.ipv4.tcp_fin_timeout=3",
+      "sysctl -w net.ipv4.tcp_keepalive_time=3",
+      "echo 10800 > /proc/sys/net/ipv4/tcp_fin_timeout",
+      "echo 10800 > /proc/sys/net/ipv4/tcp_keepalive_time"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-055",
+    "source": "1급 2019.03.16 · 55번 · 리눅스 시스템 관리",
+    "question": "2일 전 로테이션이 실행되지 않는 시스템에 ihd 사용자가 시스템에 로그인하여 시스템 일부를 수정하였다. 다음 중 ihd 사용자가 로그인에 성공한 기록을 확인하기 위한 명령으로 틀린 것은?",
+    "choices": [
+      "last",
+      "last ihd",
+      "lastb ihd",
+      "lastlog -t 5"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-056",
+    "source": "1급 2019.03.16 · 56번 · 리눅스 시스템 관리",
+    "question": "다음 중 logrotate로 구현할 수 있는 작업으로 틀린 것은?",
+    "choices": [
+      "30분마다 한 번씩 로그 로테이트를 수행한다.",
+      "로그 크기가 250MB가 되면 로그 로테이트를 수행한다.",
+      "로그 로테이트로 생성되는 백로그 파일을 3개로 제한한다.",
+      "로그 로테이트가 된 후 \"/usr/bin/killall -HUP httpd\" 명령을 실행한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-057",
+    "source": "1급 2019.03.16 · 57번 · 리눅스 시스템 관리",
+    "question": "/var/log/messages 파일은 시스템에서 발생되는 표준 메시지가 쌓이는 파일로, 날짜 및 시간, 메시지가 발생한 호스트명, 메시지를 발생한 내부 시스템이나 응용 프로그램의 이름, 발생된 메시지 순으로 기록된다. 다음 중 내부 시스템이나 응용 프로그램의 이름과 발생된 메시지를 구분하는 기호로 알맞은 것은?",
+    "choices": [
+      "콜론(:)",
+      "콤마(,)",
+      "파이프(|)",
+      "세미콜론(;)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-058",
+    "source": "1급 2019.03.16 · 58번 · 리눅스 시스템 관리",
+    "question": "chattr 명령을 이용하여 파일 속성을 변경하려고 한다. 다음 중 속성 변경에 사용되는 기호로 틀린 것은?",
+    "choices": [
+      "+",
+      "-",
+      "*",
+      "="
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-059",
+    "source": "1급 2019.03.16 · 59번 · 리눅스 시스템 관리",
+    "question": "다음 중 보안 도구 중 하나인 tripwire에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "tripwire의 모태는 유닉스 계열 패스워드 크랙 도구(Password Crack tool)이다.",
+      "명령 행에서 사용하는 네트워크 트래픽 모니터링 도구로서 외부 호스트로부터 들어오는 패킷들을 검사할 수 있다.",
+      "1992년 퍼듀(Purdue)대학의 컴퓨터 보안 전문가인 Eugene Spafford 박사와 대학원생인 Gene Kim에 의해 개발되었다.",
+      "네트워크 탐지 도구 및 보안 스캐너로 시스템에서 서비스 중인 포트를 스캔하여 관련 정보를 출력하는 기능을 제공한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-062",
+    "source": "1급 2019.03.16 · 62번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 VM1이라는 가상 머신을 종료시키는 명령으로 알맞은 것은?",
+    "choices": [
+      "virsh off VM1",
+      "virsh halt VM1",
+      "virsh stop VM1",
+      "virsh shutdown VM1"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-063",
+    "source": "1급 2019.03.16 · 63번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 레드햇(Red Hat)사에서 개발한 LDAP 서버 프로그램으로 알맞은 것은?",
+    "choices": [
+      "389 Directory Server",
+      "Active Directory Server",
+      "Tivoli Server",
+      "OpenLDAP"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-067",
+    "source": "1급 2019.03.16 · 67번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS 서버에서 맵 파일들이 생성되는 디렉터리로 알맞은 것은?",
+    "choices": [
+      "/var/yp",
+      "/var/ypbind",
+      "/var/ypserv",
+      "/var/ypconv"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-069",
+    "source": "1급 2019.03.16 · 69번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NFS 서버를 설정할 때 사용하는 root_squash 옵션에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "root 사용자만 nfsnobody 권한으로 매핑시키고, 일반 사용자 권한은 그대로 인정된다.",
+      "root 사용자는 권한이 인정되고, 일반 사용자를 nfsnobody 권한으로 매핑시킨다.",
+      "root 사용자와 일반 사용자 모두 nfsnobody 권한으로 매핑시킨다.",
+      "root 사용자와 일반 사용자 모두 권한이 그대로 인정된다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-070",
+    "source": "1급 2019.03.16 · 70번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 vsftpd.conf에서 익명의 사용자도 업로드가 가능하도록 지정하는 설정으로 알맞은 것은?",
+    "choices": [
+      "anon_upload_enable=ON",
+      "anon_upload_enable=OFF",
+      "anon_upload_enable=YES",
+      "anon_upload_enable=NO"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-072",
+    "source": "1급 2019.03.16 · 72번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 발신 도메인을 ihd.or.kr로 강제 적용할 때 설정하는 sendmail.cf 파일의 내용으로 알맞은 것은?",
+    "choices": [
+      "Cwihd.or.kr",
+      "Fwihd.or.kr",
+      "Djihd.or.kr",
+      "Oihd.or.kr"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-077",
+    "source": "1급 2019.03.16 · 77번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 다양한 하이퍼바이저(hypervisor)들을 통합 관리하기 위한 플랫폼에 해당하는 기술로 틀린 것은?",
+    "choices": [
+      "Openstack",
+      "Cloudstack",
+      "vSphere",
+      "Eucalyptus"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-080",
+    "source": "1급 2019.03.16 · 80번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 설치한 후에 해당 기술이 포함된 커널로 재부팅해야만 서비스 운영이 가능한 가상화 기술로 알맞은 것은?",
+    "choices": [
+      "KVM",
+      "XEN",
+      "Docker",
+      "VirtualBox"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-081",
+    "source": "1급 2019.03.16 · 81번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 xinetd.conf 파일에서 instances 항목에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "사용 가능한 서비스의 목록을 지정한다.",
+      "동시에 서비스할 수 있는 서버의 최대 개수를 지정한다.",
+      "동일한 IP 주소로 접속할 수 있는 서비스의 수를 지정한다.",
+      "초당 요청 수가 일정 개수 이상일 경우에 지정한 시간 동안 접속 연결을 중단한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-082",
+    "source": "1급 2019.03.16 · 82번 · 네트워크 및 서비스의 활용",
+    "question": "아파치 2.x 버전 웹 서버의 포트 번호를 8080으로 변경하려고 한다. 다음 중 httpd.conf에 설정하는 항목 값으로 알맞은 것은?",
+    "choices": [
+      "Port 8080",
+      "Port :8080",
+      "Listen 8080",
+      "Listen :8080"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-084",
+    "source": "1급 2019.03.16 · 84번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS 서버의 사용자 계정 정보가 저장되는 맵 파일명으로 알맞은 것은?",
+    "choices": [
+      "passwd.userid",
+      "passwd.username",
+      "passwd.byid",
+      "passwd.byname"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-085",
+    "source": "1급 2019.03.16 · 85번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 리눅스 시스템에서 윈도우 시스템에 공유된 디렉터리명을 확인할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "smbstatus",
+      "testparm",
+      "smbclient",
+      "nmblookup"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190316-086",
+    "source": "1급 2019.03.16 · 86번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 PAM 관련 설정 파일에서 사용되는 파일로 기본 설정이 접근 거부될 사용자 목록 파일은?",
+    "choices": [
+      "/etc/vsftpd/ftpuser",
+      "/etc/vsftpd/ftpusers",
+      "/etc/vsftpd/user_list",
+      "/etc/vsftpd/users_list"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190316-087",
+    "source": "1급 2019.03.16 · 87번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 MTA(Mail Transfer Agent)에 속하는 프로그램으로 틀린 것은?",
+    "choices": [
+      "kmail",
+      "qmail",
+      "postfix",
+      "sendmail"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190316-094",
+    "source": "1급 2019.03.16 · 94번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 VNC 서버의 환경 설정 파일에서 해상도를 지정하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-set",
+      "-pixel",
+      "-resolution",
+      "-geometry"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-096",
+    "source": "1급 2019.03.16 · 96번 · 네트워크 및 서비스의 활용",
+    "question": "iptables 명령의 '-j LOG' 옵션을 통해서 특정 호스트에 대한 로그를 기록하도록 정책을 설정하였다. 다음 중 관련 로그가 기록되는 파일로 알맞은 것은?",
+    "choices": [
+      "/var/log/btmp",
+      "/var/log/secure",
+      "/var/log/iptables",
+      "/var/log/messages"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190316-098",
+    "source": "1급 2019.03.16 · 98번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 INPUT 사슬에 대한 기본 정책을 거부로 설정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "iptables -F INPUT DROP",
+      "iptables -N INPUT DROP",
+      "iptables -P INPUT DROP",
+      "iptables -X INPUT DROP"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190921-001",
+    "source": "1급 2019.09.21 · 1번 · 리눅스 실무의 이해",
+    "question": "다음 중 2차적 저작물 소스 코드 공개에 대한 정책이 나머지와 다른 것은?",
+    "choices": [
+      "GPL",
+      "BSD",
+      "LGPL",
+      "MPL"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-002",
+    "source": "1급 2019.09.21 · 2번 · 리눅스 실무의 이해",
+    "question": "다음 중 다수의 웹 서버를 운영하는 환경에서 구축할 때 유용한 조합으로 가장 알맞은 것은?",
+    "choices": [
+      "고계산용 클러스터와 부하분산 클러스터",
+      "부하분산 클러스터와 고가용성 클러스터",
+      "고계산용 클러스터와 고가용성 클러스터",
+      "베어울프 클러스터와 부하분산 클러스터"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-006",
+    "source": "1급 2019.09.21 · 6번 · 리눅스 실무의 이해",
+    "question": "다음 중 LVM을 구성하는 순서로 알맞은 것은?",
+    "choices": [
+      "볼륨그룹 → 물리적 볼륨 → 논리적 볼륨",
+      "볼륨그룹 → 논리적 볼륨 → 물리적 볼륨",
+      "물리적 볼륨 → 볼륨그룹 → 논리적 볼륨",
+      "논리적 볼륨 → 볼륨그룹 → 물리적 볼륨"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190921-007",
+    "source": "1급 2019.09.21 · 7번 · 리눅스 실무의 이해",
+    "question": "다음 중 GRUB의 환경 설정파일에서 'default=1'에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "'title' 항목으로 나타나는 첫 번째 운영체제를 의미한다.",
+      "'title' 항목으로 나타나는 두 번째 운영체제를 의미한다.",
+      "GRUB 메뉴 화면에서의 대기 시간이 1초임을 의미한다.",
+      "GRUB 메뉴 화면에서의 대기 시간이 10초임을 의미한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-009",
+    "source": "1급 2019.09.21 · 9번 · 리눅스 실무의 이해",
+    "question": "다음 중 가장 큰 번호 값을 갖는 시그널(signal)로 알맞은 것은?",
+    "choices": [
+      "SIGTERM",
+      "SIGKILL",
+      "SIGSTOP",
+      "SIGQUIT"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190921-011",
+    "source": "1급 2019.09.21 · 11번 · 리눅스 실무의 이해",
+    "question": "다음 중 GNOME 3 버전에서 사용하는 윈도 매니저로 알맞은 것은?",
+    "choices": [
+      "nautilus",
+      "KWin",
+      "Metacity",
+      "Mutter"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-012",
+    "source": "1급 2019.09.21 · 12번 · 리눅스 실무의 이해",
+    "question": "다음 중 포어그라운드 프로세스를 백그라운드 프로세스로 전환할 때 사용하는 키 조합으로 알맞은 것은?",
+    "choices": [
+      "Ctrl + C",
+      "Ctrl + D",
+      "Ctrl + L",
+      "Ctrl + Z"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-014",
+    "source": "1급 2019.09.21 · 14번 · 리눅스 실무의 이해",
+    "question": "다음 중 X 클라이언트 프로그램을 다른 원격지의 X 서버로 전송하기 위해 변경해야 할 환경변수로 알맞은 것은?",
+    "choices": [
+      "TERM",
+      "TERMINAL",
+      "SESSION",
+      "DISPLAY"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-015",
+    "source": "1급 2019.09.21 · 15번 · 리눅스 실무의 이해",
+    "question": "다음 중 파일 시스템 점검을 위해 단일 사용자 모드로 전환할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "init 0",
+      "init 1",
+      "init 5",
+      "init 6"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-016",
+    "source": "1급 2019.09.21 · 16번 · 리눅스 실무의 이해",
+    "question": "DoS 공격 중 하나인 Ping of Death 공격에 대응하기 위하여 방화벽에서 특정 프로토콜을 차단하는 보안 정책을 적용하려고 한다. 다음 중 차단해야 하는 프로토콜로 알맞은 것은?",
+    "choices": [
+      "FTP",
+      "ARP",
+      "DNS",
+      "ICMP"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-017",
+    "source": "1급 2019.09.21 · 17번 · 리눅스 실무의 이해",
+    "question": "사용 가능한 호스트 수가 126개인 서브 네트워크를 구성하려고 한다. 다음 중 네트워크 접두어 길이 표현방법으로 가장 알맞은 것은?",
+    "choices": [
+      "/8",
+      "/16",
+      "/24",
+      "/25"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-018",
+    "source": "1급 2019.09.21 · 18번 · 리눅스 실무의 이해",
+    "question": "다음 중 프로토콜에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "ISO, ANSI, ITU-T는 대표적인 프로토콜의 제정 기관이다.",
+      "프로토콜의 기능으로는 흐름제어, 오류제어, 동기화, 캡슐화 등이 있다.",
+      "프로토콜은 구문(Syntax), 의미(Semantics), 순서(Timing)으로 구성되어 있다.",
+      "대표적인 프로토콜인 TCP/IP는 ISO에서 제정하였다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-019",
+    "source": "1급 2019.09.21 · 19번 · 리눅스 실무의 이해",
+    "question": "다음 중 FTP 서비스에서 사용하는 명령어로 가장 거리가 먼 것은?",
+    "choices": [
+      "mcd",
+      "mget",
+      "mput",
+      "mdelete"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190921-022",
+    "source": "1급 2019.09.21 · 22번 · 리눅스 시스템 관리",
+    "question": "/etc/shadow 파일에서 계정 만기일 영역에 해당하는 필드 순서로 알맞은 것은?",
+    "choices": [
+      "3번째",
+      "7번째",
+      "8번째",
+      "9번째"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190921-024",
+    "source": "1급 2019.09.21 · 24번 · 리눅스 시스템 관리",
+    "question": "다음 중 명령어의 사용법으로 틀린 것은?",
+    "choices": [
+      "pgrep httpd",
+      "nice -10 1222",
+      "killall httpd",
+      "renice 1 987 -u daemon root -p 1222"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-025",
+    "source": "1급 2019.09.21 · 25번 · 리눅스 시스템 관리",
+    "question": "다음 중 월, 수, 금요일 오전 4시 1분에 실행되는 crontab 설정으로 알맞은 것은?",
+    "choices": [
+      "4 1 * * 1,3,5 /etc/lin.sh",
+      "1 4 * * 1,3,5 /etc/lin.sh",
+      "4 1 1,3,5 * * /etc/lin.sh",
+      "1 4 1,3,5 * * /etc/lin.sh"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-028",
+    "source": "1급 2019.09.21 · 28번 · 리눅스 시스템 관리",
+    "question": "다음 중 joon이라는 아이디를 lin으로 변경하는 명령으로 알맞은 것은?",
+    "choices": [
+      "usermod -l joon lin",
+      "usermod -l lin joon",
+      "usermod -n joon lin",
+      "usermod -n lin joon"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-029",
+    "source": "1급 2019.09.21 · 29번 · 리눅스 시스템 관리",
+    "question": "다음 중 특수 권한인 Set-UID, Set-GID, Sticky Bit가 부여된 파일이나 디렉터리로 틀린 것은?",
+    "choices": [
+      "/tmp",
+      "/bin/su",
+      "/etc/shadow",
+      "/usr/bin/passwd"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190921-032",
+    "source": "1급 2019.09.21 · 32번 · 리눅스 시스템 관리",
+    "question": "다음 중 온라인 기반 패키지 관리 기법으로 가장 거리가 먼 것은?",
+    "choices": [
+      "yum",
+      "yast",
+      "apt-get",
+      "zypper"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-033",
+    "source": "1급 2019.09.21 · 33번 · 리눅스 시스템 관리",
+    "question": "다음 중 사용자가 백그라운드로 수행중인 프로세스 정보를 확인할 때 사용하는 명령어로 알맞은 것은?",
+    "choices": [
+      "fg",
+      "bg",
+      "jobs",
+      "pgrep"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190921-034",
+    "source": "1급 2019.09.21 · 34번 · 리눅스 시스템 관리",
+    "question": "다음 중 프로세스에 할당되는 NI 값의 범위로 알맞은 것은?",
+    "choices": [
+      "-20 ∼ 20",
+      "-20 ∼ 19",
+      "-19 ∼ 19",
+      "-19 ∼ 20"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-035",
+    "source": "1급 2019.09.21 · 35번 · 리눅스 시스템 관리",
+    "question": "다음 중 yum을 이용해서 telnet이라는 문자열이 들어있는 패키지를 전부 찾는 명령으로 알맞은 것은?",
+    "choices": [
+      "yum info telnet",
+      "yum list telnet",
+      "yum find telnet",
+      "yum search telnet"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-037",
+    "source": "1급 2019.09.21 · 37번 · 리눅스 시스템 관리",
+    "question": "다음 중 시그널의 종류와 번호를 확인할 수 있는 명령으로 알맞은 것은?",
+    "choices": [
+      "kill -l",
+      "signal -l",
+      "killall -l",
+      "ps -l"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190921-038",
+    "source": "1급 2019.09.21 · 38번 · 리눅스 시스템 관리",
+    "question": "다음 중 ihduser 계정이 사용하고 있는 디스크의 총 사용량을 확인하는 명령으로 가장 알맞은 것은?",
+    "choices": [
+      "du -sh ihduser",
+      "du -sh ~ihduser",
+      "df -sh ihduser",
+      "df -sh ~ihduser"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-039",
+    "source": "1급 2019.09.21 · 39번 · 리눅스 시스템 관리",
+    "question": "다음 중 시스템에 로그인된 사용자들의 아이디를 확인하는 명령으로 가장 거리가 먼 것은?",
+    "choices": [
+      "w",
+      "who",
+      "users",
+      "logname"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-040",
+    "source": "1급 2019.09.21 · 40번 · 리눅스 시스템 관리",
+    "question": "다음 중 특정 그룹의 그룹 관리자를 지정할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "grpconv",
+      "newgrp",
+      "gpasswd",
+      "grpck"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20190921-041",
+    "source": "1급 2019.09.21 · 41번 · 리눅스 시스템 관리",
+    "question": "다음 중 새롭게 생성된 파티션을 /etc/fstab 파일에 등록하는 형식으로 알맞은 것은?",
+    "choices": [
+      "/dev/sdb1 /home2 ext4 default 1 1",
+      "/dev/sdb1 /home2 ext4 defaults 1 1",
+      "/home2 /dev/sdb1 ext4 default 1 1",
+      "/home2 /dev/sdb1 ext4 defaults 1 1"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-045",
+    "source": "1급 2019.09.21 · 45번 · 리눅스 시스템 관리",
+    "question": "다음 중 시스템에서 사용 가능한 모듈이 저장되어 있는 디렉터리로 알맞은 것은?",
+    "choices": [
+      "/lib/커널버전/modules/kernel",
+      "/lib/modules/커널버전/kernel",
+      "/lib/modules/kernel/커널버전",
+      "/lib/커널버전/kernel/modules"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-048",
+    "source": "1급 2019.09.21 · 48번 · 리눅스 시스템 관리",
+    "question": "다음 중 System V 계열에 속하는 프린터 관련 명령어로 틀린 것은?",
+    "choices": [
+      "lp",
+      "lpr",
+      "lpstat",
+      "cancel"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-049",
+    "source": "1급 2019.09.21 · 49번 · 리눅스 시스템 관리",
+    "question": "다음 중 모듈 간의 의존성이 기록된 파일의 정보를 갱신할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "insmod",
+      "depmod",
+      "modinfo",
+      "modprobe"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-051",
+    "source": "1급 2019.09.21 · 51번 · 리눅스 시스템 관리",
+    "question": "다음 중 rsync의 특징으로 가장 거리가 먼 것은?",
+    "choices": [
+      "레벨을 지정하여 증분 백업이 가능하며, 하드 링크 복사가 가능하다.",
+      "기본적으로 ssh나 rsh를 이용하여 전송하며, 다른 프로토콜 접속을 지원한다.",
+      "이전에 받은 백업본을 삭제하고, 원본과 항상 똑같이 백업이 되도록 설정이 가능하다.",
+      "데이터를 압축하여 전송이 가능하며 심볼릭 링크나, 심볼릭 링크가 참고하고 있는 파일도 복사가 가능하다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190921-055",
+    "source": "1급 2019.09.21 · 55번 · 리눅스 시스템 관리",
+    "question": "다음 중 SELinux를 설정하는 방법으로 틀린 것은?",
+    "choices": [
+      "getenforce 명령어를 이용한 수정",
+      "setenforce 명령어를 이용한 수정",
+      "vi 편집기를 이용해 /etc/selinux/config 수정",
+      "system-config-window 도구를 이용한 x-window 환경에서 수정"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-060",
+    "source": "1급 2019.09.21 · 60번 · 리눅스 시스템 관리",
+    "question": "다음 중 rsyslog로 생성되는 로그의 저장 위치로 알맞은 것은?",
+    "choices": [
+      "/log",
+      "/var/log",
+      "/usr/log",
+      "/etc/rsyslog/log"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-062",
+    "source": "1급 2019.09.21 · 62번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 전가상화(Bare-Metal/Hypervisor) 기법을 이용하는 제품으로 알맞은 것은?",
+    "choices": [
+      "Citrix의 XenServer",
+      "VMware의 ESX Server",
+      "Oracle의 VirtualBox",
+      "Microsoft의 Virtual Server"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-063",
+    "source": "1급 2019.09.21 · 63번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 이름과 성의 조합을 나타내는 LDAP의 속성 관련 키워드로 알맞은 것은?",
+    "choices": [
+      "c",
+      "cn",
+      "sn",
+      "dc"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-066",
+    "source": "1급 2019.09.21 · 66번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 아파치 웹 서버의 다중처리모듈(MPM : Multi-Process Module) 관련 정보를 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "httpd -l",
+      "httpd -t",
+      "httpd -f",
+      "httpd -S"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190921-068",
+    "source": "1급 2019.09.21 · 68번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS(Network Information Service)와 가장 거리가 먼 것은?",
+    "choices": [
+      "Yellow Pages",
+      "X.500",
+      "RPC",
+      "Sun Microsystems"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-080",
+    "source": "1급 2019.09.21 · 80번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 xinetd 기반으로 동작하는 텔넷 서비스를 중단하기 위한 관련 설정 항목과 값으로 알맞은 것은?",
+    "choices": [
+      "enable = no",
+      "enable = yes",
+      "disable = no",
+      "disable = yes"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-083",
+    "source": "1급 2019.09.21 · 83번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 아파치 웹 서버의 환경 설정 파일에서 일반 사용자의 웹 문서가 위치하는 디렉터리를 변경할 때 사용하는 항목으로 알맞은 것은?",
+    "choices": [
+      "HomeDir",
+      "UserDir",
+      "PublicDir",
+      "HtmlDir"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-084",
+    "source": "1급 2019.09.21 · 84번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 SQL 기반의 관계형 데이터베이스로 거리가 먼 것은?",
+    "choices": [
+      "MongoDB",
+      "MariaDB",
+      "Oracle",
+      "PostgreSQL"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190921-085",
+    "source": "1급 2019.09.21 · 85번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 CentOS 6 버전에서 RPC 서비스를 사용하기 위해 동작시켜야 할 데몬명으로 알맞은 것은?",
+    "choices": [
+      "portmap",
+      "rpcbind",
+      "ypbind",
+      "ypserv"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20190921-088",
+    "source": "1급 2019.09.21 · 88번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 vsftpd.conf에서 TCP wrappers를 이용한 접근 제어가 가능하도록 지정하는 설정으로 알맞은 것은?",
+    "choices": [
+      "tcp_wrappers=OK",
+      "tcp_wrappers=ON",
+      "tcp_wrappers=OFF",
+      "tcp_wrappers=YES"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20190921-092",
+    "source": "1급 2019.09.21 · 92번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DNS 서버를 운영하기 위해 설치해야 할 프로그램으로 알맞은 것은?",
+    "choices": [
+      "bind",
+      "ypbind",
+      "dnsserver",
+      "nameserver"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20190921-097",
+    "source": "1급 2019.09.21 · 97번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 INPUT 사슬에 설정된 두 번째 정책을 제거하는 명령으로 알맞은 것은?",
+    "choices": [
+      "iptables -D INPUT 2",
+      "iptables -F INPUT 2",
+      "iptables -P INPUT 2",
+      "iptables -R INPUT 2"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-001",
+    "source": "1급 2020.06.13 · 1번 · 리눅스 실무의 이해",
+    "question": "다음 중 클라우드 컴퓨팅에 대한 내용으로 틀린 것은?",
+    "choices": [
+      "클라우드 컴퓨팅 서비스는 크게 IaaS, PaaS, SaaS 등 세 가지 개념으로 구분할 수 있다.",
+      "클라우드 컴퓨팅이 발전하면서 하드웨어 자원을 제외한 나머지 IT자원은 서비스 형태로 제공할 수 있게 되었다.",
+      "최근 세분화된 개념으로 FaaS(Function as a Service) 형태로 제공되는 서버리스(Serverless) 컴퓨팅도 클라우드 컴퓨팅의 일종이다.",
+      "사용자가 필요한 작업을 제시하면, 필요한 자원이 할당되어 작업하고 결과를 얻도록 해주는 'as a Service'로 제공되는 컴퓨팅 환경을 의미한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-003",
+    "source": "1급 2020.06.13 · 3번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스 주요 라이선스(License)에 대한 내용으로 틀린 것은?",
+    "choices": [
+      "LGPL이 적용된 라이브러리는 독점소프트웨어에서도 사용이 가능하고 LGPL을 사용해서 개발한 뒤 GPL로 변경이 가능하다.",
+      "BSD 라이선스는 공개소프트웨어 라이선스로 해당 소프트웨어를 누구나 개작할 수 있고 수정한 것을 제한 없이 배포할 수 있다.",
+      "BSD, Apache, MIT 라이선스는 기본적으로 소스코드 취득 및 수정이 가능하므로 2차적 저작물 소스코드도 반드시 공개하여야 한다.",
+      "아파치 라이선스 2.0에 따르면 누구든 자유롭게 아파치 소프트웨어를 다운 받아 부분 혹은 전체를 개인적 또는 상업적 목적으로 이용할 수 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-004",
+    "source": "1급 2020.06.13 · 4번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스 운영체제의 특징으로 틀린 것은?",
+    "choices": [
+      "리눅스는 약간의 어셈블리와 대부분의 C언어로 작성되어 이식성이 뛰어나다.",
+      "하나의 시스템에 다중 사용자 접속 및 사용자별 다중 처리 시스템을 지원한다.",
+      "운영체제의 핵심인 커널(Kernel)을 제외한 나머지 프로그램들은 소스가 공개되었다.",
+      "고유 파일시스템 외 DOS, Windows, 상용 유닉스 등의 다양한 파일 시스템을 지원한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-005",
+    "source": "1급 2020.06.13 · 5번 · 리눅스 실무의 이해",
+    "question": "다음 중 데비안 계열에 속하는 리눅스 배포판으로 틀린 것은?",
+    "choices": [
+      "CentOS",
+      "Ubuntu",
+      "Linux Mint",
+      "Kali Linux"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-007",
+    "source": "1급 2020.06.13 · 7번 · 리눅스 실무의 이해",
+    "question": "다음 중 시그널(Signal)에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "SIGQUIT는 터미널에서 입력된 정지 시그널이다.",
+      "SIGKILL은 터미널이 시작할 때 보내오는 시그널이다.",
+      "SIGTERM은 정상 종료시키는 시그널로 15번으로 관리된다.",
+      "SIGSTOP은 실행 정지 후 다시 실행하기 위해 대기시키는 시그널이다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-009",
+    "source": "1급 2020.06.13 · 9번 · 리눅스 실무의 이해",
+    "question": "다음 중 프로세스에 대한 정의로 틀린 것은?",
+    "choices": [
+      "실행(executing)중인 프로그램",
+      "PC(Program Counter)를 지닌 프로그램",
+      "PCB(Process Control Block)를 지닌 프로그램",
+      "수동적인 개체(entity)로 순차적으로 수행하는 프로그램"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20200613-010",
+    "source": "1급 2020.06.13 · 10번 · 리눅스 실무의 이해",
+    "question": "다음 중 X윈도에 관한 설명으로 틀린 것은?",
+    "choices": [
+      "원격지의 X클라이언트를 다른 시스템의 X서버에서 실행시킬 수 있다.",
+      "디스플레이 장치에 의존적이지 않고 서로 다른 기종을 함께 사용할 수 있다.",
+      "X윈도는 클라이언트/서버 구조로 되어있고 서로간의 통신을 위해 xhost를 사용한다.",
+      "현재 리눅스를 비롯하여 유닉스 대부분이 X.org 기반의 X윈도 시스템을 사용하고 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-013",
+    "source": "1급 2020.06.13 · 13번 · 리눅스 실무의 이해",
+    "question": "다음 중 로그인 메시지 관련 파일로 틀린 것은?",
+    "choices": [
+      "/etc/motd",
+      "/etc/inittab",
+      "/etc/issue",
+      "/etc/issue.net"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-015",
+    "source": "1급 2020.06.13 · 15번 · 리눅스 실무의 이해",
+    "question": "다음 중 셸(shell)의 특징으로 알맞은 것은?",
+    "choices": [
+      "bash에서는 명령어 히스토리 기능을 제공한다.",
+      "표준에러(Standard error)는 셸에서 숫자값 0으로 표기한다.",
+      "사용자가 로그인 셸을 변경하려면 shch 명령을 사용하면 된다.",
+      "사용자 로그인 셸 정보는 /etc/passwd 파일의 5번째 필드에서 확인할 수 있다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-016",
+    "source": "1급 2020.06.13 · 16번 · 리눅스 실무의 이해",
+    "question": "다음 중 네트워크 설정인 점보 프레임(Jumbo Frame)에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "점보 프레임의 최솟값은 1300바이트이다.",
+      "ifconfig 명령을 이용하여 점보 프레임 설정 값을 변경 할 수 있다.",
+      "ifconfig 명령을 이용하여 현재 설정된 점보 프레임 설정 값을 확인 할 수 있다.",
+      "점보 프레임은 스위치와 네트워크 인터페이스 둘 다 지원해야 사용 할 수 있다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-017",
+    "source": "1급 2020.06.13 · 17번 · 리눅스 실무의 이해",
+    "question": "다음 중 TCP와 UDP의 설명으로 틀린 것은?",
+    "choices": [
+      "TCP와 UDP는 둘 다 전송계층에서 사용되는 프로토콜이다.",
+      "UDP는 3-way handshaking이라는 방식으로 세션을 연결한다.",
+      "TCP는 IP에 의해 전달되는 패킷의 오류를 검사하고 재전송을 요구하는 역할을 한다.",
+      "UDP는 시스템 내부 메시지 및 소규모 데이터 전송에 이용되고, DNS에서 많이 사용한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-018",
+    "source": "1급 2020.06.13 · 18번 · 리눅스 실무의 이해",
+    "question": "다음 중 프로토콜에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "프로토콜의 주요 제정기관으로는 ISO, IEEE, EIA, ITU-T 등이 있다.",
+      "OSI 7계층 중 인터넷 계층에 사용되는 프로토콜은 ICMP, ARP, IMAP 등이 있다.",
+      "프로토콜의 3가지 구성요소는 순서(Timing), 구문(Syntax), 의미(Semantics) 이다.",
+      "프로토콜의 주요 기능으로는 캡슐화, 단편화와 재조합, 멀티 플렉싱, 흐름제어, 동기화 등이 있다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-019",
+    "source": "1급 2020.06.13 · 19번 · 리눅스 실무의 이해",
+    "question": "다음 중 IPv6를 구분하는 구분자로 알맞은 것은?",
+    "choices": [
+      "콤마(,)",
+      "콜론(:)",
+      "세미콜론(;)",
+      "피어리어드(.)"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-020",
+    "source": "1급 2020.06.13 · 20번 · 리눅스 실무의 이해",
+    "question": "네트워크 부하를 줄이기 위해 방화벽에서 ping과 traceroute 관련 프로토콜을 차단하려고 한다. 다음 중 차단해야 하는 프로토콜로 가장 알맞은 것은?",
+    "choices": [
+      "IP",
+      "ARP",
+      "UDP",
+      "ICMP"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20200613-022",
+    "source": "1급 2020.06.13 · 22번 · 리눅스 시스템 관리",
+    "question": "다음 중 PID가 1222번인 프로세스를 실행한 파일명을 확인할 때 사용하는 파일로 알맞은 것은?",
+    "choices": [
+      "/proc/1222/fd",
+      "/proc/1222/exe",
+      "/proc/PID/1222/fd",
+      "/proc/PID/1222/exe"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-023",
+    "source": "1급 2020.06.13 · 23번 · 리눅스 시스템 관리",
+    "question": "다음 중 10분 주기로 실행되는 crontab 설정으로 알맞은 것은?",
+    "choices": [
+      "*/10 * * * * /etc/lin.sh",
+      "* */10 * * * /etc/lin.sh",
+      "* * */10 * * /etc/lin.sh",
+      "* * * */10 * /etc/lin.sh"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-024",
+    "source": "1급 2020.06.13 · 24번 · 리눅스 시스템 관리",
+    "question": "다음 중 lin.txt 파일에서 a로 시작되는 줄만 검색하려고 할 때의 명령으로 알맞은 것은?",
+    "choices": [
+      "grep a lin.txt",
+      "grep ^a lin.txt",
+      "grep [a] lin.txt",
+      "grep [^a] lin.txt"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-027",
+    "source": "1급 2020.06.13 · 27번 · 리눅스 시스템 관리",
+    "question": "다음 중 fdisk 명령을 이용해서 파티션 속성을 Linux LVM으로 변경할 때 지정하는 코드값으로 알맞은 것은?",
+    "choices": [
+      "82",
+      "83",
+      "8e",
+      "fd"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-030",
+    "source": "1급 2020.06.13 · 30번 · 리눅스 시스템 관리",
+    "question": "다음 중 /etc/xinetd.d 디렉터리를 현재 디렉터리에 x로 연결하여 손쉽게 디렉터리를 이동하려고 할 때 설정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "ln x /etc/xinetd.d",
+      "ln /etc/xinetd.d x",
+      "ln -s x /etc/xinetd.d",
+      "ln -s /etc/xinetd.d x"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20200613-031",
+    "source": "1급 2020.06.13 · 31번 · 리눅스 시스템 관리",
+    "question": "다음 중 ihduser 사용자의 계정만기일을 2020년 12월 31일로 지정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "usermod -i 2020-12-31 ihduser",
+      "usermod -I 2020-12-31 ihduser",
+      "usermod -e 2020-12-31 ihduser",
+      "usermod -f 2020-12-31 ihduser"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-032",
+    "source": "1급 2020.06.13 · 32번 · 리눅스 시스템 관리",
+    "question": "다음 중 root 권한을 갖는 사용자를 찾는 방법으로 가장 알맞은 것은?",
+    "choices": [
+      "/etc/passwd의 두 번째 필드 값이 0인 사용자를 찾는다.",
+      "/etc/passwd의 세 번째 필드 값이 0인 사용자를 찾는다.",
+      "/etc/passwd의 두 번째 필드 값이 1인 사용자를 찾는다.",
+      "/etc/passwd의 세 번째 필드 값이 1인 사용자를 찾는다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-033",
+    "source": "1급 2020.06.13 · 33번 · 리눅스 시스템 관리",
+    "question": "다음 중 소스 컴파일 단계인 configure를 통해 생성되는 파일명으로 알맞은 것은?",
+    "choices": [
+      "config.make",
+      "config.h",
+      "make.config",
+      "Makefile"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20200613-034",
+    "source": "1급 2020.06.13 · 34번 · 리눅스 시스템 관리",
+    "question": "다음 중 yum을 이용해서 telnet-server라는 패키지를 제거하는 명령으로 알맞은 것은?",
+    "choices": [
+      "yum erase telnet-server",
+      "yum delete telnet-server",
+      "yum -e telnet-server",
+      "yum -d telnet-server"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-037",
+    "source": "1급 2020.06.13 · 37번 · 리눅스 시스템 관리",
+    "question": "다음 중 프로세스의 우선순위 변경과 가장 거리가 먼 명령은?",
+    "choices": [
+      "jobs",
+      "top",
+      "nice",
+      "renice"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-039",
+    "source": "1급 2020.06.13 · 39번 · 리눅스 시스템 관리",
+    "question": "다음 중 /etc/group의 필드 구성 예로 알맞은 것은?",
+    "choices": [
+      "ihd:x:500:",
+      "ihd:500:x:",
+      "ihd:500:500:",
+      "ihd:500:500:x"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-040",
+    "source": "1급 2020.06.13 · 40번 · 리눅스 시스템 관리",
+    "question": "다음 중 사용자 추가 시에 제공되는 파일이나 디렉터리를 확인할 수 있는 디렉터리로 알맞은 것은?",
+    "choices": [
+      "/home",
+      "/etc/skel",
+      "/etc/login.defs",
+      "/etc/default/useradd"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-041",
+    "source": "1급 2020.06.13 · 41번 · 리눅스 시스템 관리",
+    "question": "다음 중 커널에 탑재되는 모듈 관련 디렉터리 경로로 알맞은 것은?",
+    "choices": [
+      "/lib/커널버전/modules/kernel",
+      "/lib/커널버전/kernel/modules",
+      "/lib/modules/커널버전/kernel",
+      "/lib/modules/kernel/커널버전"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-044",
+    "source": "1급 2020.06.13 · 44번 · 리눅스 시스템 관리",
+    "question": "다음 제시된 프린터 관련 명령어 중 나머지 셋과 비교해서 다른 계열로 속하는 명령으로 알맞은 것은?",
+    "choices": [
+      "lp",
+      "lpr",
+      "lpstat",
+      "cancel"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-047",
+    "source": "1급 2020.06.13 · 47번 · 리눅스 시스템 관리",
+    "question": "다음 중 지정한 파일이 프린터를 통해 출력되도록 작업을 요청하는 명령으로 알맞은 것은?",
+    "choices": [
+      "pr",
+      "lpr",
+      "lpq",
+      "lpstat"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-052",
+    "source": "1급 2020.06.13 · 52번 · 리눅스 시스템 관리",
+    "question": "다음 중 SSH에 관한 설명으로 알맞은 것은?",
+    "choices": [
+      "ssh는 IPv6 주소체계에서는 접속이 불가능하다.",
+      "ssh는 로그인 전에 보여주는 메시지를 별도의 파일로 지정 할 수 있다.",
+      "ssh서버의 환경 설정 파일은 /etc/sshd_config이고 실행 데몬 스크립트는 /etc/rc.d/init.d/sshd이다.",
+      "ssh는 사용할 암호화 알고리즘을 지정할 수 있으나, ssh2 버전에서 알고리즘을 지정하지 않으면 기본적으로 DSA를 사용한다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-053",
+    "source": "1급 2020.06.13 · 53번 · 리눅스 시스템 관리",
+    "question": "cpio 명령을 이용하여 백업된 데이터의 내용만 확인하려고 한다. 다음 중 사용되는 옵션으로 가장 알맞은 것은?",
+    "choices": [
+      "-ic",
+      "-icvt",
+      "-icdv",
+      "-ocvF"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-054",
+    "source": "1급 2020.06.13 · 54번 · 리눅스 시스템 관리",
+    "question": "다음 중 ASCII 형태의 로그 파일로 알맞은 것은?",
+    "choices": [
+      "/var/log/btmp",
+      "/var/log/wtmp",
+      "/var/log/lastlog",
+      "/var/log/xferlog"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20200613-055",
+    "source": "1급 2020.06.13 · 55번 · 리눅스 시스템 관리",
+    "question": "다음 중 로그 관련 파일의 특징으로 알맞은 것은?",
+    "choices": [
+      "/var/log/wtmp : 콘솔, ftp 등 접속이 실패한 경우 기록",
+      "/var/log/lastlog : 부팅 시 동작하는 데몬 관련 정보 기록",
+      "/var/log/dmesg : 시스템이 부팅할 때 출력되었던 로그 기록",
+      "/var/log/boot.log : telnet이나 ssh를 이용하여 접속한 사용자의 마지막 정보를 기록"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-057",
+    "source": "1급 2020.06.13 · 57번 · 리눅스 시스템 관리",
+    "question": "single 모드 부팅을 제한하기 위하여 grub 패스워드를 설정하려고 한다. 다음 중 grub 패스워드 설정 시 사용되는 암호화 알고리즘으로 알맞은 것은?",
+    "choices": [
+      "MD5",
+      "SHA-1",
+      "SHA-256",
+      "Blowfish"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-059",
+    "source": "1급 2020.06.13 · 59번 · 리눅스 시스템 관리",
+    "question": "다음 중 상호 대화식 복구 프로그램으로 알맞은 것은?",
+    "choices": [
+      "dd",
+      "cpio",
+      "rsync",
+      "restore"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20200613-060",
+    "source": "1급 2020.06.13 · 60번 · 리눅스 시스템 관리",
+    "question": "다음 중 증분 백업을 지원하지 않는 명령으로 알맞은 것은?",
+    "choices": [
+      "tar",
+      "cpio",
+      "rsync",
+      "dump"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-064",
+    "source": "1급 2020.06.13 · 64번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 smb.conf 파일에서 특정 네트워크 대역의 접근을 허가하는 설정으로 알맞은 것은?",
+    "choices": [
+      "hosts allow = 192.168.5",
+      "hosts allow = 192.168.5.",
+      "hosts allow = 192.168.5.0",
+      "hosts allow = 192.168.5.0/24"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-067",
+    "source": "1급 2020.06.13 · 67번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 인증 관련 서비스와 가장 거리가 먼 것은?",
+    "choices": [
+      "NFS",
+      "NIS",
+      "LDAP",
+      "Active Directory"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-068",
+    "source": "1급 2020.06.13 · 68번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 이름을 나타내는 LDAP의 속성 관련 키워드로 알맞은 것은?",
+    "choices": [
+      "c",
+      "cn",
+      "sn",
+      "givenName"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20200613-069",
+    "source": "1급 2020.06.13 · 69번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS 서버에 동작 시켜야할 데몬명으로 가장 거리가 먼 것은?",
+    "choices": [
+      "ypxfrd",
+      "rpcbind",
+      "ypbind",
+      "ypserv"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-073",
+    "source": "1급 2020.06.13 · 73번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 메일 관련 프로그램의 종류가 다른 것은?",
+    "choices": [
+      "postfix",
+      "evolution",
+      "qmail",
+      "sendmail"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-074",
+    "source": "1급 2020.06.13 · 74번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 sendmail.cf 파일에서 특정 도메인명을 발신지 메일 주소로 강제 지정할 때 사용하는 항목으로 알맞은 것은?",
+    "choices": [
+      "Cw",
+      "Fw",
+      "Dj",
+      "O"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-082",
+    "source": "1급 2020.06.13 · 82번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 CPU 반가상화 기술을 기반으로 가상 머신을 생성할 때 사용하는 기술로 가장 알맞은 것은?",
+    "choices": [
+      "Xen",
+      "KVM",
+      "VirtualBox",
+      "Docker"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-085",
+    "source": "1급 2020.06.13 · 85번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 vsftpd.conf에서 익명(anonymous) 사용자의 접근을 허가할 때 사용하는 설정으로 알맞은 것은?",
+    "choices": [
+      "anonymous_disable=YES",
+      "anonymous_disable=NO",
+      "anonymous_enable=YES",
+      "anonymous_enable=NO"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-086",
+    "source": "1급 2020.06.13 · 86번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 메일 서버간의 송신 및 수신에 사용되는 프로토콜로 알맞은 것은?",
+    "choices": [
+      "POP3",
+      "IMAP",
+      "SMTP",
+      "SNMP"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-088",
+    "source": "1급 2020.06.13 · 88번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 named.ca를 비롯하여 사용자가 선언하는 zone 파일 등이 위치하는 디렉터리로 알맞은 것은?",
+    "choices": [
+      "/etc/named",
+      "/etc/named/zones",
+      "/var/named",
+      "/var/named/zones"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-090",
+    "source": "1급 2020.06.13 · 90번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 명령행에서 가상 머신만을 대상으로 CPU 자원을 모니터링할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "xm",
+      "xend",
+      "virt-top",
+      "virt-manager"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20200613-091",
+    "source": "1급 2020.06.13 · 91번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 xinetd 기반으로 동작하는 서비스의 초당 요청 개수가 50개 이상일 경우 10초 동안 접속 연결을 중단하기 위한 설정 항목과 값으로 알맞은 것은?",
+    "choices": [
+      "cps = 50 10",
+      "cps = 50 100",
+      "cps = 10 50",
+      "cps = 100 50"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-094",
+    "source": "1급 2020.06.13 · 94번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 VNC(Virtual Network Computing)와 가장 관련 있는 프로토콜로 알맞은 것은?",
+    "choices": [
+      "RFB(Remote Frame Buffer)",
+      "NTP(Network Time Protocol)",
+      "MQTT(MQ Telemetry Transport)",
+      "DHCP(Dynamic Host Configuration Protocol)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20200613-099",
+    "source": "1급 2020.06.13 · 99번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 C 언어의 malloc()과 가장 관련 있는 공격 유형으로 알맞은 것은?",
+    "choices": [
+      "네트워크 대역폭 고갈",
+      "가용 메모리 자원 고갈",
+      "가용 디스크 자원 고갈",
+      "가용 프로세스 자원 고갈"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20200613-100",
+    "source": "1급 2020.06.13 · 100번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 침입 탐지 시스템으로 이용되는 도구로 가장 알맞은 것은?",
+    "choices": [
+      "John the Ripper",
+      "Tripwire",
+      "Stacheldraht",
+      "Suricata"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-002",
+    "source": "1급 2020.10.10 · 2번 · 리눅스 실무의 이해",
+    "question": "다음 중 나머지 셋과 다른 종류에 속하는 리눅스 배포판으로 알맞은 것은?",
+    "choices": [
+      "Ubuntu",
+      "Linux Mint",
+      "Elementary OS",
+      "Vector Linux"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-003",
+    "source": "1급 2020.10.10 · 3번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스 기반 운영체제로 틀린 것은?",
+    "choices": [
+      "Tizen",
+      "webOS",
+      "QNX",
+      "GENIVI"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-005",
+    "source": "1급 2020.10.10 · 5번 · 리눅스 실무의 이해",
+    "question": "다음 중 유닉스(UNIX)를 개발한 인물로 알맞은 것은?",
+    "choices": [
+      "리누스 토발즈",
+      "켄 톰슨",
+      "빌 조이",
+      "리처드 스톨먼"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-008",
+    "source": "1급 2020.10.10 · 8번 · 리눅스 실무의 이해",
+    "question": "다음 중 X 클라이언트 프로그램을 X 서버로 전송하기 위해 변경해야 할 환경 변수로 알맞은 것은?",
+    "choices": [
+      "TERM",
+      "XTERM",
+      "DISPLAY",
+      "TERMINAL"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-009",
+    "source": "1급 2020.10.10 · 9번 · 리눅스 실무의 이해",
+    "question": "6개의 하드디스크로 RAID를 구성하려고 한다. 1개는 여분(spare) 디스크로 구성하고, 나머지 디스크로 RAID-5를 구성했을 경우에 실제 사용 가능한 디스크의 비율로 가장 알맞은 것은?",
+    "choices": [
+      "33.3%",
+      "50%",
+      "66.7%",
+      "83.3%"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-010",
+    "source": "1급 2020.10.10 · 10번 · 리눅스 실무의 이해",
+    "question": "다음 중 번호값이 가장 큰 시그널(signal)로 알맞은 것은?",
+    "choices": [
+      "SIGTERM",
+      "SIGINT",
+      "SIGTSTP",
+      "SIGQUIT"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-013",
+    "source": "1급 2020.10.10 · 13번 · 리눅스 실무의 이해",
+    "question": "다음 중 장치 파일명의 종류가 나머지 셋과 다른 것은?",
+    "choices": [
+      "IDE 디스크",
+      "SCSI 디스크",
+      "S-ATA 디스크",
+      "SSD(Solid State Drive)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-015",
+    "source": "1급 2020.10.10 · 15번 · 리눅스 실무의 이해",
+    "question": "다음 중 바로 직전에 수행한 명령을 재실행할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "!0",
+      "!1",
+      "!!",
+      "history -1"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-017",
+    "source": "1급 2020.10.10 · 17번 · 리눅스 실무의 이해",
+    "question": "다음 중 netstat의 State 결과값이 ESTABLISHED일 때 내용으로 알맞은 것은?",
+    "choices": [
+      "3 Way-Handshaking이 완료된 후 서버와 클라이언트가 서로 연결된 상태",
+      "서버에서 클라이언트로 들어오는 패킷을 위해 소켓을 열고 기다리는 상태",
+      "로컬 시스템의 클라이언트 애플리케이션이 원격 호스트에 연결을 요청한 상태",
+      "원격 호스트가 종료되고 소켓도 닫힌 상태에서 마지막 ACK 패킷을 기다리는 상태"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-018",
+    "source": "1급 2020.10.10 · 18번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스에서 지원하는 네트워크 하드웨어 장치명과 설명으로 알맞은 것은?",
+    "choices": [
+      "lo : 로컬 루프백(Local Loopback)을 나타내는 장치로 물리적으로 존재하는 인터페이스",
+      "enpx : CentOS 6 이전 버전에서 사용되었던 이더넷 카드 인터페이스 장치",
+      "pppx : 패러럴 케이블을 사용하는 패러럴 라인 인터페이스 장치",
+      "docker0 : 경량화된 서버 가상화 기술인 Docker를 사용할 경우 설정되는 네트워크 장치"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-021",
+    "source": "1급 2020.10.10 · 21번 · 리눅스 시스템 관리",
+    "question": "다음 중 1시간 주기로 실행되는 crontab 설정으로 알맞은 것은?",
+    "choices": [
+      "1 * * * * /etc/joon.sh",
+      "* 1 * * * /etc/joon.sh",
+      "* * 1 * * /etc/joon.sh",
+      "* * * 1 * /etc/joon.sh"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-024",
+    "source": "1급 2020.10.10 · 24번 · 리눅스 시스템 관리",
+    "question": "다음 중 다수의 텍스트 파일이 10MB 정도로 묶여있는 tar 파일을 압축하려고 할 때 가장 압축률이 좋은 명령으로 알맞은 것은?",
+    "choices": [
+      "xz",
+      "gzip",
+      "bzip2",
+      "compress"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-027",
+    "source": "1급 2020.10.10 · 27번 · 리눅스 시스템 관리",
+    "question": "다음 중 root 사용자가 lin 사용자의 예약된 cron 작업을 제거하는 명령으로 가장 알맞은 것은?",
+    "choices": [
+      "crontab -d -u lin",
+      "crontab -e -u lin",
+      "crontab -r -u lin",
+      "crontab -x -u lin"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-028",
+    "source": "1급 2020.10.10 · 28번 · 리눅스 시스템 관리",
+    "question": "사용자 디스크 용량을 제한하기 위해 쿼터를 설정하려고 한다. 다음 중 /etc/fstab에 설정해야 하는 내용으로 알맞은 것은?",
+    "choices": [
+      "4번째 필드에 usrquota라는 옵션을 추가한다.",
+      "4번째 필드에 userquota라는 옵션을 추가한다.",
+      "5번째 필드에 usrquota라는 옵션을 추가한다.",
+      "5번째 필드에 userquota라는 옵션을 추가한다."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-030",
+    "source": "1급 2020.10.10 · 30번 · 리눅스 시스템 관리",
+    "question": "다음 중 특정 사용자가 자신이 속한 주(Primary) 그룹을 다른 그룹으로 변경할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "groupmod",
+      "gpasswd",
+      "newgrp",
+      "groups"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-033",
+    "source": "1급 2020.10.10 · 33번 · 리눅스 시스템 관리",
+    "question": "다음 중 yum을 이용해서 telnet이라는 문자열이 들어있는 패키지를 검색하는 명령으로 알맞은 것은?",
+    "choices": [
+      "yum -f telnet",
+      "yum search telnet",
+      "yum -search telnet",
+      "yum --search telnet"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-034",
+    "source": "1급 2020.10.10 · 34번 · 리눅스 시스템 관리",
+    "question": "다음 중 시그널 이름과 번호를 확인할 수 있는 명령으로 알맞은 것은?",
+    "choices": [
+      "kill -l",
+      "killall -l",
+      "pkill -l",
+      "pgrep -l"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-035",
+    "source": "1급 2020.10.10 · 35번 · 리눅스 시스템 관리",
+    "question": "다음 중 백그라운드로 수행 중인 작업번호가 2인 프로세스를 포어그라운드로 전환하는 명령으로 알맞은 것은?",
+    "choices": [
+      "fg -2",
+      "fg &2",
+      "fg %2",
+      "fg -n 2"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-036",
+    "source": "1급 2020.10.10 · 36번 · 리눅스 시스템 관리",
+    "question": "다음 중 ihd라는 그룹명을 kait로 변경하는 명령으로 알맞은 것은?",
+    "choices": [
+      "groupmod -n ihd kait",
+      "groupmod -n kait ihd",
+      "groupmod -N ihd kait",
+      "groupmod -N kait ihd"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-039",
+    "source": "1급 2020.10.10 · 39번 · 리눅스 시스템 관리",
+    "question": "다음 중 10줄이 기록된 텍스트 파일인 lin.txt 파일에서 4번째부터 7번째 줄까지 출력하는 명령으로 알맞은 것은?",
+    "choices": [
+      "head -7 lin.txt | tail -3",
+      "head -7 lin.txt | tail -4",
+      "tail -10 lin.txt | head -3",
+      "tail -10 lin.txt | head -4"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-041",
+    "source": "1급 2020.10.10 · 41번 · 리눅스 시스템 관리",
+    "question": "다음 중 커널 컴파일의 작업 내용과 명령어로 알맞은 것은?",
+    "choices": [
+      "커널 컴파일 옵션 설정 작업 : make mrproper",
+      "커널 소스의 설정 값 초기화 : make menuconfig",
+      "커널 모듈 생성을 위한 컴파일 작업 : make modules",
+      "커널 모듈 파일 복사 및 grub.conf 파일 수정 작업 : make modules_install"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-043",
+    "source": "1급 2020.10.10 · 43번 · 리눅스 시스템 관리",
+    "question": "새로운 디스크를 인식하려고 한다. 다음 중 디스크 인식 여부를 확인하는 명령으로 가장 알맞은 것은?",
+    "choices": [
+      "mount",
+      "fdisk -l",
+      "cat /etc/fstab",
+      "cat /etc/mtab"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-044",
+    "source": "1급 2020.10.10 · 44번 · 리눅스 시스템 관리",
+    "question": "다음 중 모듈에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "모듈 관련 명령어로는 lsmod, insmod, rmmod가 있다.",
+      "모듈이 커널에 내장되는 방식을 모놀리식 방식이라고 한다.",
+      "리눅스 모듈의 경우 C컴파일러로 만들어진 '*.ko' 파일 형태이다.",
+      "사용 가능한 모듈은 /lib/modules/커널버전/kernel 디렉터리 안에서 확인할 수 있다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-046",
+    "source": "1급 2020.10.10 · 46번 · 리눅스 시스템 관리",
+    "question": "새로운 디스크를 추가 할당하고 리부팅을 하였으나 해당 디스크가 mount 되어 있지 않았다. 다음 중 리부팅 후에도 자동으로 mount되도록 설정하는 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/fstab",
+      "/etc/groups",
+      "/etc/exports",
+      "/proc/partitions"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-047",
+    "source": "1급 2020.10.10 · 47번 · 리눅스 시스템 관리",
+    "question": "다음 중 프린트 작업의 'Request-ID'를 확인하는 명령어로 알맞은 것은?",
+    "choices": [
+      "lp",
+      "lpc",
+      "lpstat",
+      "cancel"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-048",
+    "source": "1급 2020.10.10 · 48번 · 리눅스 시스템 관리",
+    "question": "다음 중 자동 문서 공급 장치가 장착된 스캐너에서 스캔할 때 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "xcam",
+      "scanadf",
+      "scanimage",
+      "sane-find-scanner"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-049",
+    "source": "1급 2020.10.10 · 49번 · 리눅스 시스템 관리",
+    "question": "다음 중 CUPS 프린팅 시스템의 특징으로 알맞은 것은?",
+    "choices": [
+      "설정 정보는 /etc/printcap 파일에 저장된다.",
+      "BSD계열 유닉스에서 사용하기 위해 개발되었다.",
+      "로컬에 직접 연결한 프린터를 네트워크 프린터처럼 설정이 가능하다.",
+      "초기에는 printconf, printtool과 같은 도구를 사용하여 설정을 하였다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-050",
+    "source": "1급 2020.10.10 · 50번 · 리눅스 시스템 관리",
+    "question": "다음 중 uname 명령을 이용하여 커널 버전을 확인하는 옵션으로 알맞은 것은?",
+    "choices": [
+      "-n",
+      "-o",
+      "-r",
+      "-s"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-053",
+    "source": "1급 2020.10.10 · 53번 · 리눅스 시스템 관리",
+    "question": "다음 중 리눅스 주요 보안 도구와 기능 설명에 대해 알맞은 것은?",
+    "choices": [
+      "nmap : 모든 파일들에 대한 데이터베이스를 만들어 파일의 변조 여부를 검사한다.",
+      "nessus : 운영 중인 서버에 불필요하게 작동하고 있는 서비스 포트를 확인할 수 있다.",
+      "tripwire : 서버의 보안 취약점을 검사해주는 도구로 문제가 되는 서비스에 대한 정보를 알려준다.",
+      "tcpdump : 조건식을 설정하여 네트워크 인터페이스를 거치는 패킷 헤더 정보를 출력할 수 있다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-054",
+    "source": "1급 2020.10.10 · 54번 · 리눅스 시스템 관리",
+    "question": "다음 중 SSH(Secure Shell)의 설명으로 틀린 것은?",
+    "choices": [
+      "패킷을 암호화하여 telnet이나 rlogin에 비해 안전하다.",
+      "ssh-keygen을 이용하면 인증키를 이용한 접속이 가능하다.",
+      "기본 설정 포트는 22번이며 원격 셸, scp, sftp 기능을 지원한다.",
+      "ssh2는 ssh1을 개선한 것으로 하위호환성을 완벽하게 지원한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-057",
+    "source": "1급 2020.10.10 · 57번 · 리눅스 시스템 관리",
+    "question": "다음 중 sudo에 관련된 설명으로 틀린 것은?",
+    "choices": [
+      "특정 사용자 또는 특정 그룹에 root 사용자 권한을 가질 수 있게 하는 도구이다.",
+      "visudo는 환경설정 파일을 편집할 때 사용하는 명령이다.",
+      "적용된 사용자는 'sudo 명령어' 형태로 실행하며 root 권한을 대행한다.",
+      "환경설정 파일은 /etc/sudo 이다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-058",
+    "source": "1급 2020.10.10 · 58번 · 리눅스 시스템 관리",
+    "question": "다음 중 dmesg 명령에 관한 설명으로 알맞은 것은?",
+    "choices": [
+      "커널 변수의 값을 제어하여 시스템을 최적화 할 수 있는 명령이다.",
+      "커널 링 버퍼(kernel ring buffer)의 내용을 출력하고 제어하는 명령이다.",
+      "/var/log/dmesg 파일에 기록된 환경 변수 설정 값을 출력하는 명령이다.",
+      "커널 부트 메시지 로그를 보여주는 명령으로 실행 시 /var/log/dmesg에 기록된다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-060",
+    "source": "1급 2020.10.10 · 60번 · 리눅스 시스템 관리",
+    "question": "다음 중 rsync 명령에 관한 설명으로 틀린 것은?",
+    "choices": [
+      "rcp(remote copy)에 비해 처리속도가 빠르다.",
+      "내부 파이프라인을 통하여 전송기간을 줄인다.",
+      "ssh을 이용하여 전송 가능하나 root 권한이 필요하다.",
+      "링크된 파일도 복사 가능하고 소유권도 유지하여 복사할 수 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-067",
+    "source": "1급 2020.10.10 · 67번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 LDAP에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "X.500 Directory Access Protocol 기반으로 만들어진 통신 규약이다.",
+      "RDBMS에 비교해서 검색 속도가 빠르다.",
+      "자주 변경되는 정보인 경우에 RDBMS보다 더욱 뛰어난 성능을 발휘한다.",
+      "읽기 위주의 검색 서비스에서 상당히 좋은 성능을 발휘한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-069",
+    "source": "1급 2020.10.10 · 69번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS 서버에서 사용자 관련 정보가 저장되는 파일명으로 알맞은 것은?",
+    "choices": [
+      "uid.byname",
+      "user.byname",
+      "hosts.byname",
+      "passwd.byname"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-071",
+    "source": "1급 2020.10.10 · 71번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 메일 관련 프로그램의 종류가 다른 것은?",
+    "choices": [
+      "qmail",
+      "postfix",
+      "dovecot",
+      "sendmail"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-078",
+    "source": "1급 2020.10.10 · 78번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 xinetd 기반으로 동작하는 텔넷 서버를 활성화하기 위한 설정으로 알맞은 것은?",
+    "choices": [
+      "disable = no",
+      "disable = yes",
+      "enable = no",
+      "enable = yes"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-079",
+    "source": "1급 2020.10.10 · 79번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 TCP wrapper를 이용한 접근 제어가 가능한 서비스로 틀린 것은?",
+    "choices": [
+      "sshd",
+      "vsftpd",
+      "in.telnetd",
+      "squid"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-081",
+    "source": "1급 2020.10.10 · 81번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NTP 서버에서 계층을 나타내는 용어로 알맞은 것은?",
+    "choices": [
+      "Layer",
+      "Frame",
+      "Class",
+      "Stratum"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-082",
+    "source": "1급 2020.10.10 · 82번 · 네트워크 및 서비스의 활용",
+    "question": "아파치 웹 서버 2.4 버전에서 서버의 포트 번호를 8080으로 운영하려고 한다. 다음 중 관련 설정으로 알맞은 것은?",
+    "choices": [
+      "Port 8080",
+      "Listen 8080",
+      "http_port 8080",
+      "http_listen 8080"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-083",
+    "source": "1급 2020.10.10 · 83번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 이름과 성의 조합을 나타내는 LDAP의 속성 키워드로 알맞은 것은?",
+    "choices": [
+      "ou",
+      "cn",
+      "sn",
+      "dc"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-085",
+    "source": "1급 2020.10.10 · 85번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 삼바 서버와 관련 있는 프로토콜의 조합으로 가장 알맞은 것은?",
+    "choices": [
+      "SMB, CIFS",
+      "RPC, SMB",
+      "RPC, CIFS",
+      "SMB, IPC"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-087",
+    "source": "1급 2020.10.10 · 87번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 vsftpd 설치 시에 제공되는 /etc/vsftpd/ftpusers 파일의 기능에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "vsftpd 서버에 접근이 가능한 사용자 목록 파일이다.",
+      "vsftpd 서버에 접근이 불가능한 사용자 목록 파일이다.",
+      "vsftpd 서버에 접근이 가능한 호스트의 IP 주소 목록 파일이다.",
+      "vsftpd 서버에 접근이 불가능한 호스트의 IP 주소 목록 파일이다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-088",
+    "source": "1급 2020.10.10 · 88번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 메일 클라이언트가 메일 서버에 도착한 E-mail을 가져올 때 사용되는 프로토콜의 조합으로 알맞은 것은?",
+    "choices": [
+      "SNMP, SMTP",
+      "IMAP, SMTP",
+      "SMTP, POP3",
+      "IMAP, POP3"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-089",
+    "source": "1급 2020.10.10 · 89번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 메일을 보낸 후에 외부로 메일이 전송되었는지 여부를 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "m4",
+      "mailq",
+      "mail -v",
+      "sendmail -bi"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20201010-090",
+    "source": "1급 2020.10.10 · 90번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DNS 서버가 등장하는 데 계기가 된 파일로 알맞은 것은?",
+    "choices": [
+      "/etc/hosts",
+      "/etc/host.conf",
+      "/etc/networks",
+      "/etc/sysconfig/network"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-092",
+    "source": "1급 2020.10.10 · 92번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 리버스 존(Reverse Zone) 파일에만 사용하는 레코드 타입으로 알맞은 것은?",
+    "choices": [
+      "RX",
+      "MX",
+      "PTR",
+      "CNAME"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20201010-097",
+    "source": "1급 2020.10.10 · 97번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 iptables에 구성되어 있는 각 테이블의 설명으로 알맞은 것은?",
+    "choices": [
+      "filter : IP의 주소를 변환시키는 역할을 수행하는 테이블",
+      "mangle : 패킷 필터링을 담당하는 iptables의 기본 테이블",
+      "nat : 패킷 데이터를 변경하는 특수 규칙을 적용하는 테이블",
+      "raw : 넷필터의 연결추적 하위 시스템과 독립적으로 동작해야 하는 규칙을 설정하는 테이블"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20201010-099",
+    "source": "1급 2020.10.10 · 99번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DDoS 공격 도구의 종류가 다른 것은?",
+    "choices": [
+      "Boink",
+      "Trinoo",
+      "TFN 2K",
+      "Stacheldraht"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20201010-100",
+    "source": "1급 2020.10.10 · 100번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 iptables 관련 로그가 기록되는 로그파일로 알맞은 것은?",
+    "choices": [
+      "/var/dmesg",
+      "/var/log/secure",
+      "/cat/log/xferlog",
+      "/var/log/messages"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20220312-002",
+    "source": "1급 2022.03.12 · 2번 · 리눅스 실무의 이해",
+    "question": "다음 중 프로토콜 데이터 단위를 OSI 7 모델의 하위 계층부터 상위 계층 순으로 올바르게 나열한 것은?",
+    "choices": [
+      "bit → frame → packet → segment",
+      "bit → frame → segment → packet",
+      "bit → packet → frame → segment",
+      "bit → segment → frame → packet"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-003",
+    "source": "1급 2022.03.12 · 3번 · 리눅스 실무의 이해",
+    "question": "다음 중 IPv4 주소 체제에서 B클래스에 속하는 사설 IP 주소 대역으로 알맞은 것은?",
+    "choices": [
+      "171.16.0.0 ~ 171.31.0.0",
+      "171.16.0.0 ~ 172.31.0.0",
+      "172.16.0.0 ~ 172.31.0.0",
+      "173.16.0.0 ~ 173.31.0.0"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-007",
+    "source": "1급 2022.03.12 · 7번 · 리눅스 실무의 이해",
+    "question": "최근 실행한 명령 중에서 ‘al’이라는 문자열이 들어간 명령을 찾아서 재실행하려고 할 때 가장 알맞은 것은?",
+    "choices": [
+      "!al",
+      "!?al?",
+      "!!al",
+      "history al"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-009",
+    "source": "1급 2022.03.12 · 9번 · 리눅스 실무의 이해",
+    "question": "다음 중 할당된 번호 값이 가장 큰 시그널로 알맞은 것은?",
+    "choices": [
+      "SIGTSTP",
+      "SIGKILL",
+      "SIGTERM",
+      "SIGQUIT"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-010",
+    "source": "1급 2022.03.12 · 10번 · 리눅스 실무의 이해",
+    "question": "다음 중 포어그라운드 동작 중인 프로세스를 백그라운드로 전환하는 방법으로 알맞은 것은?",
+    "choices": [
+      "[Ctrl]+[c]를 눌러 작업을 일시 정지시킨 후에 fg 명령을 실행한다.",
+      "[Ctrl]+[c]를 눌러 작업을 일시 정지시킨 후에 bg 명령을 실행한다.",
+      "[Ctrl]+[z]를 눌러 작업을 일시 정지시킨 후에 fg 명령을 실행한다.",
+      "[Ctrl]+[z]를 눌러 작업을 일시 정지시킨 후에 bg 명령을 실행한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20220312-012",
+    "source": "1급 2022.03.12 · 12번 · 리눅스 실무의 이해",
+    "question": "다음 중 10GB 용량의 하드 디스크 6개를 이용해서 RAID-5를 구성했을 때 실제 사용할 수 있는 용량으로 알맞은 것은?",
+    "choices": [
+      "30GB",
+      "40GB",
+      "50GB",
+      "60GB"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-013",
+    "source": "1급 2022.03.12 · 13번 · 리눅스 실무의 이해",
+    "question": "다음 중 ssh 데몬을 시스템 부팅 시에 구동되도록 설정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "systemctl start sshd",
+      "systemctl enable sshd",
+      "systemctl is-enabled sshd",
+      "systemctl is-active sshd"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-014",
+    "source": "1급 2022.03.12 · 14번 · 리눅스 실무의 이해",
+    "question": "다음 중 시스템 부팅 시에 X 윈도 모드로 부팅이 되도록 설정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "systemctl get-default multi-user",
+      "systemctl set-default multi-user",
+      "systemctl get-default graphical",
+      "systemctl set-default graphical"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20220312-015",
+    "source": "1급 2022.03.12 · 15번 · 리눅스 실무의 이해",
+    "question": "다음 중 CentOS 7 버전에서 GRUB 환경 설정 파일을 수정한 후에 변경된 내용을 저장하기 위해 사용하는 명령으로 알맞은 것은?",
+    "choices": [
+      "grub",
+      "grub2-mkconfig",
+      "grub2-install",
+      "grub2-probe"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-017",
+    "source": "1급 2022.03.12 · 17번 · 리눅스 실무의 이해",
+    "question": "다음 중 리눅스 탄생의 모델이 된 미닉스(MINIX) 운영체제를 개발한 인물로 알맞은 것은?",
+    "choices": [
+      "빌 조이",
+      "데니스 리치",
+      "리처드 스톨먼",
+      "앤드류 스튜어트 타넨바움"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20220312-019",
+    "source": "1급 2022.03.12 · 19번 · 리눅스 실무의 이해",
+    "question": "다음 중 2차적 저작물 소스 코드의 비공개가 불가능한 라이선스로 알맞은 것은?",
+    "choices": [
+      "MPL",
+      "MIT",
+      "Apache",
+      "BSD"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-022",
+    "source": "1급 2022.03.12 · 22번 · 리눅스 시스템 관리",
+    "question": "다음 중 백업하는 명령어와 복원하는 명령어가 다른 백업(Backup) 프로그램으로 알맞은 것은?",
+    "choices": [
+      "dd",
+      "dump",
+      "cpio",
+      "rsync"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-023",
+    "source": "1급 2022.03.12 · 23번 · 리눅스 시스템 관리",
+    "question": "다음 중 시스템 보안 관리 강화를 위한 조치로 틀린 것은?",
+    "choices": [
+      "불필요한 서비스를 최대한 제거한다.",
+      "/etc/issue와 같은 메시지 파일을 제거한다.",
+      "Set-UID와 같은 특수 권한 사용을 권장한다.",
+      "로그인 서비스는 telnet 대신에 ssh를 사용한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-024",
+    "source": "1급 2022.03.12 · 24번 · 리눅스 시스템 관리",
+    "question": "다음 중 일반 텍스트 형식으로 저장되어 있어서 편집기로 내용을 확인할 수 있는 로그 파일명으로 알맞은 것은?",
+    "choices": [
+      "/var/log/secure",
+      "/var/log/lastlog",
+      "/var/log/wtmp",
+      "/var/log/btmp"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-029",
+    "source": "1급 2022.03.12 · 29번 · 리눅스 시스템 관리",
+    "question": "다음 중 로그 설정 파일에서 가장 심각한 수준에 해당하는 priority로 알맞은 것은?",
+    "choices": [
+      "error",
+      "emerg",
+      "crit",
+      "alert"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-030",
+    "source": "1급 2022.03.12 · 30번 · 리눅스 시스템 관리",
+    "question": "다음 중 외부에서 오는 ping에 대한 응답을 거부하도록 설정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "sysctl -w net.ipv4.icmp_echo_ignore_all=0",
+      "sysctl -w net.ipv4.icmp_echo_ignore_all=1",
+      "sysctl -n net.ipv4.icmp_echo_ignore_all=0",
+      "sysctl -n net.ipv4.icmp_echo_ignore_all=1"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-031",
+    "source": "1급 2022.03.12 · 31번 · 리눅스 시스템 관리",
+    "question": "다음 중 System V 계열에 속하는 프린터 명령어로 틀린 것은?",
+    "choices": [
+      "lp",
+      "lpr",
+      "lpstat",
+      "cancel"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-034",
+    "source": "1급 2022.03.12 · 34번 · 리눅스 시스템 관리",
+    "question": "다음 중 CentOS 7에서 사용되는 리눅스 커널의 모듈 파일 형식으로 알맞은 것은?",
+    "choices": [
+      "e1000e.o",
+      "e1000e.so",
+      "e1000e.ko",
+      "e1000e.mo"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-035",
+    "source": "1급 2022.03.12 · 35번 · 리눅스 시스템 관리",
+    "question": "다음 중 LVM을 구성하는 순서에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "볼륨 그룹을 구성한 후에 물리적 볼륨, 논리적 볼륨 순으로 구성한다.",
+      "볼륨 그룹을 구성한 후에 논리적 볼륨, 물리적 볼륨 순으로 구성한다.",
+      "물리적 볼륨, 논리적 볼륨을 생성한 후에 볼륨 그룹을 구성한다.",
+      "물리적 볼륨을 생성한 후에 볼륨 그룹을 구성하고 논리적 볼륨을 생성한다."
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20220312-037",
+    "source": "1급 2022.03.12 · 37번 · 리눅스 시스템 관리",
+    "question": "커널 컴파일 과정 중 make menuconfig 명령을 이용해서 여러 가지 설정을 끝낸 후에 저장하였다. 다음 중 관련 작업 후 커널 소스 디렉터리에 생성되는 파일명으로 알맞은 것은?",
+    "choices": [
+      "Makefile",
+      ".config",
+      "Kconfig",
+      "configure"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-038",
+    "source": "1급 2022.03.12 · 38번 · 리눅스 시스템 관리",
+    "question": "다음 중 커널 컴파일의 순서로 알맞은 것은?",
+    "choices": [
+      "make menuconfig → make mrproper → make bzImage",
+      "make menuconfig → make bzImage → make mrproper",
+      "make mrproper → make menuconfig → make bzImage",
+      "make bzImage → make menuconfig → make mrproper"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-039",
+    "source": "1급 2022.03.12 · 39번 · 리눅스 시스템 관리",
+    "question": "다음 중 리눅스 커널이 속해있는 커널의 종류로 가장 알맞은 것은?",
+    "choices": [
+      "단일형 커널(monolithic kernel)",
+      "마이크로커널(microkernel)",
+      "혼합형 커널(hybrid kernel)",
+      "나노커널(nanokernel)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-044",
+    "source": "1급 2022.03.12 · 44번 · 리눅스 시스템 관리",
+    "question": "다음 중 등록된 cron 관련 파일을 제거하는 명령으로 알맞은 것은?",
+    "choices": [
+      "crontab -e",
+      "crontab -d",
+      "crontab -l",
+      "crontab -r"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20220312-045",
+    "source": "1급 2022.03.12 · 45번 · 리눅스 시스템 관리",
+    "question": "다음 중 특정 명령이나 작업을 예약된 시간에 실행할 때 사용하는 명령어로 알맞은 것은?",
+    "choices": [
+      "at",
+      "atq",
+      "atrm",
+      "atc"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-049",
+    "source": "1급 2022.03.12 · 49번 · 리눅스 시스템 관리",
+    "question": "다음 중 root 계정에 대한 보안을 강화하는 조치로 틀린 것은?",
+    "choices": [
+      "root 계정 이외에 UID가 0인 계정이 없도록 관리한다.",
+      "PAM을 이용해서 root 계정으로 접근하는 서비스를 제어한다.",
+      "일반 사용자들에게 sudo 보다는 su 명령을 이용하도록 한다.",
+      "환경변수인 TMOUT를 이용해서 무의미하게 장시간 로그인되어 있는 것을 막는다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-054",
+    "source": "1급 2022.03.12 · 54번 · 리눅스 시스템 관리",
+    "question": "다음 중 프로세스 우선순위와 관련된 설명으로 틀린 것은?",
+    "choices": [
+      "프로세스 우선순위와 관련된 항목에는 PRI와 NI가 있다.",
+      "명령어를 이용해서 우선순위를 조정할 때 사용하는 항목이 NI이다.",
+      "NI에 설정하는 값의 범위는 -19~20이다.",
+      "프로세스 우선순위를 변경하는 명령어에는 nice, renice, top이 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-056",
+    "source": "1급 2022.03.12 · 56번 · 리눅스 시스템 관리",
+    "question": "다음 중 레드햇 리눅스의 패키지 관리 기법으로 가장 거리가 먼 것은?",
+    "choices": [
+      "rpm",
+      "yum",
+      "dnf",
+      "pacman"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20220312-057",
+    "source": "1급 2022.03.12 · 57번 · 리눅스 시스템 관리",
+    "question": "다음 중 yum 명령에서 bind라는 문자열이 들어 있는 패키지들을 찾는 명령으로 알맞은 것은?",
+    "choices": [
+      "yum search bind",
+      "yum info bind",
+      "yum list bind",
+      "yum seek bind"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-060",
+    "source": "1급 2022.03.12 · 60번 · 리눅스 시스템 관리",
+    "question": "다음 중 CentOS 7 버전 리눅스에서 그룹 패스워드에 적용되는 해시 알고리즘으로 알맞은 것은?",
+    "choices": [
+      "DES",
+      "MD5",
+      "SHA-256",
+      "SHA-512"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20220312-061",
+    "source": "1급 2022.03.12 · 61번 · 네트워크 및 서비스의 활용",
+    "question": "iptables 명령을 이용해서 직접 방화벽 규칙(rule)을 설정하려고 한다. 다음 중 동적 방화벽인 firewalld의 동작을 중지시키는 명령으로 알맞은 것은?",
+    "choices": [
+      "systemctl firewall-cmd stop",
+      "systemctl stop firewall-cmd",
+      "systemctl firewalld stop",
+      "systemctl stop firewalld"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20220312-065",
+    "source": "1급 2022.03.12 · 65번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 iptables의 nat 테이블에 존재하는 사슬명으로 틀린 것은?",
+    "choices": [
+      "INPUT",
+      "OUTPUT",
+      "FORWARD",
+      "PREROUTING"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-066",
+    "source": "1급 2022.03.12 · 66번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 웹 클라이언트가 접근이 금지된 페이지를 요청했을 때 웹 서버에 기록되는 상태 코드 번호로 알맞은 것은?",
+    "choices": [
+      "200",
+      "400",
+      "403",
+      "404"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-067",
+    "source": "1급 2022.03.12 · 67번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 아파치 웹 서버 주 환경 설정 파일에서 웹 서버의 도메인명이나 IP 주소를 기입하는 항목으로 알맞은 것은?",
+    "choices": [
+      "ServerAdmin",
+      "ServerName",
+      "DirectoryIndex",
+      "ServerRoot"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-069",
+    "source": "1급 2022.03.12 · 69번 · 네트워크 및 서비스의 활용",
+    "question": "CentOS 7에서 NIS 서버를 사용하기 위해서는 systemctl 명령을 이용해서 RPC 관련 데몬을 먼저 실행해야 한다. 다음 중 관련 데몬을 실행하는 명령으로 알맞은 것은?",
+    "choices": [
+      "rpcbind",
+      "ypserv",
+      "ypbind",
+      "prtmap"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-071",
+    "source": "1급 2022.03.12 · 71번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DHCP 서버 환경 설정 파일에서 클라이언트에게 할당할 IP 주소 대역을 기입하는 항목으로 알맞은 것은?",
+    "choices": [
+      "range",
+      "fixed-address",
+      "option routers",
+      "option broadcast-address"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-072",
+    "source": "1급 2022.03.12 · 72번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 가상 머신을 사용하기 위해서 실행시켜야 하는 데몬명으로 알맞은 것은?",
+    "choices": [
+      "libvirt",
+      "libvirtd",
+      "virt-manager",
+      "virt-top"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-073",
+    "source": "1급 2022.03.12 · 73번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 가상화 방식이 나머지 셋과 다른 것은?",
+    "choices": [
+      "Docker",
+      "VMware Workstation",
+      "VirtualBox",
+      "Hyper-V"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-074",
+    "source": "1급 2022.03.12 · 74번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 IPv6 기반 주소를 기입할 때 사용하는 Zone 파일의 레코드 타입으로 알맞은 것은?",
+    "choices": [
+      "A",
+      "AA",
+      "AAAA",
+      "NS"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-075",
+    "source": "1급 2022.03.12 · 75번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 DNS 서버 프로그램인 bind를 배포하고 관리하는 기관명으로 알맞은 것은?",
+    "choices": [
+      "ISO",
+      "ISC",
+      "W3C",
+      "IEEE"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-076",
+    "source": "1급 2022.03.12 · 76번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 /etc/aliases 파일 설정 후에 변경된 내용을 적용시킬 때 사용하는 명령어로 알맞은 것은?",
+    "choices": [
+      "makemap",
+      "mailq",
+      "newaliases",
+      "m4"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20220312-082",
+    "source": "1급 2022.03.12 · 82번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 CentOS 7에서 TCP Wrapper를 이용해서 접근 제어가 가능한 서비스로 알맞은 것은?",
+    "choices": [
+      "ssh",
+      "samba",
+      "telnet",
+      "gdm"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20220312-092",
+    "source": "1급 2022.03.12 · 92번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS 서버에서 맵 파일이 생성되는 기본 디렉토리로 알맞은 것은?",
+    "choices": [
+      "/etc/yp",
+      "/var/yp",
+      "/etc/ypserv",
+      "/var/ypserv"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20220312-093",
+    "source": "1급 2022.03.12 · 93번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 이름과 성의 조합을 나타내는 LDAP 속성 키워드로 알맞은 것은?",
+    "choices": [
+      "cn",
+      "sn",
+      "givenName",
+      "dc"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20230311-008",
+    "source": "1급 2023.03.11 · 8번 · 리눅스 실무의 이해",
+    "question": "다음 중 ssh 데몬이 리눅스 부팅 시에 실행되도록 설정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "systemctl enable sshd",
+      "systemctl status sshd",
+      "systemctl active sshd",
+      "systemctl start sshd"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20230311-009",
+    "source": "1급 2023.03.11 · 9번 · 리눅스 실무의 이해",
+    "question": "다음 중 원격지 X 서버에 응용 프로그램을 전송하기 위해 X 클라이언트에서 진행해야 하는 과정으로 알맞은 것은?",
+    "choices": [
+      "xauth 명령으로 서버 주소를 등록한다.",
+      "xhost 명령으로 서버 주소를 등록한다.",
+      "환경변수인 DISPLAY의 값을 서버 주소로 변경한다.",
+      "환경변수인 TERM의 값을 서버 주소로 변경한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20230311-015",
+    "source": "1급 2023.03.11 · 15번 · 리눅스 실무의 이해",
+    "question": "다음 중 백그라운드로 수행 중인 프로세스를 확인하는 명령으로 알맞은 것은?",
+    "choices": [
+      "bg",
+      "fg",
+      "jobs",
+      "nohup"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20230311-016",
+    "source": "1급 2023.03.11 · 16번 · 리눅스 실무의 이해",
+    "question": "다음 중 '전송 계층-네트워크 계층-데이터링크 계층' 순서로 나열된 PDU(Protocol Data Unit) 단위로 알맞은 것은?",
+    "choices": [
+      "frame-packet-segment",
+      "segment-packet-frame",
+      "packet-frame-segment",
+      "packet-segment-frame"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20230311-020",
+    "source": "1급 2023.03.11 · 20번 · 리눅스 실무의 이해",
+    "question": "다음 중 ssh로 접속한 호스트의 IP 주소를 확인할 때 사용하는 명령어로 알맞은 것은?",
+    "choices": [
+      "ss",
+      "arp",
+      "mii-tool",
+      "ethtool"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20230311-024",
+    "source": "1급 2023.03.11 · 24번 · 리눅스 시스템 관리",
+    "question": "다음 중 그룹관리자를 확인하는 과정으로 알맞은 것은?",
+    "choices": [
+      "/etc/group 파일의 3번째 필드에서 확인한다.",
+      "/etc/group 파일의 4번째 필드에서 확인한다.",
+      "/etc/gshadow 파일의 3번째 필드에서 확인한다.",
+      "/etc/gshadow 파일의 4번째 필드에서 확인한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20230311-028",
+    "source": "1급 2023.03.11 · 28번 · 리눅스 시스템 관리",
+    "question": "다음 중 XFS 파일 시스템으로 운영 중인 CentOS 7에서 사용자 쿼터를 설정할 때 사용하는 명령으로 거리가 먼 것은?",
+    "choices": [
+      "quota",
+      "edquota",
+      "setquota",
+      "xfs_quota"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20230311-029",
+    "source": "1급 2023.03.11 · 29번 · 리눅스 시스템 관리",
+    "question": "다음 중 touch 명령어에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "파일의 크기가 0인 빈 파일을 만들 때 사용한다.",
+      "파일의 Access Time을 변경할 때 사용한다.",
+      "파일의 Change Time을 변경할 때 사용한다.",
+      "파일의 Modify Time을 변경할 때 사용한다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20230311-030",
+    "source": "1급 2023.03.11 · 30번 · 리눅스 시스템 관리",
+    "question": "다음 중 locate 명령어에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "텍스트 파일에서 특정 패턴과 일치하는 줄을 출력해준다.",
+      "정보를 데이터베이스화하여 find 명령어보다 검색 속도가 빠르다.",
+      "새롭게 추가된 파일도 별다른 조치 없이 검색할 수 있다.",
+      "사용자, 허가권 등 다양한 조건을 이용해서 검색할 수 있다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20230311-035",
+    "source": "1급 2023.03.11 · 35번 · 리눅스 시스템 관리",
+    "question": "프로세스 아이디(PID)가 513인 bash 프로세스의 우선순위(NI)값이 0이다. 다음 중 NI 값을 변경하여 우선순위를 낮추는 명령으로 알맞은 것은?",
+    "choices": [
+      "nice -5 513",
+      "nice -5 bash",
+      "renice -5 513",
+      "renice -5 bash"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20230311-036",
+    "source": "1급 2023.03.11 · 36번 · 리눅스 시스템 관리",
+    "question": "다음 중 레드햇 계열 패키지 관리 기법으로 가장 거리가 먼 것은?",
+    "choices": [
+      "dnf",
+      "yum",
+      "rpm",
+      "apt-get"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20230311-043",
+    "source": "1급 2023.03.11 · 43번 · 리눅스 시스템 관리",
+    "question": "다음 중 커널 모듈 간의 의존성을 갱신할 때 사용하는 명령어로 알맞은 것은?",
+    "choices": [
+      "depmod",
+      "modules.dep",
+      "ldconfig",
+      "modprobe"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20230311-045",
+    "source": "1급 2023.03.11 · 45번 · 리눅스 시스템 관리",
+    "question": "다음 중 X 윈도가 미설치된 환경에서 커널 컴파일을 진행할 수 있는 도구의 조합으로 알맞은 것은?",
+    "choices": [
+      "make config, make xconfig",
+      "make xconfig, make menuconfig",
+      "make config, make menuconfig",
+      "make config, make gconfig"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20230311-046",
+    "source": "1급 2023.03.11 · 46번 · 리눅스 시스템 관리",
+    "question": "RAID 구성을 위해 fdisk 명령을 이용해서 생성된 파티션의 속성을 변경하려고 한다. 다음 중 파티션 변경에 사용되는 코드값으로 알맞은 것은?",
+    "choices": [
+      "82",
+      "83",
+      "8e",
+      "fd"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20230311-049",
+    "source": "1급 2023.03.11 · 49번 · 리눅스 시스템 관리",
+    "question": "다음 중 생성된 RAID 장치에 대한 레벨 정보를 확인할 때 사용하는 파일로 가장 알맞은 것은?",
+    "choices": [
+      "/proc/mdadm",
+      "/proc/raidtools",
+      "/proc/mdstat",
+      "/proc/partitions"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20230311-050",
+    "source": "1급 2023.03.11 · 50번 · 리눅스 시스템 관리",
+    "question": "다음 중 프린트 작업을 요청하는 명령어 조합으로 알맞은 것은?",
+    "choices": [
+      "lp, lpstat",
+      "lp, lpc",
+      "lp, lpr",
+      "lpr, lpc"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20230311-051",
+    "source": "1급 2023.03.11 · 51번 · 리눅스 시스템 관리",
+    "question": "다음 중 로그 설정 파일에서 가장 많은 기록이 남는 낮은 수준의 priority로 알맞은 것은?",
+    "choices": [
+      "alert",
+      "crit",
+      "panic",
+      "emerg"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20230311-053",
+    "source": "1급 2023.03.11 · 53번 · 리눅스 시스템 관리",
+    "question": "다음 중 문서 편집기나 cat 명령으로 내용을 확인할 수 있는 로그 파일로 알맞은 것은?",
+    "choices": [
+      "/var/log/btmp",
+      "/var/log/secure",
+      "/var/log/wtmp",
+      "/var/log/lastlog"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20230311-056",
+    "source": "1급 2023.03.11 · 56번 · 리눅스 시스템 관리",
+    "question": "다음 중 /etc/services 파일의 수정은 불가하고 내용 추가만 가능하도록 설정하는 명령으로 알맞은 것은?",
+    "choices": [
+      "setfacl -m +a /etc/services",
+      "setfacl -m +i /etc/services",
+      "chattr +a /etc/services",
+      "chattr +i /etc/services"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20230311-060",
+    "source": "1급 2023.03.11 · 60번 · 리눅스 시스템 관리",
+    "question": "다음 중 XFS 파일 시스템에서 사용할 수 없는 백업 도구로 알맞은 것은?",
+    "choices": [
+      "dd",
+      "dump",
+      "cpio",
+      "rsync"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20230311-063",
+    "source": "1급 2023.03.11 · 63번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 아파치 웹 서버 환경 설정 파일의 문법적인 오류를 점검하는 명령으로 알맞은 것은?",
+    "choices": [
+      "httpd -f",
+      "httpd -t",
+      "httpd -l",
+      "httpd -S"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20230311-066",
+    "source": "1급 2023.03.11 · 66번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 LDAP과 RDBMS(관계형 데이터베이스 시스템)과의 비교 설명으로 틀린 것은?",
+    "choices": [
+      "LDAP이 RDBMS에 비해 읽기 작업이 많은 곳에 유리하다.",
+      "LDAP이 RDBMS에 비해 쓰기 작업이 많은 곳에 유리하다.",
+      "LDAP이 RDBMS에 비해 검색 작업이 많은 곳에 유리하다.",
+      "LDAP은 계층형 트리 구조 형태이고, RDBMS는 행과 열 형태의 테이블 구조이다."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "g1-20230311-068",
+    "source": "1급 2023.03.11 · 68번 · 네트워크 및 서비스의 활용",
+    "question": "CentOS 7에서 NIS 서버를 사용하기 위해 RPC 처리를 위한 데몬 실행이 요구된다. 다음 중 관련 실행 명령으로 알맞은 것은?",
+    "choices": [
+      "systemctl start ypbind",
+      "systemctl start ypserv",
+      "systemctl start portmap",
+      "systemctl start rpcbind"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20230311-069",
+    "source": "1급 2023.03.11 · 69번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS 클라이언트로 운영하기 위해 설치해야 하는 패키지의 조합으로 알맞은 것은?",
+    "choices": [
+      "ypbind, yp-tools",
+      "ypserv, ypbind",
+      "ypserv, yp-tools",
+      "ypbind, ypxfrd"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20230311-070",
+    "source": "1급 2023.03.11 · 70번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 NIS 클라이언트에서 사용하는 명령어로 거리가 먼 것은?",
+    "choices": [
+      "ypcat",
+      "yptest",
+      "ypwhich",
+      "yppush"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20230311-082",
+    "source": "1급 2023.03.11 · 82번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 /etc/named.conf 파일에 대한 설명으로 틀린 것은?",
+    "choices": [
+      "C 언어에서 사용되는 /* ~ */ 형식의 주석을 사용할 수 있다.",
+      "C++ 언어에서 사용되는 // 형식의 주석을 사용할 수 있다.",
+      "윈도우 운영체제에서 사용되는 ; 형식의 주석을 사용할 수 있다.",
+      "유닉스 운영체제에서 사용되는 # 형식의 주석을 사용할 수 있다."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "g1-20230311-084",
+    "source": "1급 2023.03.11 · 84번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 리버스 존 파일에서만 사용되는 레코드 타입으로 알맞은 것은?",
+    "choices": [
+      "PTR",
+      "CNAME",
+      "MX",
+      "NS"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "g1-20230311-089",
+    "source": "1급 2023.03.11 · 89번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 가상 머신만을 대상으로 CPU 자원 상태를 모니터링할 때 사용하는 명령어로 가장 알맞은 것은?",
+    "choices": [
+      "virsh",
+      "libvirtd",
+      "virt-manager",
+      "virt-top"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20230311-090",
+    "source": "1급 2023.03.11 · 90번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 KVM을 이용해서 가상 머신을 생성했을 때 기본적으로 적용되는 디스크 이미지 파일 형식으로 알맞은 것은?",
+    "choices": [
+      "VDI",
+      "VMDK",
+      "VHD",
+      "QCOW2"
+    ],
+    "answer": 3
+  },
+  {
+    "id": "g1-20230311-099",
+    "source": "1급 2023.03.11 · 99번 · 네트워크 및 서비스의 활용",
+    "question": "다음 중 iptables의 사용법으로 틀린 것은?",
+    "choices": [
+      "iptables -nL INPUT",
+      "iptables -A INPUT -s 192.168.5.4 -j DROP",
+      "iptables -P INPUT -j DROP",
+      "iptables -t nat -L PREROUTING"
+    ],
+    "answer": 2
+  }
+]

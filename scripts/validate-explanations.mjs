@@ -77,31 +77,35 @@ const cha1Explanations = JSON.parse(
 checkExplanations("1차", cha1Ids, cha1Explanations);
 checkDuplicates("1차", cha1Entries);
 
-// 2차: JSON 데이터를 그대로 검사한다.
-const cha2Entries = JSON.parse(
-  await readFile("app/data/questions-cha2.json", "utf8"),
-);
-const cha2Ids = cha2Entries.map((entry) => entry.id);
-const cha2Explanations = JSON.parse(
-  await readFile("app/data/explanations-cha2.json", "utf8"),
-);
+// JSON 기반 분야: 데이터를 그대로 검사한다.
+const jsonCategories = [
+  ["2급 2차", "app/data/questions-cha2.json", "app/data/explanations-cha2.json"],
+  ["1급 1차", "app/data/questions-geup1.json", "app/data/explanations-geup1.json"],
+];
 
-for (const entry of cha2Entries) {
-  if (!Array.isArray(entry.choices) || entry.choices.length !== 4) {
-    errors.push(`2차 ${entry.id}: 선택지가 4개가 아님`);
+const summary = [`2급 1차 ${cha1Ids.length}문항`];
+
+for (const [label, questionPath, explanationPath] of jsonCategories) {
+  const entries = JSON.parse(await readFile(questionPath, "utf8"));
+  const ids = entries.map((entry) => entry.id);
+  const explanations = JSON.parse(await readFile(explanationPath, "utf8"));
+
+  for (const entry of entries) {
+    if (!Array.isArray(entry.choices) || entry.choices.length !== 4) {
+      errors.push(`${label} ${entry.id}: 선택지가 4개가 아님`);
+    }
+    if (!Number.isInteger(entry.answer) || entry.answer < 0 || entry.answer > 3) {
+      errors.push(`${label} ${entry.id}: 정답 인덱스가 잘못됨`);
+    }
   }
-  if (!Number.isInteger(entry.answer) || entry.answer < 0 || entry.answer > 3) {
-    errors.push(`2차 ${entry.id}: 정답 인덱스가 잘못됨`);
-  }
+  checkExplanations(label, ids, explanations);
+  checkDuplicates(label, entries);
+  summary.push(`${label} ${ids.length}문항`);
 }
-checkExplanations("2차", cha2Ids, cha2Explanations);
-checkDuplicates("2차", cha2Entries);
 
 if (errors.length > 0) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
 
-console.log(
-  `1차 ${cha1Ids.length}문항, 2차 ${cha2Ids.length}문항의 해설·중복 검사를 통과했습니다.`,
-);
+console.log(`${summary.join(", ")}의 해설·중복 검사를 통과했습니다.`);

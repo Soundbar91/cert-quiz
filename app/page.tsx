@@ -216,7 +216,7 @@ export default function Home() {
             </span>
             <div>
               <p className="eyebrow">LINUX MASTER · RANDOM QUIZ</p>
-              <h1 id="quiz-title">리눅스 마스터 2급</h1>
+              <h1 id="quiz-title">리눅스 마스터 퀴즈</h1>
             </div>
           </div>
           {screen === "quiz" && (
@@ -487,7 +487,8 @@ export default function Home() {
         </article>
 
         <p className="source-note">
-          리눅스 마스터 2급 1차·2차 족보 기출문제가 중복 없이 무작위로 출제됩니다.
+          리눅스 마스터 2급 1차·2차 족보와 1급 1차 기출문제가 중복 없이 무작위로
+          출제됩니다.
         </p>
       </section>
     </main>

@@ -28,10 +28,11 @@ test("server-renders the quiz home screen", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /리눅스 마스터 2급/);
+  assert.match(html, /리눅스 마스터 퀴즈/);
   assert.match(html, /어떤 분야를 공부할까요/);
   assert.match(html, /2급 1차/);
   assert.match(html, /2급 2차/);
+  assert.match(html, /1급 1차/);
   assert.match(html, /랭킹 TOP 20/);
 });
 

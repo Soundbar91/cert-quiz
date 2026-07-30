@@ -1,7 +1,8 @@
 import { questions as cha1Questions, type Question } from "./questions";
 import { cha2Questions } from "./questions-cha2";
+import { geup1Questions } from "./questions-geup1";
 
-export type CategoryKey = "cha1" | "cha2";
+export type CategoryKey = "cha1" | "cha2" | "geup1";
 
 export type Category = {
   key: CategoryKey;
@@ -41,6 +42,13 @@ export const categories: Category[] = [
     eyebrow: "리눅스 활용",
     description: "2차 족보 기출문제. 파일 시스템, 셸, 프로세스, 에디터, X 윈도, 인터넷 활용 등",
     questions: dedupeQuestions(cha2Questions),
+  },
+  {
+    key: "geup1",
+    label: "1급 1차",
+    eyebrow: "리눅스마스터 1급 필기",
+    description: "2017~2023 기출 10회분. 실무의 이해, 시스템 관리, 네트워크·서비스 활용",
+    questions: dedupeQuestions(geup1Questions),
   },
 ];
 
