@@ -1,13 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-async function render(path = "/") {
+async function render() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
 
   return worker.fetch(
-    new Request(`http://localhost${path}`, {
+    new Request("http://localhost/", {
       headers: { accept: "text/html" },
     }),
     {
@@ -33,12 +33,4 @@ test("server-renders the quiz home screen", async () => {
   assert.match(html, /2급 1차/);
   assert.match(html, /2급 2차/);
   assert.match(html, /1급 1차/);
-  assert.match(html, /랭킹 TOP 20/);
-});
-
-test("rankings API rejects an unknown category", async () => {
-  const response = await render("/api/rankings?category=nope");
-  assert.equal(response.status, 400);
-  const payload = await response.json();
-  assert.match(payload.error, /category/);
 });

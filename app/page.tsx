@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { getQuestionExplanation } from "./explanations";
 import type { Question } from "./questions";
 import {
@@ -13,66 +13,7 @@ import {
 const labels = ["A", "B", "C", "D"];
 const COUNT_OPTIONS = [10, 20, 0] as const; // 0 = 전체
 
-type RankingRow = {
-  id: number;
-  name: string;
-  correct: number;
-  total: number;
-  percent: number;
-  createdAt: string;
-};
-
 type Screen = "home" | "quiz" | "result";
-
-function formatDate(value: string) {
-  const date = new Date(value.includes("T") ? value : `${value.replace(" ", "T")}Z`);
-  if (Number.isNaN(date.getTime())) return "";
-  return `${date.getMonth() + 1}/${date.getDate()}`;
-}
-
-async function fetchRankings(category: CategoryKey): Promise<RankingRow[]> {
-  const response = await fetch(`/api/rankings?category=${category}`);
-  const payload = (await response.json()) as { rankings?: RankingRow[]; error?: string };
-  if (!response.ok || !payload.rankings) {
-    throw new Error(payload.error ?? "랭킹을 불러오지 못했습니다.");
-  }
-  return payload.rankings;
-}
-
-function RankingTable({
-  rows,
-  highlightId,
-  emptyMessage,
-}: {
-  rows: RankingRow[];
-  highlightId?: number | null;
-  emptyMessage: string;
-}) {
-  if (rows.length === 0) {
-    return <p className="ranking-empty">{emptyMessage}</p>;
-  }
-
-  return (
-    <ol className="ranking-list">
-      {rows.map((row, index) => (
-        <li
-          key={row.id}
-          className={highlightId === row.id ? "ranking-row highlight" : "ranking-row"}
-        >
-          <span className={`rank-no ${index < 3 ? "top" : ""}`}>{index + 1}</span>
-          <span className="rank-name">{row.name}</span>
-          <span className="rank-score">
-            {row.percent}점
-            <small>
-              {row.correct}/{row.total}
-            </small>
-          </span>
-          <span className="rank-date">{formatDate(row.createdAt)}</span>
-        </li>
-      ))}
-    </ol>
-  );
-}
 
 export default function Home() {
   const [screen, setScreen] = useState<Screen>("home");
@@ -82,17 +23,6 @@ export default function Home() {
   const [position, setPosition] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [correct, setCorrect] = useState(0);
-
-  const [homeRankings, setHomeRankings] = useState<
-    Partial<Record<CategoryKey, RankingRow[]>>
-  >({});
-  const [rankingError, setRankingError] = useState<string | null>(null);
-
-  const [playerName, setPlayerName] = useState("");
-  const [submitting, setSubmitting] = useState(false);
-  const [submitError, setSubmitError] = useState<string | null>(null);
-  const [registeredId, setRegisteredId] = useState<number | null>(null);
-  const [resultRankings, setResultRankings] = useState<RankingRow[] | null>(null);
 
   const category = getCategory(categoryKey);
   const total = quizQuestions.length;
@@ -106,28 +36,6 @@ export default function Home() {
   const solved = position + (isAnswered ? 1 : 0);
   const score = total > 0 ? Math.round((correct / total) * 100) : 0;
 
-  const loadHomeRankings = useCallback(() => {
-    Promise.all(
-      categories.map(async (entry) => {
-        const rows = await fetchRankings(entry.key);
-        return [entry.key, rows] as const;
-      }),
-    )
-      .then((pairs) => {
-        setHomeRankings(Object.fromEntries(pairs));
-        setRankingError(null);
-      })
-      .catch((error: unknown) => {
-        setRankingError(
-          error instanceof Error ? error.message : "랭킹을 불러오지 못했습니다.",
-        );
-      });
-  }, []);
-
-  useEffect(() => {
-    loadHomeRankings();
-  }, [loadHomeRankings]);
-
   const startQuiz = useCallback(
     (key: CategoryKey) => {
       const pool = getCategory(key).questions;
@@ -137,9 +45,6 @@ export default function Home() {
       setPosition(0);
       setSelected(null);
       setCorrect(0);
-      setRegisteredId(null);
-      setResultRankings(null);
-      setSubmitError(null);
       setScreen("quiz");
     },
     [countOption],
@@ -170,41 +75,7 @@ export default function Home() {
     setScreen("home");
     setQuizQuestions([]);
     setSelected(null);
-    loadHomeRankings();
-  }, [loadHomeRankings]);
-
-  const registerRanking = useCallback(async () => {
-    const name = playerName.trim();
-    if (!name) {
-      setSubmitError("이름을 입력해 주세요.");
-      return;
-    }
-    setSubmitting(true);
-    setSubmitError(null);
-    try {
-      const response = await fetch("/api/rankings", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ name, category: categoryKey, correct, total }),
-      });
-      const payload = (await response.json()) as {
-        entry?: RankingRow;
-        rankings?: RankingRow[];
-        error?: string;
-      };
-      if (!response.ok || !payload.entry || !payload.rankings) {
-        throw new Error(payload.error ?? "랭킹 등록에 실패했습니다.");
-      }
-      setRegisteredId(payload.entry.id);
-      setResultRankings(payload.rankings);
-    } catch (error) {
-      setSubmitError(
-        error instanceof Error ? error.message : "랭킹 등록에 실패했습니다.",
-      );
-    } finally {
-      setSubmitting(false);
-    }
-  }, [categoryKey, correct, playerName, total]);
+  }, []);
 
   return (
     <main className="page-shell">
@@ -282,26 +153,6 @@ export default function Home() {
                         : "준비 중"}
                     </span>
                   </button>
-                ))}
-              </div>
-
-              <div className="home-rankings">
-                {categories.map((entry) => (
-                  <section key={entry.key} className="ranking-panel">
-                    <h3>{entry.label} 랭킹 TOP 20</h3>
-                    {rankingError ? (
-                      <p className="ranking-empty">{rankingError}</p>
-                    ) : (
-                      <RankingTable
-                        rows={homeRankings[entry.key] ?? []}
-                        emptyMessage={
-                          homeRankings[entry.key]
-                            ? "아직 등록된 기록이 없습니다. 첫 주인공이 되어 보세요!"
-                            : "랭킹을 불러오는 중..."
-                        }
-                      />
-                    )}
-                  </section>
                 ))}
               </div>
             </section>
@@ -429,48 +280,8 @@ export default function Home() {
                 </div>
               </div>
 
-              {registeredId == null ? (
-                <div className="name-form">
-                  <p>이름을 등록하면 {category.label} 랭킹에 기록됩니다.</p>
-                  <div className="name-row">
-                    <input
-                      type="text"
-                      value={playerName}
-                      maxLength={12}
-                      placeholder="이름 (최대 12자)"
-                      onChange={(event) => setPlayerName(event.target.value)}
-                      onKeyDown={(event) => {
-                        if (event.key === "Enter" && !submitting) registerRanking();
-                      }}
-                    />
-                    <button
-                      type="button"
-                      className="next-button"
-                      onClick={registerRanking}
-                      disabled={submitting}
-                    >
-                      {submitting ? "등록 중..." : "랭킹 등록"}
-                    </button>
-                  </div>
-                  {submitError && <p className="form-error">{submitError}</p>}
-                </div>
-              ) : (
-                <section className="ranking-panel result-ranking">
-                  <h3>{category.label} 랭킹 TOP 20</h3>
-                  <RankingTable
-                    rows={resultRankings ?? []}
-                    highlightId={registeredId}
-                    emptyMessage="아직 등록된 기록이 없습니다."
-                  />
-                </section>
-              )}
-
               <div className="result-actions">
-                <button
-                  type="button"
-                  className="reset-button"
-                  onClick={goHome}
-                >
+                <button type="button" className="reset-button" onClick={goHome}>
                   홈으로
                 </button>
                 <button
