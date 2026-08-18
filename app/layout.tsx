@@ -18,9 +18,9 @@ export async function generateMetadata(): Promise<Metadata> {
     requestHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
   const metadataBase = new URL(`${protocol}://${host}`);
-  const title = "리눅스 마스터 랜덤 퀴즈";
+  const title = "자격증 랜덤 퀴즈";
   const description =
-    "리눅스 마스터 2급 1차·2차 족보와 1급 1차 기출에서 무작위로 문제를 풀어보세요.";
+    "리눅스마스터와 AWS SAA 기출문제를 무작위로 풀고 해설을 확인하세요.";
 
   return {
     metadataBase,
@@ -36,7 +36,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: new URL("/og.png", metadataBase).toString(),
           width: 1536,
           height: 1024,
-          alt: "리눅스 마스터 2급 랜덤 퀴즈",
+          alt: "자격증 랜덤 퀴즈",
         },
       ],
     },

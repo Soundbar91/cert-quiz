@@ -2,17 +2,33 @@ export type Question = {
   id: string;
   source: string;
   question: string;
-  choices: [string, string, string, string];
-  answer: number;
+  /** 4~6개. 자격증에 따라 5지선다·6지선다 문항이 있다. */
+  choices: string[];
+  /** 정답 인덱스. 복수정답 문항은 2~3개가 들어간다. */
+  answers: number[];
 };
+
+/** JSON 데이터로 들어오는 원본 형태. 단일정답은 `answer`, 복수정답은 `answers`. */
+export type RawQuestion = Omit<Question, "answers"> & {
+  answer?: number;
+  answers?: number[];
+};
+
+/** 단일정답 `answer` 표기를 `answers` 배열로 통일한다. */
+export function normalizeQuestions(raw: RawQuestion[]): Question[] {
+  return raw.map(({ answer, answers, ...rest }) => ({
+    ...rest,
+    answers: answers ?? (answer === undefined ? [] : [answer]),
+  }));
+}
 
 const q = (
   id: string,
   source: string,
   question: string,
-  choices: Question["choices"],
+  choices: [string, string, string, string],
   answer: number,
-): Question => ({ id, source, question, choices, answer });
+): Question => ({ id, source, question, choices, answers: [answer] });
 
 export const questions: Question[] = [
   q("p02-01", "p.2 · 1번", "bash에서 export PATH=$PATH:/etc를 실행한 결과는?", ["기존 PATH를 제거한다.", "기존 PATH 뒤에 /etc를 추가한다.", "$PATH라는 새 변수를 만든다.", "명령 자체가 잘못되었다."], 1),

@@ -6,45 +6,93 @@ function normalize(text) {
   return text.replace(/\s+/g, "").toLowerCase();
 }
 
-function checkExplanations(label, questionIds, explanations) {
-  const explanationIds = Object.keys(explanations);
+/** 단일정답 `answer` 표기를 `answers` 배열로 통일한다. */
+function answersOf(entry) {
+  if (Array.isArray(entry.answers)) return entry.answers;
+  return Number.isInteger(entry.answer) ? [entry.answer] : [];
+}
 
-  for (const id of questionIds) {
-    const explanation = explanations[id];
-    if (!explanation) {
-      errors.push(`${label} ${id}: 해설 없음`);
+function checkQuestions(label, entries) {
+  for (const entry of entries) {
+    const choices = entry.choices;
+    if (!Array.isArray(choices) || choices.length < 4 || choices.length > 6) {
+      errors.push(`${label} ${entry.id}: 선택지가 4~6개가 아님 (${choices?.length})`);
       continue;
     }
-    if (explanation.core.length < 30) errors.push(`${label} ${id}: 핵심 개념이 너무 짧음`);
-    if (explanation.answerReason.length < 25) {
-      errors.push(`${label} ${id}: 정답 근거가 너무 짧음`);
+    const answers = answersOf(entry);
+    if (answers.length === 0) {
+      errors.push(`${label} ${entry.id}: 정답이 없음`);
+      continue;
     }
-    if (
-      !Array.isArray(explanation.choiceReasons) ||
-      explanation.choiceReasons.length !== 4
-    ) {
-      errors.push(`${label} ${id}: 선택지 해설이 4개가 아님`);
+    if (new Set(answers).size !== answers.length) {
+      errors.push(`${label} ${entry.id}: 정답 인덱스 중복`);
+    }
+    for (const index of answers) {
+      if (!Number.isInteger(index) || index < 0 || index >= choices.length) {
+        errors.push(`${label} ${entry.id}: 정답 인덱스가 선택지 범위를 벗어남`);
+      }
+    }
+  }
+}
+
+/**
+ * 해설은 자격증마다 형태가 다르다.
+ *
+ * - structured: 직접 작성한 해설. 핵심 개념·정답 근거·선택지별 해설을 모두 갖춰야 한다.
+ * - freeform: 원본 문서에서 추출한 서술형 해설. 본문이나 참고 링크 중 하나는 있어야 한다.
+ */
+function checkExplanations(label, entries, explanations, style) {
+  const ids = entries.map((entry) => entry.id);
+  const idSet = new Set(ids);
+
+  for (const entry of entries) {
+    const explanation = explanations[entry.id];
+    if (!explanation) {
+      errors.push(`${label} ${entry.id}: 해설 없음`);
+      continue;
+    }
+
+    if (style === "structured") {
+      if ((explanation.core ?? "").length < 30) {
+        errors.push(`${label} ${entry.id}: 핵심 개념이 너무 짧음`);
+      }
+      if ((explanation.answerReason ?? "").length < 25) {
+        errors.push(`${label} ${entry.id}: 정답 근거가 너무 짧음`);
+      }
+      if (
+        !Array.isArray(explanation.choiceReasons) ||
+        explanation.choiceReasons.length !== entry.choices.length
+      ) {
+        errors.push(
+          `${label} ${entry.id}: 선택지 해설이 ${entry.choices.length}개가 아님`,
+        );
+      }
+      continue;
+    }
+
+    const hasBody = (explanation.body ?? "").length > 0;
+    const hasReferences = (explanation.references ?? []).length > 0;
+    if (!hasBody && !hasReferences) {
+      errors.push(`${label} ${entry.id}: 해설 본문과 참고 링크가 모두 없음`);
     }
   }
 
-  for (const id of explanationIds) {
-    if (!questionIds.includes(id)) errors.push(`${label} ${id}: 대응 문항이 없는 해설`);
+  for (const id of Object.keys(explanations)) {
+    if (!idSet.has(id)) errors.push(`${label} ${id}: 대응 문항이 없는 해설`);
   }
 
-  if (new Set(questionIds).size !== questionIds.length) {
+  if (idSet.size !== ids.length) {
     errors.push(`${label}: 문항 ID 중복`);
-  }
-  if (questionIds.length !== explanationIds.length) {
-    errors.push(
-      `${label}: 문항 ${questionIds.length}개와 해설 ${explanationIds.length}개가 일치하지 않음`,
-    );
   }
 }
 
 function checkDuplicates(label, entries) {
   const seen = new Map();
   for (const entry of entries) {
-    const key = `${normalize(entry.question)}|${normalize(entry.choices[entry.answer])}`;
+    const answerText = answersOf(entry)
+      .map((index) => normalize(entry.choices[index] ?? ""))
+      .join("|");
+    const key = `${normalize(entry.question)}|${answerText}`;
     if (seen.has(key)) {
       errors.push(`${label}: 중복 문항 — ${seen.get(key)} 와 ${entry.id}`);
       continue;
@@ -53,54 +101,65 @@ function checkDuplicates(label, entries) {
   }
 }
 
-// 1차: app/questions.ts 의 q(...) 호출을 파싱한다.
-const questionSource = await readFile("app/questions.ts", "utf8");
-const cha1Pattern =
-  /^\s*q\(\s*"([^"]+)",\s*"[^"]*",\s*"((?:[^"\\]|\\.)*)",\s*\[((?:[^\]\\]|\\.)*)\],\s*(\d)/gm;
-const cha1Entries = [...questionSource.matchAll(cha1Pattern)].map((match) => {
-  const choices = [...match[3].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((m) => m[1]);
-  return { id: match[1], question: match[2], choices, answer: Number(match[4]) };
-});
-const cha1Ids = [...questionSource.matchAll(/^\s*q\("([^"]+)"/gm)].map(
-  (match) => match[1],
-);
+/** 2급 1차만 TypeScript 소스에 있어 q(...) 호출을 파싱한다. */
+async function readCha1Entries() {
+  const source = await readFile("app/questions.ts", "utf8");
+  const pattern =
+    /^\s*q\(\s*"([^"]+)",\s*"[^"]*",\s*"((?:[^"\\]|\\.)*)",\s*\[((?:[^\]\\]|\\.)*)\],\s*(\d)/gm;
+  const entries = [...source.matchAll(pattern)].map((match) => ({
+    id: match[1],
+    question: match[2],
+    choices: [...match[3].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((m) => m[1]),
+    answers: [Number(match[4])],
+  }));
+  const ids = [...source.matchAll(/^\s*q\("([^"]+)"/gm)].map((match) => match[1]);
 
-if (cha1Entries.length !== cha1Ids.length) {
-  errors.push(
-    `1차: 문항 파싱 불일치 (${cha1Entries.length}/${cha1Ids.length}) — validate 스크립트의 패턴을 확인하세요`,
-  );
+  if (entries.length !== ids.length) {
+    errors.push(
+      `2급 1차: 문항 파싱 불일치 (${entries.length}/${ids.length}) — validate 스크립트의 패턴을 확인하세요`,
+    );
+  }
+  return entries;
 }
 
-const cha1Explanations = JSON.parse(
-  await readFile("app/data/explanations.json", "utf8"),
-);
-checkExplanations("1차", cha1Ids, cha1Explanations);
-checkDuplicates("1차", cha1Entries);
-
-// JSON 기반 분야: 데이터를 그대로 검사한다.
-const jsonCategories = [
-  ["2급 2차", "app/data/questions-cha2.json", "app/data/explanations-cha2.json"],
-  ["1급 1차", "app/data/questions-geup1.json", "app/data/explanations-geup1.json"],
+const sources = [
+  {
+    label: "2급 1차",
+    entries: await readCha1Entries(),
+    explanationPath: "app/data/explanations.json",
+    style: "structured",
+  },
+  {
+    label: "2급 2차",
+    questionPath: "app/data/questions-cha2.json",
+    explanationPath: "app/data/explanations-cha2.json",
+    style: "structured",
+  },
+  {
+    label: "1급 1차",
+    questionPath: "app/data/questions-geup1.json",
+    explanationPath: "app/data/explanations-geup1.json",
+    style: "structured",
+  },
+  {
+    label: "AWS SAA-C03",
+    questionPath: "app/data/questions-saa.json",
+    explanationPath: "app/data/explanations-saa.json",
+    style: "freeform",
+  },
 ];
 
-const summary = [`2급 1차 ${cha1Ids.length}문항`];
+const summary = [];
 
-for (const [label, questionPath, explanationPath] of jsonCategories) {
-  const entries = JSON.parse(await readFile(questionPath, "utf8"));
-  const ids = entries.map((entry) => entry.id);
-  const explanations = JSON.parse(await readFile(explanationPath, "utf8"));
+for (const source of sources) {
+  const entries =
+    source.entries ?? JSON.parse(await readFile(source.questionPath, "utf8"));
+  const explanations = JSON.parse(await readFile(source.explanationPath, "utf8"));
 
-  for (const entry of entries) {
-    if (!Array.isArray(entry.choices) || entry.choices.length !== 4) {
-      errors.push(`${label} ${entry.id}: 선택지가 4개가 아님`);
-    }
-    if (!Number.isInteger(entry.answer) || entry.answer < 0 || entry.answer > 3) {
-      errors.push(`${label} ${entry.id}: 정답 인덱스가 잘못됨`);
-    }
-  }
-  checkExplanations(label, ids, explanations);
-  checkDuplicates(label, entries);
-  summary.push(`${label} ${ids.length}문항`);
+  checkQuestions(source.label, entries);
+  checkExplanations(source.label, entries, explanations, source.style);
+  checkDuplicates(source.label, entries);
+  summary.push(`${source.label} ${entries.length}문항`);
 }
 
 if (errors.length > 0) {
