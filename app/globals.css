@@ -478,8 +478,27 @@ h2 {
   color: #116347;
 }
 
+/*
+ * 한국어는 기본 줄바꿈 규칙에서 어절 중간이 끊긴다. keep-all 로 띄어쓰기
+ * 단위를 지키고, 줄에 담기지 않는 긴 영문 토큰만 break-word 로 흘린다.
+ * (SAA 지문에는 AmazonElastiCache 같은 긴 서비스명이 자주 나온다.)
+ */
+.question-text,
+.choice-text,
+.explanation-block p,
+.choice-explanations li p,
+.result p {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 .question-text {
+  max-width: none;
+  margin-bottom: 22px;
   white-space: pre-line;
+  font-size: clamp(16px, 1.9vw, 19px);
+  line-height: 1.75;
+  letter-spacing: -0.01em;
 }
 
 .choice-text {
